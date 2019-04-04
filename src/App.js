@@ -12,7 +12,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <GetStarted />
         <Index />
         <Footer />
       </div>

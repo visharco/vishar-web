@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import GetStarted from './../../component/getStarted/getStarted'
 import Categories from '../../component/categories/categories';
 
 
@@ -13,7 +13,7 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
-                <p>Welcome to Index</p>
+                <GetStarted />
                 <Categories />
             </div>
          );
