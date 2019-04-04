@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
-import Categories from '../../component/categories/categories';
+import Categories from '../../component/index/categories/categories'
+import GetStarted from '../../component/index/getStarted/getStarted'
 
 
 
@@ -13,11 +14,7 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
+                <GetStarted />
                 <Categories />
             </div>
          );
