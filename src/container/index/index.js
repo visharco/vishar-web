@@ -13,7 +13,15 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
+<<<<<<< HEAD
                 <GetStarted />
+=======
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+>>>>>>> 52f43f8acae30c8cbddc0ab7843f86f5dcbd5dff
                 <Categories />
             </div>
          );
