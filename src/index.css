@@ -71,6 +71,10 @@ button{
 	cursor: pointer;
 }
 
+a {
+	text-decoration: none;
+	color: #333;
+}
 
 .container-fluid{ 
   padding: 1rem;
