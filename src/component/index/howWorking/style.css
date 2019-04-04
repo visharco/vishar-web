@@ -1,0 +1,56 @@
+
+
+
+.howWorking{ 
+    background-color: #F3F3F3;
+    width: 100%;
+}
+
+.howWorking .container-fluid{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
+}
+
+.howWorking .container{
+    margin: auto;   
+    padding:100px 50px;
+}
+
+.how-right{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+text-align: right;
+padding: 50px;
+align-items: flex-start;
+}
+
+.how-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 50px;
+    align-items: flex-start;
+}
+
+.how-text{
+    padding: 40px 20px;
+}
+.how-text h1 {
+    font-size: 18px;
+}
+.how-text p{
+    width: 500px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+.how-num{
+font-size: 200px;
+color: #2D9CDB;
+}
+

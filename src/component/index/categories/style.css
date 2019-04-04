@@ -73,3 +73,15 @@ justify-content: space-between;
     font-size: 20px;
     color: #a5a5a5;
 }
+.cat-label{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    background-color: #ffffff80;
+    padding: 5px 10px;
+    border-radius: 30px;
+    min-width: 90px;
+    color: #616161;
+    text-align: center;
+    font-size: 11px;
+}

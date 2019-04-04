@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import Categories from '../../component/index/categories/categories'
 import GetStarted from '../../component/index/getStarted/getStarted'
+import HowWorking from '../../component/index/howWorking/howWorking';
 
 
 
@@ -16,6 +17,7 @@ class IndexComponent extends Component {
             <div>
                 <GetStarted />
                 <Categories />
+                <HowWorking />
             </div>
          );
     }
