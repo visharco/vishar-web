@@ -31,7 +31,7 @@ class HeaderComponent extends Component {
                             </ul>
                         </div>
                         <div className="header-logo" >
-                            <img src={logo} alt="لوگو" />
+                        <Link to="/" ><img src={logo} alt="لوگو" /></Link>
                         </div>
                     </div>
                 </div>
