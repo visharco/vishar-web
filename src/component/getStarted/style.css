@@ -1,0 +1,73 @@
+.getStarted{ 
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.getStarted .container-fluid{
+height: 100%;
+padding: 0;
+margin: 0;
+max-width: 100%;
+}
+
+.getStarted .container{
+    margin: auto; 
+    background-image: url('./../../assets/images/getStarted.png');
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0 50px;
+}
+
+.getStarted-text{
+    padding-top: 250px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+}
+
+.getStartedi-title{
+    width: 50%;
+}
+.getStartedi-title h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.getStartedi-title h1:nth-child(2){
+    border-bottom: 10px solid ;
+    display: inline;
+    padding: 0px 0px 10px;
+    border-radius: 0px 10px;
+}
+.getStartedi-title h2{
+    margin-top: 40px;
+    line-height: 25px;
+}
+.getStarted-button{
+    padding: 10px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition:all .2s linear;
+    padding-top: 50px;
+}
+
+.getStarted-button:hover{
+    opacity: .8;
+    transition:all .2s linear;
+}
+.getStarted-button p{
+    background-color: #2D9CDB;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+}
+
