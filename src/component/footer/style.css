@@ -1,8 +1,33 @@
-.footer{ 
-    height: 100px;
+.footer{  
     padding: 1rem;
-    background-color: #888888;
+    background-color: #333;
     bottom: 0;
-    
+}
 
+
+.footer-split {
+    width: 50%;
+    background-color: red;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.footer-menu{
+    display: flex;
+    color: #fff;
+    width: 300px;
+    margin: auto;
+
+
+}
+ 
+.footer-split ul li {
+    list-style-type: none;
+    text-align: right;
+    padding: 0.5rem;
+
+}
+
+.footer-split ul li:hover{
+    opacity: 0.8;
 }
