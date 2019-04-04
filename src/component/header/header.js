@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router';
+
+//
+//
+//
 import logo from './../../assets/images/logo.png'
 import './style.css';
 
@@ -18,11 +23,11 @@ class HeaderComponent extends Component {
                                 <p className="menu-login-text">ثبت نام / ورود</p>
                             </div>
                             <ul className="menu-links">
-                                <li className="menu-link">دسته بندی</li>
-                                <li className="menu-link">طراحان</li>
-                                <li className="menu-link">پروژه ها</li>
-                                <li className="menu-link">درباره ما</li>
-                                <li className="menu-link">بلاگ</li>
+                                <Link to="/categories" ><li className="menu-link">دسته بندی</li></Link>
+                                <Link to="/designers" ><li className="menu-link">طراحان</li></Link>
+                                <Link to="/projects" ><li className="menu-link">پروژه ها</li></Link>
+                                <Link to="/about-us" ><li className="menu-link">درباره ما</li></Link>
+                                <Link to="/blog" ><li className="menu-link">بلاگ</li></Link>
                             </ul>
                         </div>
                         <div className="header-logo" >
