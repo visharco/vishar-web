@@ -14,6 +14,10 @@ class IndexComponent extends Component {
         return ( 
             <div>
                 <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
+                <p>Welcome to Index</p>
                 <Categories />
             </div>
          );

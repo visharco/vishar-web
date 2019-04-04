@@ -60,4 +60,6 @@ transition:all .2s linear
     height: 40px;
     line-height: 40px;
     color: #fff;
+    text-align: center;
+    
 }
