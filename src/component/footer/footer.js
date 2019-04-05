@@ -1,5 +1,10 @@
 import React,{Component} from 'react';
 
+import facebook from './../../assets/icons/facebook.svg'
+import twitter from './../../assets/icons/twitter.svg'
+import instagram from './../../assets/icons/instagram.svg'
+import telegram from './../../assets/icons/telegram.svg'
+
 import './style.css';
 
 
@@ -16,18 +21,18 @@ class FooterComponent extends Component {
                         <h1>عضویت در خبرنامه</h1>
                         <div className="footer-newslater">
                             <div className="newslater-container">
-                                 <div className="footer-newslater-input-container">
+                                 <input  className="footer-newslater-input-container" placeholder="ایمیل" />
 
-                                 </div>
+                                 
                                  <div className="footer-newslater-button-container">
                                     <p>عضویت</p>
                                  </div>
                             </div>
                             <div className="footer-social-network">
-                                <div className="footer-social"></div>
-                                <div className="footer-social"></div>
-                                <div className="footer-social"></div>
-                                <div className="footer-social"></div>
+                                <img className="footer-social" src={facebook} alt="فیسبوک" />
+                                <img className="footer-social" src={twitter} alt="توویتر" />
+                                <img className="footer-social" src={instagram} alt="اینستاگرام" />
+                                <img className="footer-social" src={telegram} alt="تلگرام" />
                             </div>
 
                         </div>
