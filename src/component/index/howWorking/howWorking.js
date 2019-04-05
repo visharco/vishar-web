@@ -16,6 +16,7 @@ class HowWorking extends Component {
             <div className="howWorking" >
                 <div className="container-fluid">
                     <div className="container">
+                        <h1>چگونه کار میکند ؟</h1>
                         <div className="how-right">
                             <div className="how-text" >
                                 <h1>

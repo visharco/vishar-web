@@ -18,6 +18,13 @@
     padding:100px 50px;
 }
 
+.howWorking .container > h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+    top: 100px;
+    text-align: center;
+}
 .how-right{
 display: flex;
 flex-direction: row;

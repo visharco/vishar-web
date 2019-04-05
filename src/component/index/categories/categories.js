@@ -30,12 +30,7 @@ class Categories extends Component {
             // speed: 5000,
             // autoplaySpeed: 200,
         };
-        const images = {
-            x1: './../../../assets/images/slide1.png',
-            x2: './../../../assets/images/slide2.png',
-            x3: './../../../assets/images/slide3.png',
-        }
-        
+
         return (
             <div className="categories" >
                 <div className="container-fluid">

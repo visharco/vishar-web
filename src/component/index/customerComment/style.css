@@ -1,0 +1,68 @@
+
+
+
+.customerComment{ 
+    background-color: #fff;
+    width: 100%;
+}
+
+.customerComment .container-fluid{
+
+
+}
+
+.customerComment .container{
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.customerComment .container > h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+    top: 100px;
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+.customer-box{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+.customer-detail{
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+
+
+}
+.customer-box img { 
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.customer-title{
+}
+
+.customer-title h1{
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.customer-title h2{
+color: #DFDFDF;
+font-size:18px;
+}
+
+.customer-text{
+    padding: 0px 150px;
+    text-align: right;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 25px;
+
+}
