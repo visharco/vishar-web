@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
-import Categories from '../../component/categories/categories';
+import Categories from '../../component/index/categories/categories'
+import GetStarted from '../../component/index/getStarted/getStarted'
+import HowWorking from '../../component/index/howWorking/howWorking';
+import OurService from '../../component/index/ourService/ourService';
+import SampleDesigns from '../../component/index/sampleDesigns/sampleDesigns';
+import CustomerComment from '../../component/index/customerComment/customerComment';
 
 
 
@@ -13,12 +18,12 @@ class IndexComponent extends Component {
     render() { 
         return ( 
             <div>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
-                <p>Welcome to Index</p>
+                <GetStarted />
                 <Categories />
+                <HowWorking />
+                <OurService />
+                <SampleDesigns />
+                <CustomerComment />
             </div>
          );
     }

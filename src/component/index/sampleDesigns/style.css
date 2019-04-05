@@ -1,0 +1,33 @@
+
+
+
+.sampleDesigns{ 
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.sampleDesigns .container-fluid{
+
+
+}
+
+.sampleDesigns .container{
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+.sampleDesigns .container h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+    top: 100px;
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+.sampleDesigns .slick-dots{
+    padding-bottom: 20px;
+}

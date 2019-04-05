@@ -1,5 +1,5 @@
 .header{ 
-    background-color: #eee;
+    background-color: #eeeeee9e;
     position: absolute;
     width: 100%;
 }
@@ -29,6 +29,8 @@ width: 640px;
 
 .menu-links{
 display: flex;
+font-weight: 900;
+align-items: center;
 }
 .menu-link{
     margin: 10px;
@@ -61,5 +63,6 @@ transition:all .2s linear
     line-height: 40px;
     color: #fff;
     text-align: center;
+font-weight: 900;
     
 }
