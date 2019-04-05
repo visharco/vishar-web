@@ -4,6 +4,10 @@
     bottom: 0;
 }
 
+.footer .container{
+    display: flex;
+    padding: 50px;
+}
 
 .footer-split {
     width: 50%; 
@@ -13,23 +17,29 @@
 
 .footer-split h1 {
     color: #7F7F7F;
-    
+    padding: 30px;
 }
 
 .footer-menu{
     display: flex;
     color: #fff;
     width: 300px;
-    margin: auto;
+    margin: auto;   
+    justify-content: center;
 
-
+}
+.footer-menu ul{
+    text-align: center;
+    margin: 0px 40px;
 }
  
 .footer-split ul li {
     list-style-type: none;
     text-align: right;
-    padding: 0.5rem;
-
+    padding: 0.5rem 0px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 .footer-split ul li:hover{
@@ -60,14 +70,33 @@
     padding: 30px 0;
 
 }
+
+.footer-social-network > div{
+
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    transition: all .2s linear;
+
+}
+.footer-social-network > div:hover{
+    opacity: .8;
+    transition: all .2s linear;
+}
 .footer-social{
     width: 50px;
     height: 50px;
-    background-color: #fff;
     margin: 0 5px;
     text-align: center;
-
+    padding: 10px;
+    cursor: pointer;
 }
+
 
 .footer-newslater-input-container{
     width: 300px;
@@ -75,8 +104,8 @@
     background-color: #333;
     border-radius: 50px 0 0 50px;
     border: 1px solid #5F5F5F;
-
-
+    padding-left: 20px;
+    color: #fff;
 }
 
 
@@ -85,14 +114,16 @@
     width: 100px;
     height: 50px;
     border-radius: 0 50px 50px 0;
-    border:1px solid #0090CF;
+    border: 1px solid #0090CF;
     transition: ease 500ms;
-
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 900;
 }
 
 .footer-newslater-button-container p {
     color: #fff;
-
+    cursor: pointer;
 }
 
 .footer-newslater-button-container:hover {
