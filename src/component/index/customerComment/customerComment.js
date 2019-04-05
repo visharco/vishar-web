@@ -28,17 +28,17 @@ class CustomerComment extends Component {
             <div className="customerComment" >
                 <div className="container-fluid">
                     <div className="container">
-                    <h1>  Customer Comments</h1>
+                    <h1> نظرت برخی مشتریان ویشار </h1>
                         <div>
                             
                             <Slider {...settings}>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <img src={customer1} alt="نظرات" />
                                         <div className="customer-title  " >
-                                            <h1>Omid Rahmani</h1>
-                                            <h2>CEO of Appel</h2>
+                                            <h1>امید رحمانی</h1>
+                                            <h2>کارمند اپل</h2>
                                         </div>
+                                        <img src={customer1} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
@@ -47,11 +47,11 @@ class CustomerComment extends Component {
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <img src={customer1} alt="نظرات" />
                                         <div className="customer-title  " >
-                                            <h1>Omid Rahmani</h1>
-                                            <h2>CEO of Appel</h2>
+                                            <h1>امید رحمانی</h1>
+                                            <h2>کارمند اپل</h2>
                                         </div>
+                                        <img src={customer1} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
@@ -60,11 +60,11 @@ class CustomerComment extends Component {
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <img src={customer1} alt="نظرات" />
                                         <div className="customer-title  " >
-                                            <h1>Omid Rahmani</h1>
-                                            <h2>CEO of Appel</h2>
+                                            <h1>امید رحمانی</h1>
+                                            <h2>کارمند اپل</h2>
                                         </div>
+                                        <img src={customer1} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
@@ -73,11 +73,11 @@ class CustomerComment extends Component {
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <img src={customer1} alt="نظرات" />
                                         <div className="customer-title  " >
-                                            <h1>Omid Rahmani</h1>
-                                            <h2>CEO of Appel</h2>
+                                            <h1>امید رحمانی</h1>
+                                            <h2>کارمند اپل</h2>
                                         </div>
+                                        <img src={customer1} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
@@ -86,11 +86,11 @@ class CustomerComment extends Component {
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <img src={customer1} alt="نظرات" />
                                         <div className="customer-title  " >
-                                            <h1>Omid Rahmani</h1>
-                                            <h2>CEO of Appel</h2>
+                                            <h1>امید رحمانی</h1>
+                                            <h2>کارمند اپل</h2>
                                         </div>
+                                        <img src={customer1} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است

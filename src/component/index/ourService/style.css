@@ -2,7 +2,8 @@
 
 
 .ourService{ 
-    background-color: #F3F3F3;
+    background-color: #f7f7f7;
+
     width: 100%;
 }
 
@@ -18,8 +19,7 @@
     padding:0px 50px;
     display: flex;
     flex-direction: row;
-
-    background-color: #f7f7f7;
+max-width: 1200px;
 }
 
 .ours-box{

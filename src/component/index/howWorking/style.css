@@ -16,6 +16,7 @@
 .howWorking .container{
     margin: auto;   
     padding:100px 50px;
+    max-width: 1200px;
 }
 
 .howWorking .container > h1{

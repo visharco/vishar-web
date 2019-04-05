@@ -14,6 +14,7 @@ class GetStarted extends Component {
             <div className="getStarted" >
                 <div className="container-fluid">
                     <div className="container">
+
                         <div className="get-title">
                             <div className="get-title-box" >
                                 <div className="get-title-up" >
