@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Input from './../../component/common/input/Input'
-import TextArea from './../../component/common/textarea/textarea'
+import Input from './../../component/common/input/Input';
+import TextArea from './../../component/common/textarea/textarea';
+import Button from './../../component/common/Button/Button'
 
 import './style.css';
 
@@ -52,7 +53,12 @@ class ContactUs extends Component {
                                 changed={this.changedHandler}
                                 error={this.state.forgetEmailError}
                             />
-
+                            <Button
+                                isLoading={this.state.isLoading}
+                                title={'ارسال'}
+                                bgcolor={'#0090CF'}
+                                hoverbgcolor={'#1fc056cc'}
+                                click={this.callSubmit} />
 
                         </div>
                     </div>
