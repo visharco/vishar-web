@@ -1,29 +1,38 @@
 
 .contactUs{ 
-    background-color: #fff;
 
 }
 
-.contactUs .container-fluid{
+
+.container-fluid{
 
 
 }
 
 .contactUs .container{
-    margin: auto;
-    text-align: center;
+    margin: auto; 
+    text-align: center; 
     padding: 100px 50px;
 }
 
+.conatactUs-form{
+    direction: rtl;
+    padding: 50px 0px 100px;
+}
+.contactUs-title p{
+    text-align: right;
+    font-size: 16px;
+    color: #4c4c4c;
+}
 
 
-.contactUs-title{
+.contactUs-title h1{
     margin: 50px 0px;
     display: inline-block;
     position: relative;
 }
 
-.contactUs-title:after{
+.contactUs-title h1:after{
     background-color: #EAEAEA;
     display: block;
     content: '';
@@ -32,16 +41,4 @@
     position: absolute;
     bottom: -20px;
     border-radius: 30px;
-}
-
-.contactUs-text{
-    text-align: right;
-    font-size: 16px;
-    color: #4c4c4c;
-}
-
-.contactUs-form{
-    display: flex;
-    justify-content: center;
-    
 }
