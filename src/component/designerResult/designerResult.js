@@ -26,6 +26,7 @@ class DesignerResult extends Component {
                     click={this.callSubmit}
                     borderRadius="30px"
                     color="#919191"
+                    click={this.props.click}
                 />
             </div>
         );
