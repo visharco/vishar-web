@@ -1,0 +1,53 @@
+
+.aboutUsVideo{ 
+    background-color: #f3f3f3;
+
+}
+
+.aboutUsVideo .container-fluid{
+max-width: 100%;
+
+}
+
+.aboutUsVideo .container{
+    margin: auto; 
+    text-align: center;
+}
+
+
+
+
+.aboutUs-title{
+    margin: 50px 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.aboutUs-title:after{
+    background-color: #EAEAEA;
+    display: block;
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 30px;
+}
+.aboutUs-play{
+    width: 70%;
+    margin: 50px auto ;
+}
+
+
+.aboutUsVideo .video-react .video-react-big-play-button{
+    left: 45%;
+    top: 45%;
+    height: 3em;
+    border-radius: 50%;
+}
+
+.aboutUsVideo .video-react .video-react-control:before,.aboutUsVideo .video-react .video-react-big-play-button:before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
