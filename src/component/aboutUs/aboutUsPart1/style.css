@@ -9,8 +9,7 @@
 
 .aboutUsTextImg .container{
     margin: auto; 
-    text-align: center;
-    height: 800px;
+    text-align: center; 
     padding: 100px 50px;
 }
 
