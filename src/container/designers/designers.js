@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 import DesignerResult from '../../component/designerResult/designerResult';
 
@@ -17,6 +18,11 @@ class DesignersComponent extends Component {
             designerLevel: 'سطح ۲'
         }
     }
+    gotoDesigner = () => {
+        browserHistory.push('/designer-page');
+        console.log(this.props)
+    }
+
     render() {
         return (
             <div className="designers" >
@@ -39,11 +45,13 @@ class DesignersComponent extends Component {
                                 <input type="text" />
                                 <img src={search} />
                             </div>
+                            <div className="designers-search-wrap" >
                                 <div className="designers-search-result " >
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
@@ -80,7 +88,16 @@ class DesignersComponent extends Component {
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
                                     />
+                                </div>
+                                <div className="designers-search-pagination" >
+                                    <p className="pagination-number">1</p>
+                                    <p className="pagination-number">2</p>
+                                    <p className="pagination-number .pagination-number-selected">3</p>
+                                    <p className="pagination-number">4</p>
+                                    <p className="pagination-number">5</p>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
