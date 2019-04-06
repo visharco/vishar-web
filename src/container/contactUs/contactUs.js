@@ -58,6 +58,7 @@ class ContactUs extends Component {
                                 title={'ارسال'}
                                 bgcolor={'#0090CF'}
                                 hoverbgcolor={'#1fc056cc'}
+                                borderRadius="30px"
                                 click={this.callSubmit} />
 
                         </div>

@@ -6,7 +6,10 @@ const button = (props) => (
     <div  className="button-box">
         <button className="button-style"  
                 onClick={props.click} 
-                style={{backgroundColor : props.bgcolor , ':hover' : {backgroundColor : props.hoverbgcolor}} } >
+                style={{backgroundColor : props.bgcolor ,
+                        ':hover' : {backgroundColor : props.hoverbgcolor} ,
+                        borderRadius: props.borderRadius ,
+                        color:props.color} } >
                     {props.isLoading ? (
                         <div  className="loader-button"></div>
                     ) : (
@@ -32,7 +35,10 @@ How can use this button : ------->
                 title={'Send'}                                                      
                 bgcolor={'#0080FF'}                                                 
                 hoverbgcolor={'#1fc056cc'}                                          
-                click={this.callSubmit}/>                                           
+                click={this.callSubmit}
+                borderRadius="10px"
+                color="#fff"
+                />                                           
                                                                                     
                                                                                     
 =====================================================================================
