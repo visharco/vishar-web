@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Input from './../../component/common/input/Input'
+import TextArea from './../../component/common/textarea/textarea'
 
 import './style.css';
 
@@ -11,15 +13,47 @@ class ContactUs extends Component {
     }
     render() {
         return (
-            <div className="contactUs">
+            <div className="contactUs" >
+
                 <div className="container-fluid">
-                    <div className="container">
-                        <h1 className="contactUs-title"  >ارتباط با ما</h1>
-                        <p className="contactUs-text" >
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
-                        </p>
-                        <div className="contactUs-form" >
-                            
+                    <div className="container" >
+                        <div className="contactUs-title" >
+                            <h1>تماس با ما</h1>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                            </p>
+                        </div>
+                        <div className="conatactUs-form" >
+                            <Input
+                                type={'text'}
+                                name={'name'}
+                                placeholder={'نام و نام خانوادگی'}
+                                changed={this.changedHandler}
+                                error={this.state.forgetEmailError}
+                            />
+                            <Input
+                                type={'text'}
+                                name={'email'}
+                                placeholder={'ایمیل'}
+                                changed={this.changedHandler}
+                                error={this.state.forgetEmailError}
+                            />
+                            <Input
+                                type={'text'}
+                                name={'phonenumber'}
+                                placeholder={'شماره همراه'}
+                                changed={this.changedHandler}
+                                error={this.state.forgetEmailError}
+                            />
+                            <TextArea
+                                type={'text'}
+                                name={'message'}
+                                placeholder={'پیام شما'}
+                                changed={this.changedHandler}
+                                error={this.state.forgetEmailError}
+                            />
+
+
                         </div>
                     </div>
                 </div>
