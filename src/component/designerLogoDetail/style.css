@@ -1,0 +1,70 @@
+
+.designerLogoDetail{
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 2px solid #ededed;
+    width: 400px;
+    height: 300px;
+
+}
+
+.DLD-time{
+    color: #b8b8b8;
+    padding: 30px 0px;
+    font-size: 12px;
+    text-align: right;
+}
+.DLD-time span{
+margin: 0px 5px;
+}
+
+.DLD-right{
+display: flex;
+align-items: center;
+text-align: right;
+justify-content: flex-end;
+}
+
+.DLD-right-title{
+    margin-right: 20px;
+}
+.DLD-right-title h1{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.DLD-right-title h2{
+    color: #6f6f6f;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.DLD-right img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #bebebe;
+    box-shadow: 0px 6px 6px 1px #c5c5c5;
+}
+
+.DLD-time{
+
+}
+
+.DLD-icon-box{
+display: flex;
+justify-content: space-around;
+}
+
+.DLD-icons{
+display: flex;
+align-items: center;
+}
+
+.DLD-icons img{
+width: 15px;
+}
+
+.DLD-icons span{
+font-size: 12px;
+padding: 0px 5px ;
+}

@@ -13,7 +13,7 @@ import './style.css';
 
 
 
-class DesignersPage extends Component {
+class Profile extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -62,20 +62,20 @@ class DesignersPage extends Component {
         }
     }
 
-    goToLogo = () => {
-        browserHistory.push('/designer-logo');
+    goToDesigns = () => {
+        browserHistory.push('/designs');
     }
 
 
     render() {
         return (
-            <div className="designerPage" >
+            <div className="Profile" >
 
-                <div className="DP-title" >
+                <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >
                             <img src={pic1} />
-                            <div className="DP-name">
+                            <div className="Profile-name">
                                 <h1>امید آرمانی</h1>
                                 <h2>سطح ۱</h2>
                             </div>
@@ -84,10 +84,10 @@ class DesignersPage extends Component {
                     </div>
                 </div>
 
-                <div className="DP-desc-up" >
+                <div className="Profile-desc-up" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <div className="DP-desc-box1" >
+                            <div className="Profile-desc-box1" >
                                 <Button
                                     isLoading={this.state.isLoading}
                                     title={'دعوت به همکاری'}
@@ -97,29 +97,29 @@ class DesignersPage extends Component {
                                     borderRadius="5px"
                                     color="#fff"
                                 />
-                                <div className="DP-desc-box">
-                                    <div className="DP-desc-title" onClick={this.descriptionHandler} id="appreciate" ref={this.appreciate} >قدر دانی ها</div>
-                                    <div className="DP-desc-title" onClick={this.descriptionHandler} id="profile" ref={this.profile} >پروفایل</div>
-                                    <div className="DP-desc-title" onClick={this.descriptionHandler} id="aboutme" ref={this.aboutme}>درباره ی من</div>
+                                <div className="Profile-desc-box">
+                                    <div className="Profile-desc-title" onClick={this.descriptionHandler} id="appreciate" ref={this.appreciate} >قدر دانی ها</div>
+                                    <div className="Profile-desc-title" onClick={this.descriptionHandler} id="profile" ref={this.profile} >پروفایل</div>
+                                    <div className="Profile-desc-title" onClick={this.descriptionHandler} id="aboutme" ref={this.aboutme}>درباره ی من</div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="DP-desc-down" >
+                <div className="Profile-desc-down" >
                     <div className="container-fluid">
                         <div className="container" >
 
-                            <div className="DP-desc-box2" >
-                                <div className="DP-desc-texts" ref={this.aboutmeText}>
-                                    <div className="DP-desc-text" >
+                            <div className="Profile-desc-box2" >
+                                <div className="Profile-desc-texts" ref={this.aboutmeText}>
+                                    <div className="Profile-desc-text" >
                                         <p>
                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                         </p>
                                         <h1>خلاصه</h1>
                                     </div>
-                                    <div className="DP-desc-text" >
+                                    <div className="Profile-desc-text" >
                                         <p>
                                             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                                         </p>
@@ -127,37 +127,27 @@ class DesignersPage extends Component {
                                     </div>
                                 </div>
 
-                                <div className="DP-desc-texts " ref={this.profileText} >
-                                    <div className="DP-profile">
+                                <div className="Profile-desc-texts " ref={this.profileText} >
+                                    <div className="Profile-profile">
                                         <DesignerLogo
-                                            designerLogo={designerLogo}
-                                            designerComments={this.state.designerComments}
-                                            designerLikes={this.state.designerLikes}
-                                            goToLogo={this.goToLogo}
+                                            goToDesigns={this.goToDesigns}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
-                                            designerLogo={designerLogo}
-                                            designerComments={this.state.designerComments}
-                                            designerLikes={this.state.designerLikes}
-                                            goToLogo={this.goToLogo}
+                                            goToDesigns={this.goToDesigns}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
-                                            designerLogo={designerLogo}
-                                            designerComments={this.state.designerComments}
-                                            designerLikes={this.state.designerLikes}
-                                            goToLogo={this.goToLogo}
+                                            goToDesigns={this.goToDesigns}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
-                                            designerLogo={designerLogo}
-                                            designerComments={this.state.designerComments}
-                                            designerLikes={this.state.designerLikes}
-                                            goToLogo={this.goToLogo}
+                                            goToDesigns={this.goToDesigns}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
-                                            designerLogo={designerLogo}
-                                            designerComments={this.state.designerComments}
-                                            designerLikes={this.state.designerLikes}
-                                            goToLogo={this.goToLogo}
+                                            goToDesigns={this.goToDesigns}
+                                            logoFilter={this.logoFilter}
                                         />
                                     </div>
                                     <div className="designerPage-pagination" >
@@ -169,7 +159,7 @@ class DesignersPage extends Component {
                                     </div>
                                 </div>
 
-                                <div className="DP-desc-texts" ref={this.appreciateText}>
+                                <div className="Profile-desc-texts" ref={this.appreciateText}>
 
                                     تقدیر
                                     </div>
@@ -184,4 +174,4 @@ class DesignersPage extends Component {
     }
 }
 
-export default DesignersPage;
+export default Profile;
