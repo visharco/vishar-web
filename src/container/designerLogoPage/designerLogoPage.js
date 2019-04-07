@@ -98,8 +98,10 @@ class DesignerLogoPage extends Component {
                                 <DesignerLogoDetail />
                                 <DesignerLogoPostComment />
                             </div>
-                            <div className="DLP-down" > 
-<DesignerLogoComment />
+                            <div className="DLP-down" >
+                                <DesignerLogoComment />
+                                <DesignerLogoComment />
+                                <DesignerLogoComment />
                             </div>
 
 
