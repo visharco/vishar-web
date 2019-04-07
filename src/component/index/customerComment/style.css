@@ -7,7 +7,7 @@
 }
 
 .customerComment .container-fluid{
-
+background-color: #f7f7f7;
 
 }
 
@@ -16,7 +16,7 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f7f7f7;
 }
 
 .customerComment .container > h1{
@@ -41,8 +41,12 @@ margin-bottom: 20px;
 
 }
 .customer-box img { 
-    border-radius: 30px;
+    border-radius: 50%;
     margin-left: 20px;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+    box-shadow: 0px 15px 13px -3px #80808075;
 }
 
 .customer-title{
@@ -65,5 +69,17 @@ font-size:18px;
     font-size: 16px;
     color: #4c4c4c;
     line-height: 25px;
+
+}
+
+.customerComment .slick-prev:before, .slick-next:before{
+    color: rgba(59, 59, 59, 0.2);
+    font-size: 25px;
+    transition: all .1s linear;
+}
+
+.customerComment .slick-prev:before, .slick-next:before:hover{
+    color: rgba(59, 59, 59, 0.8);
+    transition: all .1s linear;
 
 }
