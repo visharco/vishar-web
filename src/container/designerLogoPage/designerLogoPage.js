@@ -1,0 +1,115 @@
+import React, { Component } from 'react';
+
+import { browserHistory } from 'react-router';
+
+import biggerlogo1 from './../../assets/images/biggerlogo1.png'
+import biggerlogo2 from './../../assets/images/biggerlogo2.png'
+
+import DesignerLogoTitle from '../../component/designerLogoTitle/designerLogoTitle';
+import DesignerLogoPostComment from '../../component/designerLogoPostComment/designerLogoPostComment.js';
+import DesignerLogoDetail from '../../component/designerLogoDetail/designerLogoDetail';
+import DesignerLogoComment from '../../component/designerLogoComment/designerLogoComment';
+
+import './style.css';
+
+
+
+class DesignerLogoPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            designerComments: 20,
+            designerLikes: 10,
+            designerViews: 12,
+            designerName: 'امید آرمانی',
+            designerLevel: '1'
+        }
+    }
+
+    aboutmeText = React.createRef();
+    profileText = React.createRef();
+    appreciateText = React.createRef();
+
+    appreciate = React.createRef();
+    aboutme = React.createRef();
+    profile = React.createRef();
+
+
+    descriptionHandler = (e) => {
+
+        if (e.target.id === 'aboutme') {
+            this.aboutmeText.current.style.display = 'block'
+            this.profileText.current.style.display = 'none'
+            this.appreciateText.current.style.display = 'none'
+
+            e.target.style.backgroundColor = "#D8D8D8"
+            this.appreciate.current.style.backgroundColor = "transparent"
+            this.profile.current.style.backgroundColor = "transparent"
+        }
+        else if (e.target.id === 'profile') {
+            this.aboutmeText.current.style.display = 'none'
+            this.profileText.current.style.display = 'block'
+            this.appreciateText.current.style.display = 'none'
+
+            e.target.style.backgroundColor = "#D8D8D8"
+            this.appreciate.current.style.backgroundColor = "transparent"
+            this.aboutme.current.style.backgroundColor = "transparent"
+        }
+        else if (e.target.id === 'appreciate') {
+            this.aboutmeText.current.style.display = 'none'
+            this.profileText.current.style.display = 'none'
+            this.appreciateText.current.style.display = 'block'
+
+            e.target.style.backgroundColor = "#D8D8D8"
+            this.profile.current.style.backgroundColor = "transparent"
+            this.aboutme.current.style.backgroundColor = "transparent"
+        }
+    }
+
+    goToLogo = () => {
+        browserHistory.push('/designer-logo');
+    }
+
+
+    render() {
+        return (
+            <div className="designerLogoPage" >
+
+                <div className="DLP-title" >
+                    <div className="container-fluid">
+                        <div className="container" >
+                            <DesignerLogoTitle />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="DLP-logos" >
+                    <div className="container-fluid">
+                        <div className="container" >
+                            <img src={biggerlogo1} alt="لوگو" />
+                            <img src={biggerlogo2} alt="لوگو" />
+                        </div>
+                    </div>
+                </div>
+                <div className="DLP-comment-box" >
+                    <div className="container-fluid">
+                        <div className="container" >
+                            <div className="DLP-up">
+                                <DesignerLogoDetail />
+                                <DesignerLogoPostComment />
+                            </div>
+                            <div className="DLP-down" > 
+<DesignerLogoComment />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        );
+    }
+}
+
+export default DesignerLogoPage;

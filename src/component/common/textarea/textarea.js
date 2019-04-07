@@ -58,7 +58,7 @@ export default textarea;
 /*
 example using 
 
-      <Input 
+      <TextArea 
             type={'text'} 
             name={'email'}
             placeholder={'Email'}

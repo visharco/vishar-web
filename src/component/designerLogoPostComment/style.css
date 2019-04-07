@@ -1,0 +1,20 @@
+.designerLogoPostComment{
+    width: calc(100% - 440px);
+    background-color: #F9F9F9;
+    height: 300px;
+    border: 2px solid #ededed;
+    padding: 40px;
+}
+
+.designerLogoPostComment .input-label textarea{
+min-height: 150px;
+}
+
+.designerLogoPostComment .Inputbox{
+margin: 0;
+}
+
+.designerLogoPostComment .button-style{
+    margin-top: 20px;
+border: 2px solid #efefef;
+}

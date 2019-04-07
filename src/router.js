@@ -10,6 +10,7 @@ import ProjectsScreen from './container/projects/projects';
 import AboutUsScreen from './container/aboutUs/aboutUs';
 import ContactUsScreen from './container/contactUs/contactUs';
 import DesignerPageScreen from './container/designerPage/designerPage';
+import DesignerLogoPageScreen from './container/designerLogoPage/designerLogoPage';
 
 
 
@@ -31,6 +32,7 @@ class RouterComponent extends Component {
                     <Route   path="about-us" component={AboutUsScreen} /> 
                     <Route   path="contact-us" component={ContactUsScreen} /> 
                     <Route   path="designer-page" component={DesignerPageScreen} /> 
+                    <Route   path="designer-logo-page" component={DesignerLogoPageScreen} /> 
                 </Route>
             </Router>
          );

@@ -1,0 +1,57 @@
+
+.designerLogoPage{ 
+
+}
+
+.DLP-title {
+    text-align: right;
+}
+
+.DLP-title  .container-fluid{
+    background-color: #F1F1F1;
+}
+
+.DLP-title   .container{
+    margin: auto;
+    padding: 130px 80px 50px;
+}
+
+
+
+.DLP-logos {
+  
+}
+
+.DLP-logos  .container-fluid{
+    background-color: #fff;
+    border-bottom: 3px solid #e7e7e7;
+}
+
+.DLP-logos   .container{
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DLP-logos .container img{
+width: 90%;
+margin-bottom: 40px
+}
+.DLP-comment-box .container{
+padding: 70px 0px;
+}
+.DLP-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.DLP-down{
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 2px solid #ededed;
+    margin-top: 40px;
+}

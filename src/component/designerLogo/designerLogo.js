@@ -15,7 +15,10 @@ class DesignerLogo extends Component {
     }
     render() {
         return (
-            <div className="designerLogo" style={{ backgroundImage: 'url(' + this.props.designerLogo + ')' }}>
+            <div className="designerLogo" 
+                 style={{ backgroundImage: 'url(' + this.props.designerLogo + ')' }}
+                 onClick={this.props.goToLogo}
+                 >
                 <div className="designerLogo-CL" >
                     <div className="designerLogo-II">
                         <span>{this.props.comments ? this.props.comments : 0 }</span>
@@ -31,7 +34,7 @@ class DesignerLogo extends Component {
                     title={'لوگو'}
                     bgcolor={'rgba(196, 196, 196, .2)'}
                     hoverbgcolor={'#ccc'}
-                    click={this.goToLogo}
+                    click={this.props.logoFilter}
                     borderRadius="30px"
                     color="#555"
                 />
@@ -55,6 +58,7 @@ How can use this button : ------->
                 designerComments={this.state.designerComments}
                 designerLikes={this.state.designerLikes}
                 goToLogo={this.goToLogo}
+                logoFilter={this.logoFilter}
                 />
 
 

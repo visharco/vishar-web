@@ -134,30 +134,35 @@ class DesignersPage extends Component {
                                             designerComments={this.state.designerComments}
                                             designerLikes={this.state.designerLikes}
                                             goToLogo={this.goToLogo}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
                                             designerLogo={designerLogo}
                                             designerComments={this.state.designerComments}
                                             designerLikes={this.state.designerLikes}
                                             goToLogo={this.goToLogo}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
                                             designerLogo={designerLogo}
                                             designerComments={this.state.designerComments}
                                             designerLikes={this.state.designerLikes}
                                             goToLogo={this.goToLogo}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
                                             designerLogo={designerLogo}
                                             designerComments={this.state.designerComments}
                                             designerLikes={this.state.designerLikes}
                                             goToLogo={this.goToLogo}
+                                            logoFilter={this.logoFilter}
                                         />
                                         <DesignerLogo
                                             designerLogo={designerLogo}
                                             designerComments={this.state.designerComments}
                                             designerLikes={this.state.designerLikes}
                                             goToLogo={this.goToLogo}
+                                            logoFilter={this.logoFilter}
                                         />
                                     </div>
                                     <div className="designerPage-pagination" >
