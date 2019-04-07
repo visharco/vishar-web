@@ -1,0 +1,156 @@
+
+.designerPage{ 
+
+}
+
+
+
+.DP-title {
+    text-align: right;
+}
+
+.DP-title  .container-fluid{
+    background-color: #F1F1F1;
+}
+
+.DP-title   .container{
+    margin: auto;
+    padding: 130px 80px 50px;
+    display: flex;
+    direction: rtl;
+    align-items: center;
+
+
+}
+.DP-desc-box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.DP-title img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #bebebe;
+}
+
+.DP-name {
+    margin-right: 20px;
+}
+.DP-name  h1{
+    margin-bottom: 15px;
+    font-size: 22px
+}
+
+.DP-name  h2{
+    color: #6f6f6f;
+    font-weight: 300;
+    font-size: 18px;
+}    
+.DP-desc-box2{
+
+}
+.DP-desc-up{
+
+}
+.DP-desc-up .container-fluid{
+    width: 100%;
+    padding: 0;
+    background-color: #F1F1F1;
+
+}
+
+.DP-desc-up .container{
+
+}
+
+
+.DP-desc-texts{
+    text-align: right;
+
+}
+
+.DP-desc-text{
+    display: flex;
+    padding: 50px 0px 25px;
+    align-items: center;
+}
+.DP-desc-text h1{
+    padding-left: 25px;
+    color: #666;
+}
+.DP-desc-text p{
+    padding: 50px 25px;
+    border-right: 3px solid #D8D8D8;
+    width: 80%;
+    font-size: 16px;
+    color: #555;
+}
+.DP-desc-down {
+    padding: 100px 0px;
+    min-height: 800px;
+}
+
+.DP-desc-box{
+display:flex;
+}
+.DP-desc-title:nth-child(1),
+.DP-desc-title:nth-child(2){
+background-color: transparent;
+}
+
+
+.DP-desc-title{
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #D8D8D8;
+    margin: 0px 10px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0px 30px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 900;
+}
+.DP-desc-texts:nth-child(2) ,
+.DP-desc-texts:nth-child(3) {
+display: none;
+}
+
+
+.DP-profile{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.designerPage-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pagination-number{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+.pagination-number:hover{
+    background-color: #d9d9d9;
+    transition: all .2s linear;
+}
+.pagination-number-selected{
+    background-color: #d4d4d4;
+}

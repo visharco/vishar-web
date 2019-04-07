@@ -1,0 +1,44 @@
+
+.contactUs{ 
+
+}
+
+
+.container-fluid{
+
+
+}
+
+.contactUs .container{
+    margin: auto; 
+    text-align: center; 
+    padding: 50px 0px;
+}
+
+.conatactUs-form{
+    direction: rtl;
+    padding: 50px 0px 100px;
+}
+.contactUs-title p{
+    text-align: right;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+
+.contactUs-title h1{
+    margin: 50px 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.contactUs-title h1:after{
+    background-color: #EAEAEA;
+    display: block;
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 30px;
+}
