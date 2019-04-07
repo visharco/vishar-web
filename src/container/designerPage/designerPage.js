@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { browserHistory } from 'react-router';
+
 import pic1 from './../../assets/images/pic1.png'
 import designerLogo from '../../assets/images/profilelogo.png'
 
@@ -59,6 +61,12 @@ class DesignersPage extends Component {
             this.aboutme.current.style.backgroundColor = "transparent"
         }
     }
+
+    goToLogo = () =>{
+        browserHistory.push('/designer-logo');
+    }
+
+
     render() {
         return (
             <div className="designerPage" >
@@ -124,26 +132,31 @@ class DesignersPage extends Component {
                                         designerLogo={designerLogo}
                                         designerComments={this.state.designerComments}
                                         designerLikes={this.state.designerLikes}
+                                        goToLogo={this.goToLogo}
                                     />
                                     <DesignerLogo
                                         designerLogo={designerLogo}
                                         designerComments={this.state.designerComments}
                                         designerLikes={this.state.designerLikes}
+                                        goToLogo={this.goToLogo}
                                     />
                                     <DesignerLogo
                                         designerLogo={designerLogo}
                                         designerComments={this.state.designerComments}
                                         designerLikes={this.state.designerLikes}
+                                        goToLogo={this.goToLogo}
                                     />
                                     <DesignerLogo
                                         designerLogo={designerLogo}
                                         designerComments={this.state.designerComments}
                                         designerLikes={this.state.designerLikes}
+                                        goToLogo={this.goToLogo}
                                     />
                                     <DesignerLogo
                                         designerLogo={designerLogo}
                                         designerComments={this.state.designerComments}
                                         designerLikes={this.state.designerLikes}
+                                        goToLogo={this.goToLogo}
                                     />
 
                                 </div>

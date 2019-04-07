@@ -34,7 +34,6 @@ class DesignerLogo extends Component {
                     click={this.goToLogo}
                     borderRadius="30px"
                     color="#555"
-                    click={this.props.click}
                 />
             </div>
         );
@@ -55,6 +54,7 @@ How can use this button : ------->
                 designerLogo={this.state.designerLogo}
                 designerComments={this.state.designerComments}
                 designerLikes={this.state.designerLikes}
+                goToLogo={this.goToLogo}
                 />
 
 
