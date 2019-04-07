@@ -119,3 +119,9 @@ background-color: transparent;
 .DP-desc-texts:nth-child(3) {
 display: none;
 }
+
+
+.DP-profile{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

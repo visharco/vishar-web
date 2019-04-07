@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 import pic1 from './../../assets/images/pic1.png'
+import designerLogo from '../../assets/images/profilelogo.png'
+
+import Button from '../../component/common/Button/Button';
+import DesignerLogo from '../../component/designerLogo/designerLogo'
+
 
 import './style.css';
-import Button from '../../component/common/Button/Button';
 
 
 
@@ -11,9 +15,11 @@ class DesignersPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            designerComments: 20,
+            designerLikes: 10
         }
     }
+
     aboutmeText = React.createRef();
     profileText = React.createRef();
     appreciateText = React.createRef();
@@ -36,9 +42,9 @@ class DesignersPage extends Component {
         }
         else if (e.target.id === 'profile') {
             this.aboutmeText.current.style.display = 'none'
-            this.profileText.current.style.display = 'block'
+            this.profileText.current.style.display = 'flex'
             this.appreciateText.current.style.display = 'none'
-            
+
             e.target.style.backgroundColor = "#D8D8D8"
             this.appreciate.current.style.backgroundColor = "transparent"
             this.aboutme.current.style.backgroundColor = "transparent"
@@ -47,7 +53,7 @@ class DesignersPage extends Component {
             this.aboutmeText.current.style.display = 'none'
             this.profileText.current.style.display = 'none'
             this.appreciateText.current.style.display = 'block'
-            
+
             e.target.style.backgroundColor = "#D8D8D8"
             this.profile.current.style.backgroundColor = "transparent"
             this.aboutme.current.style.backgroundColor = "transparent"
@@ -113,12 +119,37 @@ class DesignersPage extends Component {
                                     </div>
                                 </div>
 
-                                <div className="DP-desc-texts" ref={this.profileText} >
-                                    پروفایل
-                                    </div>
+                                <div className="DP-desc-texts DP-profile" ref={this.profileText} >
+                                    <DesignerLogo
+                                        designerLogo={designerLogo}
+                                        designerComments={this.state.designerComments}
+                                        designerLikes={this.state.designerLikes}
+                                    />
+                                    <DesignerLogo
+                                        designerLogo={designerLogo}
+                                        designerComments={this.state.designerComments}
+                                        designerLikes={this.state.designerLikes}
+                                    />
+                                    <DesignerLogo
+                                        designerLogo={designerLogo}
+                                        designerComments={this.state.designerComments}
+                                        designerLikes={this.state.designerLikes}
+                                    />
+                                    <DesignerLogo
+                                        designerLogo={designerLogo}
+                                        designerComments={this.state.designerComments}
+                                        designerLikes={this.state.designerLikes}
+                                    />
+                                    <DesignerLogo
+                                        designerLogo={designerLogo}
+                                        designerComments={this.state.designerComments}
+                                        designerLikes={this.state.designerLikes}
+                                    />
+
+                                </div>
 
                                 <div className="DP-desc-texts" ref={this.appreciateText}>
-                                    
+
                                     تقدیر
                                     </div>
                             </div>
