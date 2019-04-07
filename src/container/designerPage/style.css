@@ -122,6 +122,35 @@ display: none;
 
 
 .DP-profile{
+    display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+}
+
+.designerPage-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pagination-number{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+.pagination-number:hover{
+    background-color: #d9d9d9;
+    transition: all .2s linear;
+}
+.pagination-number-selected{
+    background-color: #d4d4d4;
 }

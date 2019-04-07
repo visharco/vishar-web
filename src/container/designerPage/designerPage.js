@@ -44,7 +44,7 @@ class DesignersPage extends Component {
         }
         else if (e.target.id === 'profile') {
             this.aboutmeText.current.style.display = 'none'
-            this.profileText.current.style.display = 'flex'
+            this.profileText.current.style.display = 'block'
             this.appreciateText.current.style.display = 'none'
 
             e.target.style.backgroundColor = "#D8D8D8"
@@ -62,7 +62,7 @@ class DesignersPage extends Component {
         }
     }
 
-    goToLogo = () =>{
+    goToLogo = () => {
         browserHistory.push('/designer-logo');
     }
 
@@ -127,38 +127,46 @@ class DesignersPage extends Component {
                                     </div>
                                 </div>
 
-                                <div className="DP-desc-texts DP-profile" ref={this.profileText} >
-                                    <DesignerLogo
-                                        designerLogo={designerLogo}
-                                        designerComments={this.state.designerComments}
-                                        designerLikes={this.state.designerLikes}
-                                        goToLogo={this.goToLogo}
-                                    />
-                                    <DesignerLogo
-                                        designerLogo={designerLogo}
-                                        designerComments={this.state.designerComments}
-                                        designerLikes={this.state.designerLikes}
-                                        goToLogo={this.goToLogo}
-                                    />
-                                    <DesignerLogo
-                                        designerLogo={designerLogo}
-                                        designerComments={this.state.designerComments}
-                                        designerLikes={this.state.designerLikes}
-                                        goToLogo={this.goToLogo}
-                                    />
-                                    <DesignerLogo
-                                        designerLogo={designerLogo}
-                                        designerComments={this.state.designerComments}
-                                        designerLikes={this.state.designerLikes}
-                                        goToLogo={this.goToLogo}
-                                    />
-                                    <DesignerLogo
-                                        designerLogo={designerLogo}
-                                        designerComments={this.state.designerComments}
-                                        designerLikes={this.state.designerLikes}
-                                        goToLogo={this.goToLogo}
-                                    />
-
+                                <div className="DP-desc-texts " ref={this.profileText} >
+                                    <div className="DP-profile">
+                                        <DesignerLogo
+                                            designerLogo={designerLogo}
+                                            designerComments={this.state.designerComments}
+                                            designerLikes={this.state.designerLikes}
+                                            goToLogo={this.goToLogo}
+                                        />
+                                        <DesignerLogo
+                                            designerLogo={designerLogo}
+                                            designerComments={this.state.designerComments}
+                                            designerLikes={this.state.designerLikes}
+                                            goToLogo={this.goToLogo}
+                                        />
+                                        <DesignerLogo
+                                            designerLogo={designerLogo}
+                                            designerComments={this.state.designerComments}
+                                            designerLikes={this.state.designerLikes}
+                                            goToLogo={this.goToLogo}
+                                        />
+                                        <DesignerLogo
+                                            designerLogo={designerLogo}
+                                            designerComments={this.state.designerComments}
+                                            designerLikes={this.state.designerLikes}
+                                            goToLogo={this.goToLogo}
+                                        />
+                                        <DesignerLogo
+                                            designerLogo={designerLogo}
+                                            designerComments={this.state.designerComments}
+                                            designerLikes={this.state.designerLikes}
+                                            goToLogo={this.goToLogo}
+                                        />
+                                    </div>
+                                    <div className="designerPage-pagination" >
+                                        <p className="pagination-number">1</p>
+                                        <p className="pagination-number">2</p>
+                                        <p className="pagination-number pagination-number-selected">3</p>
+                                        <p className="pagination-number">4</p>
+                                        <p className="pagination-number">5</p>
+                                    </div>
                                 </div>
 
                                 <div className="DP-desc-texts" ref={this.appreciateText}>
