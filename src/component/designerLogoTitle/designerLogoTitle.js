@@ -25,10 +25,10 @@ class DesignerLogoTitle extends Component {
                     <Button
                         isLoading={this.state.isLoading}
                         title={'نمایش صفحه ی پروفایل'}
-                        bgcolor={'#0080FF'}
-                        hoverbgcolor={'#1fc056cc'}
+                        bgcolor={'#0090CF'}
+                        hoverbgcolor={'#419cdb80'}
                         click={this.goToFullProfile}
-                        borderRadius="10px"
+                        borderRadius="5px"
                         color="#fff"
                     />
                     <div className="DLT-icon-box" >
