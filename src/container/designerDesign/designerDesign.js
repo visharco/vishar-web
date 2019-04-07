@@ -14,7 +14,7 @@ import './style.css';
 
 
 
-class DesignerLogoPage extends Component {
+class DesignerDesign extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -73,9 +73,9 @@ class DesignerLogoPage extends Component {
 
     render() {
         return (
-            <div className="designerLogoPage" >
+            <div className="designerDesign" >
 
-                <div className="DLP-title" >
+                <div className="DD-title" >
                     <div className="container-fluid">
                         <div className="container" >
                             <DesignerLogoTitle />
@@ -83,7 +83,7 @@ class DesignerLogoPage extends Component {
                     </div>
                 </div>
 
-                <div className="DLP-logos" >
+                <div className="DD-logos" >
                     <div className="container-fluid">
                         <div className="container" >
                             <img src={biggerlogo1} alt="لوگو" />
@@ -91,14 +91,14 @@ class DesignerLogoPage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="DLP-comment-box" >
+                <div className="DD-comment-box" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <div className="DLP-up">
+                            <div className="DD-up">
                                 <DesignerLogoDetail />
                                 <DesignerLogoPostComment />
                             </div>
-                            <div className="DLP-down" >
+                            <div className="DD-down" >
                                 <DesignerLogoComment />
                                 <DesignerLogoComment />
                                 <DesignerLogoComment />
@@ -114,4 +114,4 @@ class DesignerLogoPage extends Component {
     }
 }
 
-export default DesignerLogoPage;
+export default DesignerDesign;

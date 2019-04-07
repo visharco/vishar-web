@@ -19,7 +19,7 @@ class DesignersComponent extends Component {
         }
     }
     gotoDesigner = () => {
-        browserHistory.push('/designer-page');
+        browserHistory.push('/profile');
         console.log(this.props)
     }
 
@@ -57,36 +57,37 @@ class DesignersComponent extends Component {
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                     <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
+                                        click={this.gotoDesigner}
                                     />
                                 </div>
                                 <div className="designers-search-pagination" >
