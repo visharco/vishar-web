@@ -27,13 +27,13 @@ display: flex;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width: 745px;
 }
 
 .menu-links{
 display: flex;
 font-weight: 900;
 align-items: center;
+margin-left: 40px;
 }
 .menu-links a{
     border: 2px solid transparent;

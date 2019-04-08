@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import biggerlogo1 from './../../assets/images/biggerlogo1.png'
-import biggerlogo2 from './../../assets/images/biggerlogo2.png'
 
 import DesignerLogoTitle from '../../component/designerLogoTitle/designerLogoTitle';
 import DesignerLogoPostComment from '../../component/designerLogoPostComment/designerLogoPostComment.js';
@@ -87,7 +86,7 @@ class DesignerDesign extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <img src={biggerlogo1} alt="لوگو" />
-                            <img src={biggerlogo2} alt="لوگو" />
+                            <img src={biggerlogo1} alt="لوگو" />
                         </div>
                     </div>
                 </div>
