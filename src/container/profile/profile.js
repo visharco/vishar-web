@@ -75,7 +75,7 @@ class Profile extends Component {
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={pic1} />
+                            <img src={pic1} alt="طراح" />
                             <div className="Profile-name">
                                 <h1>امید آرمانی</h1>
                                 <h2>سطح ۱</h2>

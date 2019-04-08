@@ -40,7 +40,7 @@ class ProjectsComponent extends Component {
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={rocket} />
+                            <img src={rocket} alt="راکت" />
                             <div className="P-title-left">
                                 <h2>پروژه ات را پیدا کن</h2>
                                 <h1>شغلت رو بساز</h1>

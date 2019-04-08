@@ -23,18 +23,18 @@ class Project extends Component {
                     <div className="p-icons" >
                         <div className="p-icon" >
                             <p>0 طراحی</p>
-                            <img src={layersicon} />
+                            <img src={layersicon} alt="لایه ها " />
                         </div>
                         <div className="p-icon" >
                             <p> 
                                 <span>3 روز </span>
                                 <span>21 ساعت</span>
                             </p>
-                            <img src={clock} />
+                            <img src={clock} alt="ساعت" />
                         </div>
                         <div className="p-icon" >
                             <p>بدون نظر</p>
-                            <img src={comment} />
+                            <img src={comment} alt="کامنت"  />
                         </div>
                     </div>
                     <Button
@@ -60,7 +60,7 @@ class Project extends Component {
                             <p>لوگو</p>
                         </div>
                     </div>
-                    <img src={design1} />
+                    <img src={design1} alt="طرح" />
 
 
 

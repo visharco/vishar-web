@@ -14,7 +14,7 @@ class DesignerResult extends Component {
     render() {
         return (
             <div className="designerResult" onClick={this.props.click} > 
-                <img src={designerPic} />
+                <img src={designerPic} alt="طراح" />
                 <div className="designerResult-title" > 
                     <h1>مارک والبرگ</h1>
                     <h2>سطح 1</h2>
