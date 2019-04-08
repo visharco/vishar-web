@@ -21,7 +21,7 @@ class DesignerResult extends Component {
                 </div>
                 <Button
                     isLoading={this.state.isLoading}
-                    title={'بیشتر'}
+                    title={'مشاهده پروفایل '}
                     bgcolor={'#F1F1F1'}
                     hoverbgcolor={'#ccc'}
                     click={this.callSubmit}

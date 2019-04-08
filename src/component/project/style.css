@@ -52,7 +52,7 @@ width: 80%;
 display: flex;
 direction: rtl;
 }
-.p-right-btns .button-style{
+.p-right-btns p{
     border: 2px solid #ababab;
     height: 30px;
     width: unset;
@@ -60,7 +60,12 @@ direction: rtl;
     padding: 0px 20px;
     font-weight: 900;
     margin-left:10px; 
-    }
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: #ababab;
+    cursor: pointer;
+}
 .p-left{
     height: 180px;
     display: flex;

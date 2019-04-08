@@ -1,5 +1,5 @@
 .designerResult{
-    width: calc(33.3333% - 40px);
+    width: calc(25% - 40px);
     background-color: #f7f7f7;
     border-radius: 10px;
     display: flex;
@@ -30,9 +30,11 @@ color: #6f6f6f;
 font-weight: 300;
 }
 .designerResult img{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     box-shadow: 0px 15px 13px -3px #80808075;   
 }
-
+.designerResult .button-style{
+    width: 190px;
+}

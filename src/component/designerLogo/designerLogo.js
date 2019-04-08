@@ -16,10 +16,10 @@ class DesignerLogo extends Component {
     }
     render() {
         return (
-            <div className="designerLogo" 
-                 style={{ backgroundImage: 'url(' + designerLogo + ')' }}
-                 onClick={this.props.goToDesigns}
-                 >
+            <div className="designerLogo"
+                style={{ backgroundImage: 'url(' + designerLogo + ')' }}
+                onClick={this.props.goToDesigns}
+            >
                 <div className="designerLogo-CL" >
                     <div className="designerLogo-II">
                         <span>12</span>
@@ -30,15 +30,15 @@ class DesignerLogo extends Component {
                         <img src={like} alt="لایک" />
                     </div>
                 </div>
-                <Button
-                    isLoading={this.state.isLoading}
-                    title={'لوگو'}
-                    bgcolor={'rgba(196, 196, 196, .2)'}
-                    hoverbgcolor={'#ccc'}
-                    click={this.props.logoFilter}
-                    borderRadius="30px"
-                    color="#555"
-                />
+                <div className="designerLogo-CL" >
+                    <div className="designerLogo-II" >
+                        <span>
+                            لوگو
+                        </span>
+                    </div>
+
+                </div>
+
             </div>
         );
     }

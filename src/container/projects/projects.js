@@ -20,12 +20,16 @@ class ProjectsComponent extends Component {
     openFinishFilter = (e) => {
 
         if (e.target.id === 'open') {
-            e.target.style.backgroundColor = "#f4f4f4"
-            this.finish.current.style.backgroundColor = "#d0d0d0"
+            e.target.style.backgroundColor = "rgb(0, 144, 207)"
+            e.target.style.color = "#fff"
+            this.finish.current.style.backgroundColor = "#f5f5f5"
+            this.finish.current.style.color = "#888"
         }
         else {
-            e.target.style.backgroundColor = "#f4f4f4"
-            this.open.current.style.backgroundColor = "#d0d0d0"
+            e.target.style.backgroundColor = "rgb(0, 144, 207)"
+            e.target.style.color = "#fff"
+            this.open.current.style.backgroundColor = "#f5f5f5"
+            this.open.current.style.color = "#888"
         }
         console.log('wfe')
 
@@ -59,8 +63,8 @@ class ProjectsComponent extends Component {
                                 </div>
                                 <div className="P-filter-right">
                                     <div className="P-open-finish" >
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}>باز</p>
-                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>تمام</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="open" ref={this.open}> فعال</p>
+                                        <p className="P-tab" onClick={this.openFinishFilter} id="finish" ref={this.finish}>غیرفعال</p>
                                     </div>
                                     <select selected="دسته بندی">
                                         <option value="0">انتخاب دسته بندی</option>

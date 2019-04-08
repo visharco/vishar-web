@@ -58,24 +58,7 @@ class Project extends Component {
                             </p>
                         </div>
                         <div className="p-right-btns" >
-                            <Button
-                                isLoading={this.state.isLoading}
-                                title={'لوگو'}
-                                bgcolor={'transparent'}
-                                hoverbgcolor={'#f7f7f7'}
-                                click={this.callSubmit}
-                                borderRadius="30px"
-                                color="#ababab"
-                            />
-                            <Button
-                                isLoading={this.state.isLoading}
-                                title={'تایپوگرافی'}
-                                bgcolor={'transparent'}
-                                hoverbgcolor={'#f7f7f7'}
-                                click={this.callSubmit}
-                                borderRadius="30px"
-                                color="#ababab"
-                            />
+                            <p>لوگو</p>
                         </div>
                     </div>
                     <img src={design1} />
