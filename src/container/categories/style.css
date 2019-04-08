@@ -1,0 +1,28 @@
+.C-title .container-fluid{
+    background-color: #f2f2f2;
+}
+.C-title .container{
+    padding: 130px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.C-title{
+    text-align: right;
+}
+
+
+.C-title-right h1{
+    color: #333;
+    margin-bottom: 10px;
+}
+.C-title-right p{
+    font-size: 16px;
+    color: #4c4c4c;
+}
+    
+.C-title-right{
+    width: 50%;
+}

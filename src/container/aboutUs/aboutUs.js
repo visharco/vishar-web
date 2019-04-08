@@ -17,7 +17,7 @@ class AboutUsComponent extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="aboutUs">
                 <div className="aboutUsTextImg" >
                     <div className="container-fluid">
                         <div className="container">

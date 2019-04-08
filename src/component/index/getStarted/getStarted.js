@@ -28,7 +28,7 @@ class GetStarted extends Component {
 
                         </div>
                         <div className="get-button-box" >
-                            <p className="get-button" >شروع</p>
+                            <p className="get-button" >ایجاد حساب کاربری</p>
                         </div>
                     </div>
                 </div>
