@@ -21,6 +21,7 @@
 
 .designers-title h1{
 margin-bottom: 20px;
+color: #333;
 }
 
 .designers-title  p{
@@ -79,7 +80,7 @@ margin-bottom: 20px;
 
 .designers-search-result{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 .designers-search-pagination{

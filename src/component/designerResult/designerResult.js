@@ -13,7 +13,7 @@ class DesignerResult extends Component {
     }
     render() {
         return (
-            <div className="designerResult">
+            <div className="designerResult" onClick={this.props.click} > 
                 <img src={designerPic} />
                 <div className="designerResult-title" > 
                     <h1>مارک والبرگ</h1>
@@ -21,7 +21,7 @@ class DesignerResult extends Component {
                 </div>
                 <Button
                     isLoading={this.state.isLoading}
-                    title={'بیشتر'}
+                    title={'مشاهده پروفایل '}
                     bgcolor={'#F1F1F1'}
                     hoverbgcolor={'#ccc'}
                     click={this.callSubmit}
