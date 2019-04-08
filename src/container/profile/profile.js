@@ -6,7 +6,8 @@ import pic1 from './../../assets/images/pic1.png'
 import designerLogo from '../../assets/images/profilelogo.png'
 
 import Button from '../../component/common/Button/Button';
-import DesignerLogo from '../../component/designerLogo/designerLogo'
+import DesignerLogo from '../../component/designerLogo/designerLogo';
+import Appreciation from '../../component/appreciation/appreciation';
 
 
 import './style.css';
@@ -161,7 +162,12 @@ class Profile extends Component {
 
                                 <div className="Profile-desc-texts" ref={this.appreciateText}>
 
-                                    تقدیر
+                                  <Appreciation />
+                                  <Appreciation />
+                                  <Appreciation />
+                                  <Appreciation />
+                                  <Appreciation />
+                                  <Appreciation />
                                     </div>
                             </div>
 

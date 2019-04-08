@@ -1,0 +1,46 @@
+
+.appreciation{
+    display: flex;
+    background: #F9F9F9;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 200px;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    box-shadow: 0px 5px 5px 0px #8080802b;
+    margin-bottom: 20px;
+}
+
+
+.A-title{
+margin-right: 20px;
+}
+
+.A-title h1{
+font-size: 20px;
+}
+
+.A-title h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.A-title p{
+color: #555;
+font-size: 16px;
+}
+
+.A-logo{
+    height: 180px;
+border-radius: 10px;
+}
+
+.A-medal{
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    width: 60px;
+}
+
