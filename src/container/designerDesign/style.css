@@ -1,0 +1,55 @@
+
+.designerLogoPage{ 
+
+}
+
+.DD-title {
+    text-align: right;
+}
+
+.DD-title  .container-fluid{
+    background-color: #F1F1F1;
+}
+
+.DD-title   .container{
+    margin: auto;
+    padding: 130px 80px 50px;
+}
+
+
+
+.DD-logos {
+  
+}
+
+.DD-logos  .container-fluid{
+    background-color: #fff;
+    border-bottom: 3px solid #e7e7e7;
+}
+
+.DD-logos   .container{
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DD-logos .container img{
+width: 60%;
+margin-bottom: 40px
+}
+.DD-comment-box .container{
+padding: 70px 0px;
+}
+.DD-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.DD-down{
+
+    margin-top: 40px;
+}

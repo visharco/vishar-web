@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import Button from '../common/Button/Button'
+import Button from '../common/Button/Button';
+import designerPic from '../../assets/images/pic1.png'
 
 import './style.css';
 
@@ -13,10 +14,10 @@ class DesignerResult extends Component {
     render() {
         return (
             <div className="designerResult">
-                <img src={this.props.designerPic} />
+                <img src={designerPic} />
                 <div className="designerResult-title" > 
-                    <h1>{this.props.designerName}</h1>
-                    <h2>{this.props.designerLevel}</h2>
+                    <h1>مارک والبرگ</h1>
+                    <h2>سطح 1</h2>
                 </div>
                 <Button
                     isLoading={this.state.isLoading}
@@ -43,11 +44,7 @@ export default DesignerResult;
 How can use this button : ------->
 
 
-           <DesignerResult
-                designerPic={this.state.designerPic}
-                designerName={this.state.designerName}
-                designerLevel={this.state.designerLevel}
-                />
+           <DesignerResult />
 
 
 =====================================================================================

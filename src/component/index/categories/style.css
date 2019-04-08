@@ -84,3 +84,15 @@ justify-content: space-between;
     text-align: center;
     font-size: 11px;
 }
+
+.categories .slick-prev:before, .slick-next:before{
+    color: rgba(59, 59, 59, 0.2);
+    font-size: 25px;
+    transition: all .1s linear;
+}
+
+.categories .slick-prev:before, .slick-next:before:hover{
+    color: rgba(59, 59, 59, 0.8);
+    transition: all .1s linear;
+
+}
