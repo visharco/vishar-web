@@ -28,6 +28,7 @@ class HeaderComponent extends Component {
                                 <Link to="/aboutUs" ><li className="menu-link">درباره ما</li></Link>
                                 <Link to="/projects" ><li className="menu-link">پروژه ها</li></Link>
                                 <Link to="/designers" ><li className="menu-link">طراحان</li></Link>
+                                <Link to="/categories" ><li className="menu-link">دسته بندی</li></Link>
                             </ul>
                         </div>
                         <div className="header-logo" >
