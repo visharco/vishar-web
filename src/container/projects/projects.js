@@ -85,6 +85,13 @@ class ProjectsComponent extends Component {
                                 <Project />
 
                             </div>
+                            <div className="P-search-pagination" >
+                                <p className="pagination-number">1</p>
+                                <p className="pagination-number">2</p>
+                                <p className="pagination-number pagination-number-selected">3</p>
+                                <p className="pagination-number">4</p>
+                                <p className="pagination-number">5</p>
+                            </div>
                         </div>
                     </div>
 

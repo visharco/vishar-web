@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import categorytitle from '../../assets/images/categorytitle.svg'
-import categories from '../../assets/images/categories.png'
+import search from '../../assets/icons/search.svg'
 
+import Product from '../../component/product/product'
 
 import './style.css';
 
@@ -30,7 +31,7 @@ class CategoriesComponent extends Component {
                     </div>
 
                 </div>
-                {/* <div className="C-search" >
+                <div className="C-search" >
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="C-search-box " >
@@ -39,26 +40,19 @@ class CategoriesComponent extends Component {
                             </div>
                             <div className="C-search-wrap" >
                                 <div className="C-search-result " >
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
+                                    <Product />
                                     
                                 </div>
-                                <div className="C-search-pagination" >
-                                    <p className="pagination-number">1</p>
-                                    <p className="pagination-number">2</p>
-                                    <p className="pagination-number pagination-number-selected">3</p>
-                                    <p className="pagination-number">4</p>
-                                    <p className="pagination-number">5</p>
-                                </div>
+                               
                             </div>
 
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
 
         );
