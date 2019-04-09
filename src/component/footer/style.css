@@ -47,7 +47,6 @@
 }
 
 .footer-newslater{
-    width: 500px; 
     margin: auto;
 
 }
@@ -132,4 +131,37 @@
 .F-SN{
     display: flex;
     align-items: center;
+}
+
+
+@media screen and (max-width: 800px){
+    
+    .footer .container{
+        flex-direction: column-reverse;
+    }
+    .footer-split {
+        width: 100%;
+    }
+    .footer-menu{
+        width: 100%;
+    }
+    .footer-menu ul{
+        margin: 10px;
+        width: 100%;    
+    }
+    .footer-split ul li{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .footer-newslater-button-container p{
+font-size: 12px;
+    }
+    .footer .container{
+        padding: 10px;
+    }
+    
 }

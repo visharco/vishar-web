@@ -72,3 +72,64 @@ margin-top: 50px;
     opacity: .8;
     transition: all .2s linear;
 }
+
+
+@media screen and (max-width: 900px){
+.getStarted .container{
+
+}
+.get-title-box{
+    width: 65%;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 700px){
+.getStarted .container-fluid{
+    display: flex;
+}
+.getStarted .container{
+    padding: 50px;
+}
+
+.get-title-box{
+    text-align: center;
+    width: 100%;
+}
+.get-title-up h1:nth-child(2) {
+    border-radius: 0px 0px 10px 10px;
+}
+.get-button{
+    margin: auto;
+}
+.cat-part1-action p{
+    width: 100%;
+}
+
+.cat-part1{
+    flex-direction: column-reverse;
+}
+.cat-part1-text{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.get-title-up{
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 450px){
+    .getStarted .container{
+        padding: 20px;
+    }
+    .get-title-up{
+        font-size: 20px;
+    }
+    .get-title-down{
+        font-size: 16px;
+    }
+
+}

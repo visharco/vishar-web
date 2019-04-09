@@ -19,11 +19,14 @@
     align-items: center;
 }
 
-.header-logo{
+.header-logo a{
 display: flex;
 }
 
-.header-menu{
+.headerMenuUp{
+    display: flex;
+}
+.headerMenu{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -40,29 +43,14 @@ margin-left: 40px;
     margin: 0px 5px;
     border-radius: 30px;
     position: relative;
+    transition:all .2s linear;
+
 }
-.menu-links a:after{
-    content: '';
-    width: 90%;
-    height: 2px;
-    background-color: #fff;
-    display: block;
-    position: absolute;
-    border-radius: 5px;
-    left:3px;
-    bottom: -30px;
-    opacity: 0;
-    transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
+.menu-links a:hover{
+    border: 2px solid #333;
+    transition:all .2s linear;
 }
-.menu-links a:hover::after { 
-    opacity: 1;
-    bottom: 0;
-    content: '';
-    background-color: #333;
-    display: block;
-    position: absolute;
-    transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
-}
+
 .linkActive{
     border: 2px solid #333;
 
@@ -85,10 +73,7 @@ cursor: pointer;
 transition:all .2s linear
 
 }
-.menu-login:hover{
-    opacity: .8;
-    transition:all .2s linear
-}
+
 
 .menu-login-text{
     background-color: #2D9CDB;
@@ -98,6 +83,167 @@ transition:all .2s linear
     line-height: 40px;
     color: #fff;
     text-align: center;
-font-weight: 900;
+    font-weight: 900;
+    border: 2px solid #419cdb;
+    transition:all .2s linear
+
+}
+
+.menu-login-text:hover{
+    background-color: transparent;
+    transition:all .2s linear;
+    color: #419cdb
+}
+
+.toggleBtn{
+    display: none;
+}
+
+.menuTablet{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 900px){
+    .menu-link{
+        margin: 2px 2px;
+        padding: 0px 5px;
+    }
+
+    .menu-login-text{
+        width: 100px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+.menuTablet{
+
+}
+
+.header{
+    position: relative;
     
 }
+.headerMenuDown{
+    position: absolute;
+    height: 100vh;
+    flex-direction: column;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    background-color: #c1c1c1;
+    display: flex;
+    transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
+    z-index: 2;
+}
+.headerMenuUp{
+    position: absolute;
+    height: 100vh;
+    flex-direction: column;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    background-color: #c1c1c1;
+    display: flex;
+    top: -1000px;
+    transition: all .4s cubic-bezier(0.000, 0.880, 0.190, 1.095);
+    z-index: 2;
+}
+
+.menu-links{
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+}
+.menu-links a{
+    padding: 20px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.menu-link{
+margin: 0;
+padding: 0;
+}
+
+.menu-login-text {
+    width: 90%;
+    height: 46px;
+    line-height: 44px;
+}
+
+.menu-login{
+    width: 100%;
+    padding: 0;
+
+}
+.hamburger {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.line {
+    width: 60%;
+    height: 2px;
+    background-color: #2D9CDB;
+    position: absolute;
+    left: 12px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(51, 51, 51, 0.13);
+}
+.lineX {
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 9px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(51, 51, 51, 0.13);
+}
+.line1{
+    top: 14px;
+    transform: rotate(0deg);
+    transition: transform  .2s linear ,top .2s .2s linear;
+}
+.line2{
+    top: 25px;
+    opacity: 1;
+    transition: opacity .2s .2s linear;
+
+}
+.line3{
+    top: 36px;
+    transform: rotate(0deg);
+    transition: transform  .2s linear ,top .2s .2s linear;
+}
+.line1move{
+    top: 26px;
+    transform: rotate(45deg);
+    transition: transform  .2s  .2s linear ,top  .2s linear;
+}
+.line2move{
+    top: 26px;
+    opacity: 0;
+    transition: opacity  .2s linear;
+}
+.line3move{
+    top: 26px;
+    transform: rotate(-45deg);
+    transition: transform  .2s  .2s linear , top .2s linear;
+}
+  
+
+}
+

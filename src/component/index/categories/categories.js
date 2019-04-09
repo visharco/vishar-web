@@ -26,9 +26,26 @@ class Categories extends Component {
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
-            // autoplay: true,
-            // speed: 5000,
-            // autoplaySpeed: 200,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
         };
 
         return (
@@ -49,66 +66,66 @@ class Categories extends Component {
                             <div>
                                 <Slider {...settings}>
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide1 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
-                                    </div>
-                                    
-                                    <div>
-                                        <div style={{ backgroundImage: 'url(' + slide3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >business cards</p>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <div>
-                                        <div style={{ backgroundImage: 'url(' + slide2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
-                                        </div>
-                                        
+
                                     </div>
 
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
+                                            <p className="cat-label" >کارت تجاری</p>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide1 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + slide1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '200px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
-                                            <p className="cat-label" >logo</p>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
                                         </div>
-                                        
+
+                                    </div>
+
+                                    <div>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div>
+                                        <div className="category-slider" style={{ backgroundImage: 'url(' + slide1 + ')' }} >
+                                            <p className="cat-label" >لوگو</p>
+                                        </div>
+
                                     </div>
                                 </Slider>
                             </div>
