@@ -65,3 +65,18 @@ width: 100px;
 .slick-slide > div > div > div {
     cursor: default !important;
 }
+
+
+@media screen and (max-width: 900px){
+    .ourService .container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .ours-box{
+        padding: 50px;
+    }
+
+}
+
+
+
