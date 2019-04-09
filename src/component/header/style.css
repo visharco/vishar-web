@@ -105,6 +105,9 @@ transition:all .2s linear
     width: 100%;
     justify-content: space-between;
 }
+.headerMenuDown{
+    display: flex;
+}
 @media screen and (max-width: 900px){
     .menu-link{
         margin: 2px 2px;
@@ -191,6 +194,7 @@ padding: 0;
     height: 60px;
     position: relative;
     cursor: pointer;
+    z-index: 3;
 
 }
 

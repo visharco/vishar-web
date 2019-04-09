@@ -8,7 +8,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    border-radius: 10px ;
+    border-radius: 30px ;
     border: 1px solid #f7f7f7;
     transition: all .2s linear;
     cursor: pointer;
@@ -76,4 +76,59 @@ margin: 0px 5px 0px 10px;
 
 .product-option p{
 
+}
+
+@media screen and (max-width: 1000px){
+    .product {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 700px){
+    .C-search > .container{
+        padding: 50px;
+    }
+    .product {
+        width: calc(100% - 40px);
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .C-title > .container{
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .C-title-right{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .C-title > .container{
+        padding: 20px;
+    }
+    .product-title h1{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .C-title > .container{
+        padding: 20px;
+    }
+    .product-title div{
+        width: 100%;
+        justify-content: center;
+    }
+    .product-title{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-title h1{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
 }
