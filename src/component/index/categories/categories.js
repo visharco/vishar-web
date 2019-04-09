@@ -10,7 +10,7 @@ import slide3 from './../../../assets/images/slide3.png'
 
 
 import './style.css';
-import { relative } from 'path';
+
 
 
 

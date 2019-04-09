@@ -15,7 +15,7 @@ class Appreciation extends Component {
     }
     render() {
         return (
-            <div className="appreciation">
+            <div className="appreciation" onClick={this.props.goToDesigns}>
                 <div className="A-title" >
                     <h1>
                         نام کمپانی
@@ -29,7 +29,6 @@ class Appreciation extends Component {
                 </div>
                 <img src={zebra} alt="لوگو" className="A-logo"/>
                 <img src={medal} alt="مدال" className="A-medal" />
-
             </div>
         );
     }
@@ -45,7 +44,9 @@ export default Appreciation;
 How can use this button : ------->
 
 
-           <Project />
+           <Appreciation 
+                goToDesigns={this.goToDesigns}
+           />
 
 
 =====================================================================================

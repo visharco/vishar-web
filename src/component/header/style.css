@@ -39,11 +39,29 @@ margin-left: 40px;
     border: 2px solid transparent;
     margin: 0px 5px;
     border-radius: 30px;
-    transition:all .2s linear
+    position: relative;
 }
-.menu-links a:hover{
-    border: 2px solid #333;
-    transition:all .2s linear
+.menu-links a:after{
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left:3px;
+    bottom: -30px;
+    opacity: 0;
+    transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
+}
+.menu-links a:hover::after { 
+    opacity: 1;
+    bottom: 0;
+    content: '';
+    background-color: #333;
+    display: block;
+    position: absolute;
+    transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
 }
 .linkActive{
     border: 2px solid #333;

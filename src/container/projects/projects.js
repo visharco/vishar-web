@@ -40,7 +40,7 @@ class ProjectsComponent extends Component {
                 <div className="P-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={rocket} />
+                            <img src={rocket} alt="راکت" />
                             <div className="P-title-left">
                                 <h2>پروژه ات را پیدا کن</h2>
                                 <h1>شغلت رو بساز</h1>
@@ -54,7 +54,7 @@ class ProjectsComponent extends Component {
                         <div className="container" >
                             <div className="P-filter" >
                                 <div className="P-filter-left">
-                                    <select value="زمان">
+                                    <select selected="زمان">
                                         <option value="0">انتخاب زمان</option>
                                         <option value="A">زمان یک</option>
                                         <option value="B">زمان دو</option>

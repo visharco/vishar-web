@@ -20,7 +20,7 @@ class CategoriesComponent extends Component {
                 <div className="C-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={categorytitle} />
+                            <img src={categorytitle} alt="عنوان دسته بندی" />
                             <div className="C-title-right">
                                 <h1>دسته بندی های ما</h1>
                                 <p>
@@ -36,7 +36,7 @@ class CategoriesComponent extends Component {
                         <div className="container" >
                             <div className="C-search-box " >
                                 <input type="text" />
-                                <img src={search} />
+                                <img src={search} alt="جستجو" />
                             </div>
                             <div className="C-search-wrap" >
                                 <div className="C-search-result " >
