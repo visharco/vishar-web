@@ -89,6 +89,9 @@ font-size:18px;
 .customer-text{
     padding: 0px ;
 }
+.customerComment .container{
+    padding: 100px 50px;
+}
 
 }
 @media screen and (max-width: 700px){
@@ -96,12 +99,11 @@ font-size:18px;
     .customerComment .slick-slider .slick-track, .slick-slider .slick-list{
 padding: 0px;
     }
+
 }
 
 @media screen and (max-width: 600px){
-    .customerComment .container{
-        padding: 20px 20px 40px;
-    }
+
     .customer-box{
         padding: 20px;
     }

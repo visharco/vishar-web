@@ -15,7 +15,7 @@
 
 .designers-title   .container{
     margin: auto; 
-    padding: 130px 0px 100px;
+    padding: 130px 50px 100px;
 
 }
 
@@ -112,4 +112,17 @@ color: #333;
 
 .pagination-number-selected{
     background-color: #d4d4d4;
+}
+
+
+@media screen and (max-width: 700px){
+    .designers-title   .container{
+        margin: auto; 
+        padding:  50px;
+        text-align: center;
+    
+    }
+    .designers-title p{
+        text-align: center;
+    }
 }
