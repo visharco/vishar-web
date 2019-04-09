@@ -8,10 +8,16 @@
     align-items: center;
     position: relative;
     justify-content: flex-end;
-    box-shadow: 0px 5px 5px 0px #8080802b;
     margin-bottom: 20px;
+    border: 1px solid #f6f6f6;
+    transition:all .2s linear;
+    cursor: pointer;
 }
 
+.appreciation:hover{
+    box-shadow: 0px 5px 5px 0px #8080802b;
+    transition:all .2s linear;
+}
 
 .A-title{
 margin-right: 20px;
@@ -35,6 +41,8 @@ font-size: 16px;
 .A-logo{
     height: 180px;
 border-radius: 10px;
+border: 1px solid #f6f6f6;
+
 }
 
 .A-medal{

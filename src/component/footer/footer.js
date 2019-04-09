@@ -30,23 +30,23 @@ class FooterComponent extends Component {
                             </div>
                             <div className="footer-social-network">
                                 <div>
-                                    <a href="http://www.facebook.com" >
+                                    <a className="F-SN" href="http://www.facebook.com" >
                                         <img className="footer-social" src={facebook} alt="فیسبوک" />
                                     </a>
 
                                 </div>
                                 <div>
-                                    <a href="http://www.twitter.com" >
+                                    <a className="F-SN" href="http://www.twitter.com" >
                                         <img className="footer-social" src={twitter} alt="توویتر" />
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="http://www.instagram.com" >
+                                    <a className="F-SN" href="http://www.instagram.com" >
                                         <img className="footer-social" src={instagram} alt="اینستاگرام" />
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="http://www.telegram.com" >
+                                    <a className="F-SN" href="http://www.telegram.com" >
                                         <img className="footer-social" src={telegram} alt="تلگرام" />
                                     </a>
                                 </div>

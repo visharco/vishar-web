@@ -62,3 +62,36 @@ font-size: 200px;
 color: #2D9CDB;
 }
 
+
+
+@media screen and (max-width: 900px){
+.how-num{
+    font-size: 100px;
+}
+.how-text{
+    padding: 20px;
+}
+}
+
+@media screen and (max-width: 700px){
+.howWorking .container{
+    padding: 50px 20px;
+}
+.how-text p{
+    width: 100%;
+}
+.how-right , .how-left{
+    padding: 20px;
+}
+
+}
+
+@media screen and (max-width: 700px){
+.how-right , .how-left{
+padding: 0px;
+}
+.how-num {
+font-size: 60px;
+}
+
+}

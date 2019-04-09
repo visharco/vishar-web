@@ -38,19 +38,19 @@ class Product extends Component {
                     <div className="product-options" >
                         <div className="product-option">
                             <p>طراحی لوگو</p>
-                            <img src={tik} />
+                            <img src={tik} alt="تیک" />
                         </div>
                         <div className="product-option">
                             <p>کارت تجاری</p>
-                            <img src={tik} />
+                            <img src={tik} alt="تیک" />
                         </div>
                         <div className="product-option">
                             <p>سازماندهی</p>
-                            <img src={tik} />
+                            <img src={tik} alt="تیک" />
                         </div>
                         <div className="product-option">
                             <p>طرح اولیه</p>
-                            <img src={tik} />
+                            <img src={tik} alt="تیک" />
                         </div>
                     </div>
                 </div>
