@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import pic1 from './../../assets/images/pic1.png'
-import designerLogo from '../../assets/images/profilelogo.png'
 
 import Button from '../../component/common/Button/Button';
 import DesignerLogo from '../../component/designerLogo/designerLogo';

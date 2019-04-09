@@ -129,3 +129,8 @@
 .footer-newslater-button-container:hover {
     opacity: 0.8;
 }
+
+.F-SN{
+    display: flex;
+    align-items: center;
+}
