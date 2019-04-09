@@ -161,12 +161,12 @@ class Profile extends Component {
 
                                 <div className="Profile-desc-texts" ref={this.appreciateText}>
 
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
                                     </div>
                             </div>
 

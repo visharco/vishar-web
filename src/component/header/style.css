@@ -43,13 +43,13 @@ margin-left: 40px;
 }
 .menu-links a:after{
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 90%;
+    height: 2px;
     background-color: #fff;
     display: block;
     position: absolute;
-    border-radius: 50%;
-    left: 45%;
+    border-radius: 5px;
+    left:3px;
     bottom: -30px;
     opacity: 0;
     transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
@@ -61,8 +61,6 @@ margin-left: 40px;
     background-color: #333;
     display: block;
     position: absolute;
-    border-radius: 50%;
-    left: 45%;
     transition:all .5s cubic-bezier(0.000, 0.980, 0.000, 1.010);
 }
 .linkActive{

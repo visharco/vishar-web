@@ -17,7 +17,7 @@ class Project extends Component {
     }
     render() {
         return (
-            <div className="project">
+            <div className="project" onClick={this.props.showProject} >
                 <div className="p-left" >
                     <p className="p-price" >1000000 تومان</p>
                     <div className="p-icons" >
@@ -26,7 +26,7 @@ class Project extends Component {
                             <img src={layersicon} alt="لایه ها " />
                         </div>
                         <div className="p-icon" >
-                            <p> 
+                            <p>
                                 <span>3 روز </span>
                                 <span>21 ساعت</span>
                             </p>
@@ -34,7 +34,7 @@ class Project extends Component {
                         </div>
                         <div className="p-icon" >
                             <p>بدون نظر</p>
-                            <img src={comment} alt="کامنت"  />
+                            <img src={comment} alt="کامنت" />
                         </div>
                     </div>
                     <Button
@@ -42,7 +42,7 @@ class Project extends Component {
                         title={'نمایش'}
                         bgcolor={'#0090CF'}
                         hoverbgcolor={'#0090cfcc'}
-                        click={this.callSubmit}
+                        click={this.props.showProject}
                         borderRadius="30px"
                         color="#fff"
                     />
@@ -50,7 +50,6 @@ class Project extends Component {
                 <div className="p-right" >
                     <div className="p-right-title" >
                         <div>
-
                             <h1>طراحی لوگو عنوان پروژه</h1>
                             <p>
                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
