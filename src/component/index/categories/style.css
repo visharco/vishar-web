@@ -7,7 +7,7 @@
 
 }
 
-.categories .container{
+.categories >.container-fluid > .container{
     margin: auto; 
     display: flex;
     justify-content: space-between;
@@ -132,7 +132,7 @@ transition: all .2s linear;
         width: 300px;
         height:200px;
     }
-    .categories .container{
+    .categories > .container-fluid > .container{
         padding: 50px;
     }
     .cat-part1-text{
