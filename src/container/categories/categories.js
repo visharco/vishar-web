@@ -8,6 +8,8 @@ import Product from '../../component/product/product'
 import './style.css';
 
 
+
+
 class CategoriesComponent extends Component {
     constructor(props) {
         super(props);
