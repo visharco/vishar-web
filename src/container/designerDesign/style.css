@@ -53,3 +53,50 @@ padding: 70px 0px;
 
     margin-top: 40px;
 }
+
+
+@media screen and (max-width: 700px){
+
+    .DD-title .container{
+        padding: 50px;
+    }
+    .DD-logos .container img {
+        width: 100%;
+    }
+}
+    
+
+@media screen and (max-width: 600px){
+.designerLogoTitle{
+flex-direction: column-reverse;
+}
+.DLT-right{
+    margin-bottom: 30px;
+}
+.DD-up{
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 500px){
+    .DLT-right-title h2 {
+        font-size: 12px;
+    }
+    .DLT-right-title h1 {
+        font-size: 16px;
+    }
+    .DLT-left{
+        width: 100%;
+    }
+    .DLT-left .button-box{
+        width: 100%;
+    }
+    .DLT-left .button-style{
+        width: 100%;
+    }
+    .DLT-icon-box {
+        margin-top: 20px;
+    }
+
+
+}

@@ -67,3 +67,20 @@ width: 15px;
 font-size: 12px;
 padding: 0px 5px ;
 }
+
+@media screen and (max-width: 900px){
+    .designerLogoDetail {
+        width: calc(50% - 10px);
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .designerLogoDetail {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+        
+    }
+
+}

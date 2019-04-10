@@ -83,7 +83,7 @@ color: #333;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-.designers-search-pagination{
+.pagination{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,5 +124,15 @@ color: #333;
     }
     .designers-title p{
         text-align: center;
+    }
+    .pagination-number {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0px 5px;
+
+    }
+    .pagination{
+        padding: 20px 0px;
     }
 }

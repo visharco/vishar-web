@@ -18,3 +18,18 @@ margin: 0;
     margin-top: 20px;
 border: 2px solid #efefef;
 }
+
+@media screen and (max-width: 900px){
+    .designerLogoPostComment {
+        width: calc(50% - 10px);
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .designerLogoPostComment {
+        width: 100%;
+        padding: 20px;
+    }
+
+}

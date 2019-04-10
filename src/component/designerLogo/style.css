@@ -56,7 +56,24 @@ width: 12px;
 }
 
 @media screen and (max-width: 1000px){
+    .designerLogo{
+        width: calc(33.333% - 40px);
+    }
 
 
+}
+
+@media screen and (max-width: 800px){
+    .designerLogo{
+        width: calc(50% - 40px);
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+    .designerLogo{
+        width: calc(100% - 40px);
+    }
 
 }

@@ -49,13 +49,13 @@ class Project extends Component {
                 </div>
                 <div className="p-right" >
                     <div className="p-right-title" >
-                        <div>
+                        <div className="p-right-text" >
                             <h1>طراحی لوگو عنوان پروژه</h1>
                             <p>
                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                             </p>
                         </div>
-                        <div className="p-right-btns" >
+                        <div className="p-right-tags" >
                             <p>لوگو</p>
                         </div>
                     </div>
