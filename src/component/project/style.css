@@ -23,9 +23,9 @@
 }
 
 .p-right img{
-    height: 180px;
+    min-height: 180px;
     border: 1px solid #E7E7E7;
-    border-radius: 10px;
+    border-radius: 30px;
 
 }
 .p-right-title{
@@ -34,25 +34,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 180px;
+    min-height: 180px;
     padding: 10px 0px;
     direction: rtl;
 }
 
-.p-right-title h1{
+.p-right-text h1{
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.p-right-title p{
+.p-right-text{
     width: 80%;
 }
 
-.p-right-btns{
+.p-right-tags{
     display: flex;
     direction: rtl;
 }
-.p-right-btns p{
+.p-right-tags p{
     border: 2px solid #ababab;
     height: 30px;
     width: unset;
@@ -107,4 +107,80 @@
     background-color: transparent !important;
     color: #eee !important;
     border: 2px solid #eee !important;
+}
+
+
+@media screen and (max-width: 700px){
+
+    .project{
+        flex-direction: column-reverse;
+        padding: 0;
+        position: relative;
+    }
+    .p-left{
+        width: 100%;
+        position: unset;
+    }
+    .p-icons{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .p-icon{
+        display: flex;
+    justify-content: center;
+    }
+    .p-right{
+        padding: 40px 20px 20px;
+    }
+    .p-right-text{
+        width: 100%;
+    }
+    .p-price{
+        top: 0; 
+        border-radius: 0px 0px 10px 0px;
+    }
+    .p-left .button-box{
+        width: 90%;
+        margin:0px auto;
+    }
+    .p-left .button-style{
+        width: 100%;
+    }
+    .p-right-text h1 {
+        font-size: 18px;
+    }
+    .p-right-text h1 {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+.p-right{
+    flex-direction: column-reverse;
+    padding: 20px;
+}
+.p-right img{
+    width: 100%;
+}
+.p-price {
+    position: unset;
+    border-radius: 30px;
+    width: 90%;
+    border: 2px solid #ebebeb;
+    background-color: #f9f9f9;
+}
+.p-left{
+    align-items: center;
+}
+.p-icons{
+    padding: 0px;
+}
+.p-icons p{
+    font-size: 10px;
+}
 }

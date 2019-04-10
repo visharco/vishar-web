@@ -150,7 +150,7 @@ class Profile extends Component {
                                             logoFilter={this.logoFilter}
                                         />
                                     </div>
-                                    <div className="designerPage-pagination" >
+                                    <div className="pagination" >
                                         <p className="pagination-number">1</p>
                                         <p className="pagination-number">2</p>
                                         <p className="pagination-number pagination-number-selected">3</p>

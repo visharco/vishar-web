@@ -90,7 +90,7 @@ class DesignersComponent extends Component {
                                         click={this.gotoDesigner}
                                     />
                                 </div>
-                                <div className="designers-search-pagination" >
+                                <div className="pagination" >
                                     <p className="pagination-number">1</p>
                                     <p className="pagination-number">2</p>
                                     <p className="pagination-number pagination-number-selected">3</p>

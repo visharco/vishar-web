@@ -73,22 +73,6 @@ max-width: 100%;
 
 
 
-.aboutUs-title{
-    margin: 50px 0px;
-    display: inline-block;
-    position: relative;
-}
-
-.aboutUs-title:after{
-    background-color: #EAEAEA;
-    display: block;
-    content: '';
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    bottom: -20px;
-    border-radius: 30px;
-}
 .aboutUs-play{
     width: 70%;
     margin: auto;
@@ -109,4 +93,57 @@ max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 900px){
+    .aboutUs-box{
+        flex-direction: column;
+    }
+    .aboutUs-text {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .aboutUs-img {
+        width: 100%;
+        margin: 0;
+        margin-top: 40px;
+        height: 500px;
+    }
+    .aboutUsVideo .video-react .video-react-big-play-button{
+        width: 2em;
+        height: 2em;
+    }
+    .aboutUs-play{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .aboutUs-img {
+        height: 300px;
+    }
+    .aboutUsVideo .video-react .video-react-big-play-button{
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .aboutUs-img {
+        width: 100%;
+        margin: 0;
+        margin-top: 40px;
+        height: 200px;
+    }
+    .aboutUsVideo .video-react .video-react-big-play-button{
+        width: 1em;
+        height: 1em;
+    }
+    .aboutUsTextImg .container{
+        padding: 50px 20px 100px;
+    }
+
+
 }

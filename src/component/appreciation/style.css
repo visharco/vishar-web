@@ -4,7 +4,7 @@
     background: #F9F9F9;
     padding: 10px 20px;
     border-radius: 10px;
-    height: 200px;
+    min-height: 200px;
     align-items: center;
     position: relative;
     justify-content: flex-end;
@@ -39,8 +39,8 @@ font-size: 16px;
 }
 
 .A-logo{
-    height: 180px;
-border-radius: 10px;
+min-height: 180px;
+border-radius: 30px;
 border: 1px solid #f6f6f6;
 
 }
@@ -52,3 +52,25 @@ border: 1px solid #f6f6f6;
     width: 60px;
 }
 
+
+@media screen and (max-width: 600px){
+
+.A-title p{
+    font-size: 13px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+    .appreciation{
+        flex-direction: column-reverse;
+    }
+    .A-logo {
+        width: 100%;
+    }
+    .A-title {
+        margin: 0px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+}

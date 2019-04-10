@@ -42,3 +42,10 @@
     bottom: -20px;
     border-radius: 30px;
 }
+
+@media screen and (max-width: 700px){
+.conatactUs-form .button-style{
+    width: 100%;
+}
+
+}
