@@ -25,9 +25,26 @@ class SampleDesigns extends Component {
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
-            // autoplay: true,
-            // speed: 5000,
-            // autoplaySpeed: 200,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
         };
         return (
             <div className="sampleDesigns" >
@@ -37,55 +54,55 @@ class SampleDesigns extends Component {
                     <div>
                                 <Slider {...settings}>
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'  }} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
                                         </div>
                                         
                                     </div>
 
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image3 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image2 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div style={{ backgroundImage: 'url(' + image1 + ')', backgroundPosition: 'center', backgroundSize: 'contain',backgroundRepeat:'no-repeat', width: '300px', height: '300px', cursor: 'zoom-in' , margin:'auto' ,position:'relative' }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'}} >
                                         </div>
                                         
                                     </div>

@@ -16,7 +16,7 @@ class DesignerLogoComment extends Component {
             <div className="designerLogoComment" >
                 <div className="DLC-box" >
                     <div className="DLC-right" >
-                        <img src={pic1} />
+                        <img src={pic1} alt="پروفایل" />
                         <div className="DLC-right-title" >
                             <h1>مارک والبرگ</h1>
                             <h2>10:20 ب.ظ  10/10/1398</h2>
@@ -24,7 +24,7 @@ class DesignerLogoComment extends Component {
                     </div>
                     <div className="DLC-report" >
                         <span>گزارش</span>
-                        <img src={report} />
+                        <img src={report} alt="گزارش"/>
                     </div>
                 </div>
                 <p>طراحیت عالیه . دمت گرم</p>

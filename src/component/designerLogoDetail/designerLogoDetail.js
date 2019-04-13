@@ -21,7 +21,7 @@ class DesignerLogoDetail extends Component {
                         <h1>امید آرمانی</h1>
                         <h2>1 سطح </h2>
                     </div>
-                    <img src={customer1} />
+                    <img src={customer1} alt="مشتری" />
 
                 </div>
                 <p className="DLD-time" >
@@ -31,15 +31,15 @@ class DesignerLogoDetail extends Component {
                 </p>
                 <div className="DLD-icon-box" >
                     <div className="DLD-icons" >
-                        <img src={like} />
+                        <img src={like} alt="لایک" />
                         <span>12</span>
                     </div>
                     <div className="DLD-icons" >
-                        <img src={view} />
+                        <img src={view} alt="بازدید" />
                         <span>33</span>
                     </div>
                     <div className="DLD-icons" >
-                        <img src={comment} />
+                        <img src={comment} alt="نظر" />
                         <span>39</span>
                     </div>
                 </div>

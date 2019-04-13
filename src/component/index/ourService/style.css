@@ -65,3 +65,40 @@ width: 100px;
 .slick-slide > div > div > div {
     cursor: default !important;
 }
+.ourService1{
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+    position: absolute;
+    top: 100px;
+}
+.ourService2{
+    display: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: #333;
+    padding: 50px;
+    text-align: center;
+}
+@media screen and (max-width: 900px){
+.ourService .container{
+    flex-direction: column;
+    padding: 0px;
+}
+.ours-box{
+    padding: 50px;
+}
+.ourService1{
+    display: none;
+}
+.ourService2{
+    display: block;
+}
+
+}
+
+
+
+
+

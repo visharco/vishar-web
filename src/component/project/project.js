@@ -17,24 +17,24 @@ class Project extends Component {
     }
     render() {
         return (
-            <div className="project">
+            <div className="project" onClick={this.props.showProject} >
                 <div className="p-left" >
                     <p className="p-price" >1000000 تومان</p>
                     <div className="p-icons" >
                         <div className="p-icon" >
                             <p>0 طراحی</p>
-                            <img src={layersicon} />
+                            <img src={layersicon} alt="لایه ها " />
                         </div>
                         <div className="p-icon" >
-                            <p> 
+                            <p>
                                 <span>3 روز </span>
                                 <span>21 ساعت</span>
                             </p>
-                            <img src={clock} />
+                            <img src={clock} alt="ساعت" />
                         </div>
                         <div className="p-icon" >
                             <p>بدون نظر</p>
-                            <img src={comment} />
+                            <img src={comment} alt="کامنت" />
                         </div>
                     </div>
                     <Button
@@ -42,25 +42,24 @@ class Project extends Component {
                         title={'نمایش'}
                         bgcolor={'#0090CF'}
                         hoverbgcolor={'#0090cfcc'}
-                        click={this.callSubmit}
+                        click={this.props.showProject}
                         borderRadius="30px"
                         color="#fff"
                     />
                 </div>
                 <div className="p-right" >
                     <div className="p-right-title" >
-                        <div>
-
+                        <div className="p-right-text" >
                             <h1>طراحی لوگو عنوان پروژه</h1>
                             <p>
                                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                             </p>
                         </div>
-                        <div className="p-right-btns" >
+                        <div className="p-right-tags" >
                             <p>لوگو</p>
                         </div>
                     </div>
-                    <img src={design1} />
+                    <img src={design1} alt="طرح" />
 
 
 

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 import pic1 from './../../assets/images/pic1.png'
-import designerLogo from '../../assets/images/profilelogo.png'
 
 import Button from '../../component/common/Button/Button';
 import DesignerLogo from '../../component/designerLogo/designerLogo';
@@ -75,7 +74,7 @@ class Profile extends Component {
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={pic1} />
+                            <img src={pic1} alt="طراح" />
                             <div className="Profile-name">
                                 <h1>امید آرمانی</h1>
                                 <h2>سطح ۱</h2>
@@ -151,7 +150,7 @@ class Profile extends Component {
                                             logoFilter={this.logoFilter}
                                         />
                                     </div>
-                                    <div className="designerPage-pagination" >
+                                    <div className="pagination" >
                                         <p className="pagination-number">1</p>
                                         <p className="pagination-number">2</p>
                                         <p className="pagination-number pagination-number-selected">3</p>
@@ -162,12 +161,12 @@ class Profile extends Component {
 
                                 <div className="Profile-desc-texts" ref={this.appreciateText}>
 
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
-                                  <Appreciation />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
+                                  <Appreciation goToDesigns={this.goToDesigns} />
                                     </div>
                             </div>
 

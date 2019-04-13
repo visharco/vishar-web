@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import comment from '../../assets/icons/comment.svg'
 import like from '../../assets/icons/like.svg'
 
-import Button from '../common/Button/Button';
 import designerLogo from '../../assets/images/profilelogo.png'
 
 import './style.css';

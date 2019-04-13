@@ -3,7 +3,7 @@
 }
 
 .P-title .container-fluid{
-background-color: #f7f7f7;
+background-color: #f2f2f2;
 }
 .P-title .container{
 padding: 130px 50px 50px;
@@ -98,32 +98,39 @@ cursor: pointer;
 
 }
 
-.P-search-pagination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+@media screen and (max-width: 700px){
+.P-filter{
+    flex-direction: column;
+    width: 100%;
+}
+.P-filter-left{
+    width: 100%;
+}
+.P-filter select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.P-open-finish{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.P-filter-right{
+    flex-direction: column;
+}
+.P-title .container{
     padding: 50px;
-    font-size: 25px;
-    font-weight: 900;
+    flex-direction: column;
 }
-.pagination-number{
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: all .2s linear;
+.P-title-left{
+    text-align: center;
 }
-
-
-.P-search-number:hover{
-    background-color: #d9d9d9;
-    transition: all .2s linear;
+.P-title-left h2{
+    font-size: 22px;
 }
-
-.pagination-number-selected{
-    background-color: #d4d4d4;
+.P-title-left h1{
+    font-size: 28px;
+}
 }

@@ -43,3 +43,45 @@
     transition: all .1s linear;
 
 }
+.sampleDesigns-slider{
+    background-position: center; 
+    background-size: contain;
+    background-repeat:no-repeat;
+    width: 300px; height: 300px;
+    cursor: zoom-in;
+     margin:auto ;
+     position:relative;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .sampleDesigns-slider{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .sampleDesigns-slider{
+        width: 300px;
+        height: 300px;
+    }
+    .sampleDesigns .slick-slider .slick-track, .slick-slider .slick-list {
+        padding: 0px 0px 30px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .sampleDesigns .container{
+        padding: 20px;
+    }
+    .sampleDesigns-slider{
+        width: 150px;
+        height: 150px;
+    }
+
+
+}

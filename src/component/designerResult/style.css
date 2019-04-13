@@ -38,3 +38,33 @@ font-weight: 300;
 .designerResult .button-style{
     width: 190px;
 }
+
+@media screen and (max-width: 1000px){
+    .designerResult{
+        width: calc(33.333% - 40px);
+    }
+
+
+}
+@media screen and (max-width: 800px){
+    .designerResult{
+        width: calc(50% - 40px);
+    }
+    .designerResult .button-style{
+        width: 140px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .designerResult{
+        width: calc(100% - 40px);
+    }
+    .designerResult .button-style{
+        width: 300px;
+    }
+
+
+
+}
+

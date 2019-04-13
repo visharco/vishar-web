@@ -83,3 +83,37 @@ font-size:18px;
     transition: all .1s linear;
 
 }
+
+
+@media screen and (max-width: 900px){
+.customer-text{
+    padding: 0px ;
+}
+.customerComment .container{
+    padding: 100px 50px;
+}
+
+}
+@media screen and (max-width: 700px){
+
+    .customerComment .slick-slider .slick-track, .slick-slider .slick-list{
+padding: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .customer-box{
+        padding: 20px;
+    }
+    .slick-slide > div > div > div {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+    }
+    .customer-box img{
+        margin: 0px 0px 10px 0px;
+    }
+
+
+}
