@@ -24,8 +24,7 @@ flex-direction: row;
 justify-content: space-between;
 }
 
-.cat-part1-text{
-    width: 300px;
+.cat-part1-text{ 
     padding: 10px;
     text-align: right;
 }
