@@ -14,7 +14,6 @@ class GetStarted extends Component {
             <div className="getStarted" >
                 <div className="container-fluid">
                     <div className="container">
-
                         <div className="get-title">
                             <div className="get-title-box" >
                                 <div className="get-title-up" >
@@ -25,7 +24,6 @@ class GetStarted extends Component {
                                 طراحان ویشار برآن است با توجه به درک و شناخت نیاز سفارش دهنده، بهترین و متنوع ترین طرح ها را در سریعترین زمان ممکن توسط طراحان مجرب کشور بصورت مستقیم به کارفرما ارائه دهد.
                                 </h2>
                             </div>
-
                         </div>
                         <div className="get-button-box" >
                             <p className="get-button" >ایجاد حساب کاربری</p>
