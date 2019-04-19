@@ -69,7 +69,6 @@ class Categories extends Component {
                                             <p className="cat-label" >لوگو</p>
                                         </div>
                                     </div>
-
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
                                             <p className="cat-label" >کارت تجاری</p>
@@ -80,42 +79,36 @@ class Categories extends Component {
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide1 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
