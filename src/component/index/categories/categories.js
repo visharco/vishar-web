@@ -60,7 +60,6 @@ class Categories extends Component {
                                 <h1>دسته بندیهای ما </h1>
                                 <h2>چالش طراحان ویشار در پی طرح های مورد نیاز شما</h2>
                             </div>
-
                         </div>
                         <div className="cat-slider" >
                             <div>
@@ -69,14 +68,12 @@ class Categories extends Component {
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide1 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
                                         </div>
-
                                     </div>
 
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide3 + ')' }} >
                                             <p className="cat-label" >کارت تجاری</p>
                                         </div>
-
                                     </div>
 
                                     <div>
