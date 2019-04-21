@@ -102,7 +102,7 @@ class Categories extends Component {
                                     <div>
                                         <div className="category-slider" style={{ backgroundImage: 'url(' + slide2 + ')' }} >
                                             <p className="cat-label" >لوگو</p>
-                                        </div>
+                                        </div>  
                                     </div>
 
                                     <div>
