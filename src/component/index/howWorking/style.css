@@ -34,6 +34,14 @@ text-align: right;
 padding: 50px;
 align-items: flex-start;
 }
+.vishar-how-working {
+    direction: rtl;
+    font-size: 18px;
+    color: '#333333';
+    padding: 30px;
+    
+
+}
 
 .how-left{
     display: flex;
