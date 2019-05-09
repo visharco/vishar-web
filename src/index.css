@@ -142,3 +142,8 @@ a {
 	margin-right:auto;
 	margin-left:auto
 }
+
+p {
+	direction: rtl;
+	
+}

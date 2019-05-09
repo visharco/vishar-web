@@ -31,7 +31,7 @@ display: flex;
 flex-direction: row;
 justify-content: flex-end;
 text-align: right;
-padding: 50px;
+padding: 0 50px;
 align-items: flex-start;
 }
 .vishar-how-working {
@@ -63,6 +63,8 @@ align-items: flex-start;
     margin-top: 20px;
     font-size: 18px;
     color: #444;
+    direction: rtl;
+
 }
 
 .how-num{
