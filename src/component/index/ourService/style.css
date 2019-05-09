@@ -31,7 +31,7 @@ max-width: 1200px;
     position: relative;
     transition: all .2s linear;
     width: 34.20%;
-    
+
 }
 .ours-box:hover{
     transition: all .2s linear;
@@ -90,6 +90,8 @@ width: 100px;
 }
 .ours-box{
     padding: 50px;
+    width: 100%;
+    
 }
 .ourService1{
     display: none;
