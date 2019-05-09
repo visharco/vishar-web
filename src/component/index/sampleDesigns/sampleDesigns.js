@@ -50,7 +50,7 @@ class SampleDesigns extends Component {
             <div className="sampleDesigns" >
                 <div className="container-fluid">
                     <div className="container">
-                    <h1>طرح های نمونه برا پروژه</h1>
+                    <h1>پروژه های انجام شده</h1>
                     <div>
                                 <Slider {...settings}>
                                     <div>

@@ -17,7 +17,7 @@ class GetStarted extends Component {
                         <div className="get-title">
                             <div className="get-title-box" >
                                 <div className="get-title-up" >
-                                    <h1>   ، ویشار </h1>
+                                    <h1>ویشــــــار </h1>
                                     <h1> طراحان بیدار</h1>
                                 </div>
                                 <h2 dir="rtl" className="get-title-down" >
