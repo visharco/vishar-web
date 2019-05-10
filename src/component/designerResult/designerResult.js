@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Button from '../common/Button/Button';
-import designerPic from '../../assets/images/pic1.png'
+import defualtAvatar from '../../assets/images/defualtAvatar.svg'
 
 import './style.css';
 
@@ -14,7 +14,7 @@ class DesignerResult extends Component {
     render() {
         return (
             <div className="designerResult" onClick={this.props.click} > 
-                <img src={this.props.data.image} alt="طراح" />
+                <img src={this.props.data.image ? this.props.data.image : defualtAvatar} alt="طراح" />
                 <div className="designerResult-title" > 
                     <h1>{this.props.data.name}</h1>
                     <h2>سطح 1</h2>
