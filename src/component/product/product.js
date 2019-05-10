@@ -15,25 +15,19 @@ class Product extends Component {
     render() {
         return (
             <div className="product">
-                <div className="product-img" style={{
-                    backgroundImage: 'url(' + product + ')',
-                    backgroundSize: 'cover',
-                    width: '100%',
-                    height: '300px'
-                }} >
-
-
+                <div className="product-img"  >
+                    <img src={this.props.data.icon} alt="ddd" />
                 </div>
                 <div className="product-down" >
                     <div className="product-title" >
                         <div> 
                             <span>تومان</span>
-                            <p>300000</p> 
+                            <p>{this.props.data.pay}</p> 
                         </div>
-                        <h1>طراحی لوگو</h1>
+                        <h1>{this.props.data.title}</h1>
                     </div>
                     <div className="product-text" >
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                        {this.props.data.desc}
                     </div>
                     <div className="product-options" >
                         <div className="product-option">

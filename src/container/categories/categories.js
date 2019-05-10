@@ -6,6 +6,8 @@ import search from '../../assets/icons/search.svg'
 import Product from '../../component/product/product'
 
 import './style.css';
+import GetApi from '../../controler/getToApi';
+
 
 
 
@@ -13,9 +15,25 @@ import './style.css';
 class CategoriesComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            category:[]
+        }
+    }
+
+    componentWillMount = async() => {
+
+        const res = await GetApi('site/category');
+        await this.setState({
+            category:res.data
+        })
     }
     render() {
+
+        const renderCategory = (
+            this.state.category ? this.state.category.map((data,index) => {
+                return  <Product data={data} />
+            }) : ''
+        )
         return (
 
             <div className="categories" >
@@ -42,11 +60,7 @@ class CategoriesComponent extends Component {
                             </div>
                             <div className="C-search-wrap" >
                                 <div className="C-search-result " >
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
-                                    <Product />
+                                   {renderCategory}
                                     
                                 </div>
                                

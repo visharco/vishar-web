@@ -18,8 +18,7 @@ function GetToApi(key){
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
-            "agent" : "web" ,
-            "Authorization" : Token  
+            "agent" : "web"  
         },
         redirect: "follow", 
         referrer: "no-referrer"

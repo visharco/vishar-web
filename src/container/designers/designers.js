@@ -7,6 +7,11 @@ import designerPic from './../../assets/images/pic1.png'
 import search from './../../assets/icons/search.svg'
 
 import './style.css';
+//
+// controler -------------->
+//
+import GetApi from '../../controler/getToApi';
+
 
 
 
@@ -15,15 +20,36 @@ class DesignersComponent extends Component {
         super(props);
         this.state = {
             designerName: 'سارا دنیل',
-            designerLevel: 'سطح ۲'
+            designerLevel: 'سطح ۲',
+            desginers:[]
         }
     }
     gotoDesigner = () => {
         browserHistory.push('/profile');
         console.log(this.props)
     }
+    componentWillMount = async() => {
+        const res = await GetApi('site/user/designer');
+        
+        await this.setState({
+            desginers:res.data
+        })
+    }
 
     render() {
+
+        const renderDesginers = (
+            this.state.desginers ?   this.state.desginers.map((data,index) => {
+                return  <DesignerResult
+                designerPic={designerPic}
+                designerName={this.state.designerName}
+                designerLevel={this.state.designerLevel}
+                click={this.gotoDesigner}
+                data={data}
+            />
+            })
+                                                    : ''
+        )
         return (
             <div className="designers" >
 
@@ -47,48 +73,17 @@ class DesignersComponent extends Component {
                             </div>
                             <div className="designers-search-wrap" >
                                 <div className="designers-search-result " >
-                                    <DesignerResult
+                                    {/* <DesignerResult
                                         designerPic={designerPic}
                                         designerName={this.state.designerName}
                                         designerLevel={this.state.designerLevel}
                                         click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
-                                    <DesignerResult
-                                        designerPic={designerPic}
-                                        designerName={this.state.designerName}
-                                        designerLevel={this.state.designerLevel}
-                                        click={this.gotoDesigner}
-                                    />
+                                    /> */}
+
+                                    {renderDesginers}
+                             
+                            
+                     
                                 </div>
                                 <div className="pagination" >
                                     <p className="pagination-number">1</p>

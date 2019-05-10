@@ -32,9 +32,24 @@
 }
 
 .product-title h1{
-    font-size: 22px;
+    font-size: 16px;
 }   
+.product-img {
+    background-color: #efefef;
+    border-radius: 10px 10px 0 0;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
 
+.product-img img {
+    width: 150px;
+
+}
 .product-title div{
     padding: 2px 25px;
     border-radius: 30px;
