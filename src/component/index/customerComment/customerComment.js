@@ -29,7 +29,7 @@ class CustomerComment extends Component {
             <div className="customerComment" >
                 <div className="container-fluid">
                     <div className="container">
-                    <h1> نظرت برخی مشتریان ویشار </h1>
+                    <h1> نظرات برخی از مشتریان ویشار </h1>
                         <div>
                             
                             <Slider {...settings}>
