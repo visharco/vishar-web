@@ -24,8 +24,8 @@ class DesignersComponent extends Component {
             desginers:[]
         }
     }
-    gotoDesigner = () => {
-        browserHistory.push('/profile');
+    gotoDesigner = (id) => {
+        browserHistory.push('/profile/' + id);
         console.log(this.props)
     }
     componentWillMount = async() => {
@@ -44,7 +44,7 @@ class DesignersComponent extends Component {
                 designerPic={designerPic}
                 designerName={this.state.designerName}
                 designerLevel={this.state.designerLevel}
-                click={this.gotoDesigner}
+                click={() => this.gotoDesigner(data.id)}
                 data={data}
             />
             })

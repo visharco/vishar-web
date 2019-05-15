@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import Token from '../../api/token';
+
 
 //
 //
@@ -60,9 +62,20 @@ class HeaderComponent extends Component {
 
                         <div className="menuTablet" >
                             <div className="headerMenuUp" ref={this.menuTablet}  >
+
+                            {Token ?   <a href="http://www.dashboard.vishar.com" className="menu-login" onClick={this._callLogin}>
+                                    <p className="menu-login-text">حساب کاربری من</p>
+                                </a> 
+                                : 
                                 <a href="http://www.dashboard.vishar.com/login" className="menu-login" onClick={this._callLogin}>
-                                    <p className="menu-login-text">ثبت نام / ورود</p>
-                                </a>
+                                <p className="menu-login-text">ثبت نام / ورود</p>
+                        </a> 
+                    }
+                            
+
+                              
+
+
                                 <ul className="menu-links">
                                     <Link onClick={this.openHumberger} to="/contactUs" ><li className="menu-link">تماس ما</li></Link>
                                     <a href="http://www.blog.vishar.com"  ><li className="menu-link">بلاگ</li></a>

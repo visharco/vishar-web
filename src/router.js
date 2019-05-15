@@ -31,7 +31,7 @@ class RouterComponent extends Component {
                     <Route   path="projects" component={ProjectsScreen} /> 
                     <Route   path="aboutUs" component={AboutUsScreen} /> 
                     <Route   path="contactUs" component={ContactUsScreen} /> 
-                    <Route   path="profile" component={ProfileScreen} /> 
+                    <Route   path="/profile/:id" component={ProfileScreen} /> 
                     <Route   path="designs" component={DesignerDesignScreen} /> 
                 </Route>
             </Router>
