@@ -23,7 +23,9 @@ class DesignerDesign extends Component {
             designerViews: 12,
             designerName: 'امید آرمانی',
             designerLevel: '1',
-            data:[]
+            data:[],
+            name:'',
+            avatar:''
         }
     }
 
@@ -33,10 +35,14 @@ class DesignerDesign extends Component {
         console.log(id)
 
         const res = await GetToApi('site/designer/portfolio/' + id);
-        this.setState({
-            data: res.data
+       await this.setState({
+            data: res.data,
+            name:res.data.user.name,
+            avatar:res.data.user.image_thumb
         })
+        console.log(this.state.data.user.name)
     }
+
     //
     // -------------------------------------------------------------------------------------------------
     //
@@ -93,7 +99,7 @@ class DesignerDesign extends Component {
                 <div className="DD-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <DesignerLogoTitle />
+                            <DesignerLogoTitle name={this.state.name  } avatar={this.state.avatar} />
                         </div>
                     </div>
                 </div>
@@ -105,7 +111,7 @@ class DesignerDesign extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="DD-comment-box" >
+                {/* <div className="DD-comment-box" >
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="DD-up">
@@ -114,14 +120,12 @@ class DesignerDesign extends Component {
                             </div>
                             <div className="DD-down" >
                                 <DesignerLogoComment />
-                                <DesignerLogoComment />
-                                <DesignerLogoComment />
                             </div>
 
 
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         );

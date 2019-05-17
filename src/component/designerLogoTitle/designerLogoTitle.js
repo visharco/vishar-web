@@ -22,7 +22,7 @@ class DesignerLogoTitle extends Component {
             <div className="designerLogoTitle" >
 
                 <div className="DLT-left" >
-                    <Button
+                    {/* <Button
                         isLoading={this.state.isLoading}
                         title={'نمایش صفحه ی پروفایل'}
                         bgcolor={'#0090CF'}
@@ -30,8 +30,10 @@ class DesignerLogoTitle extends Component {
                         click={this.goToFullProfile}
                         borderRadius="5px"
                         color="#fff"
-                    />
-                    <div className="DLT-icon-box" >
+                    /> */}
+
+
+                    {/* <div className="DLT-icon-box" >
                         <div className="DLT-icons" >
                             <img src={like} alt="لایک" />
                             <span>12</span>
@@ -44,15 +46,15 @@ class DesignerLogoTitle extends Component {
                             <img src={comment} alt="نظر" />
                             <span>12</span>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className="DLT-right" >
                     <div className="DLT-right-title" >
-                        <h1>امید آرمانی</h1>
+                        <h1>{this.props.name}</h1>
                         <h2>1 سطح </h2>
                     </div>
-                    <img src={customer1} alt="مشتری" />
+                    <img src={this.props.avatar} alt="مشتری" />
 
                 </div>
             </div>
