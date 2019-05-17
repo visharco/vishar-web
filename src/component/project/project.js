@@ -29,19 +29,18 @@ class Project extends Component {
                     <p className="p-price" >{PriceDigit(this.props.data.invoice.price_all,'price')} تومان</p>
                     <div className="p-icons" >
                         <div className="p-icon" >
-                            <p>0 طراحی</p>
+                            <p>{this.props.data.count_design} طرح</p>
                             <img src={layersicon} alt="لایه ها " />
                         </div>
                         <div className="p-icon" >
                             <p>
-                                <span>3 روز </span>
-                                <span>21 ساعت</span>
+                                <span>{this.props.data.countdown_time}</span> 
                             </p>
                             <img src={clock} alt="ساعت" />
                         </div>
                         <div className="p-icon" >
-                            <p>بدون نظر</p>
-                            <img src={comment} alt="کامنت" />
+                            {/* <p>بدون نظر</p>
+                            <img src={comment} alt="کامنت" /> */}
                         </div>
                     </div>
                     <Button
@@ -59,7 +58,7 @@ class Project extends Component {
                         <div className="p-right-text" >
                             <h1>{this.props.data.title}</h1>
                             <p>
-                                {this.props.data.desc}
+                                {this.props.data.desc.substring(0,200)}
                             </p>
                         </div>
                         <div className="p-right-tags" >

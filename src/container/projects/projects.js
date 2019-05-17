@@ -75,8 +75,11 @@ class ProjectsComponent extends Component {
                 <div className="P-body" >
                     <div className="container-fluid">
                         <div className="container" >
+
+
+                        
                             <div className="P-filter" >
-                                <div className="P-filter-left">
+                                {/* <div className="P-filter-left">
                                     <select selected="زمان">
                                         <option value="0">انتخاب زمان</option>
                                         <option value="A">زمان یک</option>
@@ -95,23 +98,28 @@ class ProjectsComponent extends Component {
                                         <option value="B">دسته دوم</option>
                                         <option value="C">سته سوم</option>
                                     </select>
-                                </div>
-
-
+                                </div> */}
                             </div>
+
+
+                            
                             <div className="P-results" >
-                                <h1 className="P-result-title" >نمایش 789 نتیجه </h1>
+                                {/* <h1 className="P-result-title" >نمایش 789 نتیجه </h1> */}
                               {renderProjects}
                        
 
                             </div>
-                            <div className="pagination" >
+
+
+
+
+                            {/* <div className="pagination" >
                                 <p className="pagination-number">1</p>
                                 <p className="pagination-number">2</p>
                                 <p className="pagination-number pagination-number-selected">3</p>
                                 <p className="pagination-number">4</p>
                                 <p className="pagination-number">5</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
