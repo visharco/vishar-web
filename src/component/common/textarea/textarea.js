@@ -28,7 +28,7 @@ const textarea = (props) => {
                           placeholder=" "
                           onChange={props.changed}
                           name={props.name}
-                          required
+                          
                           maxLength={props.max}
                           style={{color:props.color, marginBottom:5}}  
                           id={props.name}
