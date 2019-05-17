@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import rocket from '../../assets/images/rocket.svg'
 
 import Project from '../../component/project/project';
-
+import GetToApi from '../../controler/getToApi';
 import './style.css';
 
 
@@ -11,9 +11,25 @@ import './style.css';
 class ProjectsComponent extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            projects:[]
+        }
     }
 
+
+
+    componentWillMount = async() =>{
+        const res= await GetToApi('site/projects');
+        console.log(res.data)
+        this.setState({
+            projects : res.data
+        })
+    }
+
+
+    //
+    // ------------------------------------------>
+    //
     open = React.createRef()
     finish = React.createRef()
 
@@ -35,6 +51,13 @@ class ProjectsComponent extends Component {
 
     }
     render() {
+
+
+        const renderProjects = (
+           this.state.projects ? this.state.projects.map((data,index) => {
+           return <Project data ={data}/>
+           }) : ''
+        )
         return (
             <div className="projects" >
                 <div className="P-title" >
@@ -78,11 +101,8 @@ class ProjectsComponent extends Component {
                             </div>
                             <div className="P-results" >
                                 <h1 className="P-result-title" >نمایش 789 نتیجه </h1>
-                                <Project />
-                                <Project />
-                                <Project />
-                                <Project />
-                                <Project />
+                              {renderProjects}
+                       
 
                             </div>
                             <div className="pagination" >

@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 .p-right img{
@@ -36,6 +37,7 @@
     min-height: 180px;
     padding: 10px 0px;
     direction: rtl;
+    width: 100%;
 }
 
 .p-right-text h1{

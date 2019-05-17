@@ -19,7 +19,7 @@ class Project extends Component {
         return (
             <div className="project" onClick={this.props.showProject} >
                 <div className="p-left" >
-                    <p className="p-price" >1000000 تومان</p>
+                    <p className="p-price" >{this.props.data.invoice.price_all} تومان</p>
                     <div className="p-icons" >
                         <div className="p-icon" >
                             <p>0 طراحی</p>
@@ -50,13 +50,13 @@ class Project extends Component {
                 <div className="p-right" >
                     <div className="p-right-title" >
                         <div className="p-right-text" >
-                            <h1>طراحی لوگو عنوان پروژه</h1>
+                            <h1>{this.props.data.title}</h1>
                             <p>
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                {this.props.data.desc}
                             </p>
                         </div>
                         <div className="p-right-tags" >
-                            <p>لوگو</p>
+                            <p>{this.props.data.invoice.category}</p>
                         </div>
                     </div>
                     <img src={design1} alt="طرح" />
