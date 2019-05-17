@@ -6,6 +6,7 @@ import design1 from '../../assets/images/design1.png'
 import layersicon from '../../assets/icons/layersicon.svg'
 import clock from '../../assets/icons/clock.svg'
 import comment from '../../assets/icons/comment.svg'
+import PriceDigit from '../priceDigit/priceDigit';
 
 import './style.css';
 
@@ -15,11 +16,17 @@ class Project extends Component {
         super(props);
         this.state = {}
     }
+
+
+
+    showProject (id)  {
+        window.location = 'http://dashboard.vishar.com/DesignerProjectDetail/'+ id
+    }
     render() {
         return (
             <div className="project" onClick={this.props.showProject} >
                 <div className="p-left" >
-                    <p className="p-price" >{this.props.data.invoice.price_all} تومان</p>
+                    <p className="p-price" >{PriceDigit(this.props.data.invoice.price_all,'price')} تومان</p>
                     <div className="p-icons" >
                         <div className="p-icon" >
                             <p>0 طراحی</p>
@@ -42,7 +49,7 @@ class Project extends Component {
                         title={'نمایش'}
                         bgcolor={'#0090CF'}
                         hoverbgcolor={'#0090cfcc'}
-                        click={this.props.showProject}
+                        click={() => this.showProject(this.props.data.id)}
                         borderRadius="30px"
                         color="#fff"
                     />
