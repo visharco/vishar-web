@@ -7,6 +7,7 @@ import pic1 from './../../assets/images/pic1.png'
 import Button from '../../component/common/Button/Button';
 import DesignerLogo from '../../component/designerLogo/designerLogo';
 import Appreciation from '../../component/appreciation/appreciation';
+import GetToApi from '../../controler/getToApi';
 
 
 import './style.css';
@@ -18,9 +19,25 @@ class Profile extends Component {
         super(props);
         this.state = {
             designerComments: 20,
-            designerLikes: 10
+            designerLikes: 10,
+            data:[]
         }
     }
+
+    componentWillMount = async() => {
+        let id = window.location.pathname.split('/')[2];
+        console.log(id)
+
+        const res = await GetToApi('site/user/designer/' + id);
+        this.setState({
+            data: res.data
+        })
+
+    }
+
+    //
+    // ---------------------------- Tabs Info ---------------------------------------------------------
+    //
 
     aboutmeText = React.createRef();
     profileText = React.createRef();
@@ -36,19 +53,19 @@ class Profile extends Component {
         if (e.target.id === 'aboutme') {
             this.aboutmeText.current.style.display = 'block'
             this.profileText.current.style.display = 'none'
-            this.appreciateText.current.style.display = 'none'
+          //  this.appreciateText.current.style.display = 'none'  // TODO later fixed
 
             e.target.style.backgroundColor = "#D8D8D8"
-            this.appreciate.current.style.backgroundColor = "transparent"
+            //this.appreciate.current.style.backgroundColor = "transparent"  // TODO later fixed
             this.profile.current.style.backgroundColor = "transparent"
         }
         else if (e.target.id === 'profile') {
             this.aboutmeText.current.style.display = 'none'
             this.profileText.current.style.display = 'block'
-            this.appreciateText.current.style.display = 'none'
+            // this.appreciateText.current.style.display = 'none'  // TODO later fixed
 
             e.target.style.backgroundColor = "#D8D8D8"
-            this.appreciate.current.style.backgroundColor = "transparent"
+           // this.appreciate.current.style.backgroundColor = "transparent"  // TODO later fixed
             this.aboutme.current.style.backgroundColor = "transparent"
         }
         else if (e.target.id === 'appreciate') {
@@ -68,15 +85,28 @@ class Profile extends Component {
 
 
     render() {
+
+
+        const renderMyProtfilo = (
+            this.state.data.portfolio ?  this.state.data.portfolio.map((data,index) => {
+                    return   <DesignerLogo
+                                data={data}
+                                index={index}
+                                goToDesigns={this.goToDesigns}
+                                logoFilter={this.logoFilter}
+                            />
+            }) : ''
+        )
+
         return (
             <div className="Profile" >
 
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={pic1} alt="طراح" />
+                            <img src={this.state.data.image_thumb} alt="طراح" />
                             <div className="Profile-name">
-                                <h1>امید آرمانی</h1>
+                                <h1>{this.state.data.name}</h1>
                                 <h2>سطح ۱</h2>
                             </div>
 
@@ -98,7 +128,7 @@ class Profile extends Component {
                                     color="#fff"
                                 />
                                 <div className="Profile-desc-box">
-                                    <div className="Profile-desc-title" onClick={this.descriptionHandler} id="appreciate" ref={this.appreciate} >قدر دانی ها</div>
+                                    {/* <div className="Profile-desc-title" onClick={this.descriptionHandler} id="appreciate" ref={this.appreciate} >قدر دانی ها</div> */}
                                     <div className="Profile-desc-title" onClick={this.descriptionHandler} id="profile" ref={this.profile} >پروفایل</div>
                                     <div className="Profile-desc-title" onClick={this.descriptionHandler} id="aboutme" ref={this.aboutme}>درباره ی من</div>
                                 </div>
@@ -115,13 +145,13 @@ class Profile extends Component {
                                 <div className="Profile-desc-texts" ref={this.aboutmeText}>
                                     <div className="Profile-desc-text" >
                                         <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                        {this.state.data.summary}
                                         </p>
                                         <h1>خلاصه</h1>
                                     </div>
                                     <div className="Profile-desc-text" >
                                         <p>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                           {this.state.data.experience}
                                         </p>
                                         <h1>تجربیات</h1>
                                     </div>
@@ -129,34 +159,16 @@ class Profile extends Component {
 
                                 <div className="Profile-desc-texts " ref={this.profileText} >
                                     <div className="Profile-profile">
-                                        <DesignerLogo
-                                            goToDesigns={this.goToDesigns}
-                                            logoFilter={this.logoFilter}
-                                        />
-                                        <DesignerLogo
-                                            goToDesigns={this.goToDesigns}
-                                            logoFilter={this.logoFilter}
-                                        />
-                                        <DesignerLogo
-                                            goToDesigns={this.goToDesigns}
-                                            logoFilter={this.logoFilter}
-                                        />
-                                        <DesignerLogo
-                                            goToDesigns={this.goToDesigns}
-                                            logoFilter={this.logoFilter}
-                                        />
-                                        <DesignerLogo
-                                            goToDesigns={this.goToDesigns}
-                                            logoFilter={this.logoFilter}
-                                        />
+                                      {renderMyProtfilo}
+
                                     </div>
-                                    <div className="pagination" >
+                                    {/* <div className="pagination" >
                                         <p className="pagination-number">1</p>
                                         <p className="pagination-number">2</p>
                                         <p className="pagination-number pagination-number-selected">3</p>
                                         <p className="pagination-number">4</p>
                                         <p className="pagination-number">5</p>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="Profile-desc-texts" ref={this.appreciateText}>

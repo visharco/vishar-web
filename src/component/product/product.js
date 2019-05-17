@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import tik from '../../assets/icons/tik.svg';
 import product from '../../assets/images/slide2.png'
+import PriceDigit from '../priceDigit/priceDigit';
 
 
 import './style.css';
@@ -22,7 +23,7 @@ class Product extends Component {
                     <div className="product-title" >
                         <div> 
                             <span>تومان</span>
-                            <p>{this.props.data.pay}</p> 
+                            <p> {PriceDigit(this.props.data.pay,'price')}</p> 
                         </div>
                         <h1>{this.props.data.title}</h1>
                     </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 import comment from '../../assets/icons/comment.svg'
 import like from '../../assets/icons/like.svg'
@@ -13,11 +14,19 @@ class DesignerLogo extends Component {
         super(props);
         this.state = {}
     }
+
+    _goTo(id){
+         browserHistory.push('/designs/' + id);
+       // browserHistory.push({pathname:'/designs',state: this.props.data })
+
+    }
+
     render() {
         return (
             <div className="designerLogo"
-                style={{ backgroundImage: 'url(' + designerLogo + ')' }}
-                onClick={this.props.goToDesigns}
+                style={{ backgroundImage: 'url(' + this.props.data.image_thumb + ')' }}
+                onClick={() => this._goTo(this.props.data.id)}
+                key={this.props.index}
             >
                 <div className="designerLogo-CL" >
                     <div className="designerLogo-II">
@@ -32,7 +41,7 @@ class DesignerLogo extends Component {
                 <div className="designerLogo-CL" >
                     <div className="designerLogo-II" >
                         <span>
-                            لوگو
+                            {this.props.data.project.category.title}
                         </span>
                     </div>
 

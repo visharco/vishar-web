@@ -8,6 +8,7 @@ import DesignerLogoTitle from '../../component/designerLogoTitle/designerLogoTit
 import DesignerLogoPostComment from '../../component/designerLogoPostComment/designerLogoPostComment.js';
 import DesignerLogoDetail from '../../component/designerLogoDetail/designerLogoDetail';
 import DesignerLogoComment from '../../component/designerLogoComment/designerLogoComment';
+import GetToApi from '../../controler/getToApi';
 
 import './style.css';
 
@@ -21,9 +22,24 @@ class DesignerDesign extends Component {
             designerLikes: 10,
             designerViews: 12,
             designerName: 'امید آرمانی',
-            designerLevel: '1'
+            designerLevel: '1',
+            data:[]
         }
     }
+
+
+    componentWillMount = async() =>{
+        let id = window.location.pathname.split('/')[2];
+        console.log(id)
+
+        const res = await GetToApi('site/designer/portfolio/' + id);
+        this.setState({
+            data: res.data
+        })
+    }
+    //
+    // -------------------------------------------------------------------------------------------------
+    //
 
     aboutmeText = React.createRef();
     profileText = React.createRef();
@@ -85,8 +101,7 @@ class DesignerDesign extends Component {
                 <div className="DD-logos" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={biggerlogo1} alt="لوگو" />
-                            <img src={biggerlogo1} alt="لوگو" />
+                            <img src={this.state.data.image} alt="لوگو" />
                         </div>
                     </div>
                 </div>

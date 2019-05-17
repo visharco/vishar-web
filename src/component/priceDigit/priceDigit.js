@@ -44,12 +44,12 @@ export default priceDigit;
 
 # how can use it:
 
-import priceDigit from diraction.
+import PriceDigit from diraction.
 
 
-priceDigit('number','type') ==> example
-priceDigit('123456','price') // output ===>  123,456
-priceDigit('123,456','digit') // output ===>  123456
+PriceDigit('number','type') ==> example
+PriceDigit('123456','price') // output ===>  123,456
+PriceDigit('123,456','digit') // output ===>  123456
 
 
 */
