@@ -52,6 +52,20 @@ align-items: flex-start;
     align-items: flex-start;
 }
 
+.bg-silver {
+    background-color: #e5eaec;
+    background-image: url('../../../assets/images/01.png');
+    background-position: top;
+    background-repeat: no-repeat; 
+
+
+}
+
+.bg-silver h1 {
+    padding-top: 300px;
+
+}
+
 .how-text{
     padding: 80px 20px;
 }

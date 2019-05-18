@@ -14,7 +14,8 @@ class HowWorking extends Component {
     render() {
         return (
             <div className="howWorking" >
-                <div className="container-fluid">
+              
+                    <div className="container-fluid bg-silver">
                     <div className="container">
                         <h1>ویشار چگونه کار میکند ؟</h1>
                         <div className="vishar-how-working">
@@ -27,6 +28,14 @@ class HowWorking extends Component {
                             <p>با توجه به طبقه بندی های مختلف هزینه دریافتی برای سفارش های مختلف متفاوت می باشد. هر طبقه بندی دارای زیر مجموعه جدا می باشد که هزینه هر کدام در مقابل آن نوشته شده است.</p>
                         </div>
 
+                    </div>
+                    </div>
+
+
+                    <div className="container-fluid">
+
+                    <div className="container">
+                        <h1>از کجا شروع کنم ؟</h1>
                         <div className="how-right">
                             <div className="how-text" >
                                 <h1>
