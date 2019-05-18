@@ -4,8 +4,8 @@ import { browserHistory } from 'react-router';
 import comment from '../../assets/icons/comment.svg'
 import like from '../../assets/icons/like.svg'
 
-import designerLogo from '../../assets/images/profilelogo.png'
-
+import designerLogo from '../../assets/images/profilelogo.png';
+import loadingImage from '../../assets/images/loading-image.gif';
 import './style.css';
 
 
@@ -24,7 +24,7 @@ class DesignerLogo extends Component {
     render() {
         return (
             <div className="designerLogo"
-                style={{ backgroundImage: 'url(' + this.props.data.image_thumb + ')' }}
+                style={{ backgroundImage: 'url(' +  this.props.data.image_thumb  + ')' }}
                 onClick={() => this._goTo(this.props.data.id)}
                 key={this.props.index}
             >

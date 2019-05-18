@@ -8,6 +8,7 @@ import Button from '../../component/common/Button/Button';
 import DesignerLogo from '../../component/designerLogo/designerLogo';
 import Appreciation from '../../component/appreciation/appreciation';
 import GetToApi from '../../controler/getToApi';
+import loadingImage from '../../assets/images/loading-image.gif';
 
 
 import './style.css';
@@ -20,7 +21,8 @@ class Profile extends Component {
         this.state = {
             designerComments: 20,
             designerLikes: 10,
-            data:[]
+            data:[],
+            avatar : loadingImage
         }
     }
 
@@ -30,7 +32,8 @@ class Profile extends Component {
 
         const res = await GetToApi('site/user/designer/' + id);
         this.setState({
-            data: res.data
+            data: res.data,
+            avatar:res.data.image_thumb
         })
 
     }
@@ -104,7 +107,7 @@ class Profile extends Component {
                 <div className="Profile-title" >
                     <div className="container-fluid">
                         <div className="container" >
-                            <img src={this.state.data.image_thumb} alt="طراح" />
+                            <img src={this.state.avatar} alt="طراح" />
                             <div className="Profile-name">
                                 <h1>{this.state.data.name}</h1>
                                 <h2>سطح ۱</h2>
