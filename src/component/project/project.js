@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Button from '../common/Button/Button';
 
-import design1 from '../../assets/images/design1.png'
+import design1 from '../../assets/images/defualtProjectImage.png'
 import layersicon from '../../assets/icons/layersicon.svg'
 import clock from '../../assets/icons/clock.svg'
 import comment from '../../assets/icons/comment.svg'
