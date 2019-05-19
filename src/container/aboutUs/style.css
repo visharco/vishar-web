@@ -38,7 +38,7 @@ display: flex;
 }
 
 .aboutUs-img{
-    background-image: url('../../assets/images/getstarted.png');
+    background-image: url('../../assets/images/getstarted.jpg');
     width: calc(50% - 40px);
     background-size: cover;
     background-position:  center;
