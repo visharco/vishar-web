@@ -1,16 +1,22 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Input from './../../component/common/input/Input';
 import TextArea from './../../component/common/textarea/textarea';
 import Button from './../../component/common/Button/Button'
-
+import SweetAlert from 'sweetalert-react';
 import './style.css';
-
-
+import PostToApi from "../../controler/postToApi";
+import {browserHistory} from "react-router";
+import '../../../node_modules/sweetalert/dist/sweetalert.css'
 
 class ContactUs extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            name: '',
+            email: '',
+            phonenumber: '',
+            message: '',
+        }
     }
 
     //
@@ -24,38 +30,59 @@ class ContactUs extends Component {
 
     //
     // ---------------------------------------------------------------------------------------------------
-    _postContactUs = () => {
-
+    _postContactUs = async () => {
         const data = new FormData();
         data.append('name', this.state.name)
-        data.append('name', this.state.name)
-        data.append('name', this.state.name)
-        data.append('name', this.state.name)
-        alert("conatc us")
+        data.append('email', this.state.email)
+        data.append('phone', this.state.phonenumber)
+        data.append('message', this.state.message)
+        const res = await PostToApi(data, 'site/contactUs' );
+        if (res.status === 200) {
+            this.setState({
+                alertText: 'کاربر گرامی اطلاعات با موفقیت ثبت شد.',
+                show: true,
+                name: '',
+                email: '',
+                phonenumber: '',
+                message: '',
+            });
+        } else
+            this.setState({
+                alertText: res.error,
+                show: true
+            });
     }
 
 
     render() {
         return (
-            <div className="contactUs" >
-
+            <div className="contactUs">
+                <SweetAlert
+                    show={this.state.show}
+                    title="اعلان"
+                    text={this.state.alertText}
+                    onConfirm={() => this.setState({show: false})}
+                />
                 <div className="container-fluid">
-                    <div className="container" >
-                        <div className="contactUs-title" >
+                    <div className="container">
+                        <div className="contactUs-title">
                             <h1>تماس با ما</h1>
                             <p>
-                            اگر نظر، پیشنهاد یا سوالی دارید می توانید در هر زمان از شبانه روز از طریق فرم زیر با ما در ارتباط باشید.
-                            </p> 
+                                اگر نظر، پیشنهاد یا سوالی دارید می توانید در هر زمان از شبانه روز از طریق فرم زیر با ما
+                                در ارتباط باشید.
+                            </p>
                             <p>
-                            اپراتورهای مجموعه ویشار در اسرع وقت، نظرات شما را ملاحظه و در صورت لزوم پاسخ را به مشخصات ثبت شده توسط شما ارسال خواهند کرد.
+                                اپراتورهای مجموعه ویشار در اسرع وقت، نظرات شما را ملاحظه و در صورت لزوم پاسخ را به
+                                مشخصات ثبت شده توسط شما ارسال خواهند کرد.
                             </p>
                         </div>
-                        <div className="conatactUs-form" >
+                        <div className="conatactUs-form">
                             <Input
                                 type={'text'}
                                 name={'name'}
                                 placeholder={'نام و نام خانوادگی'}
                                 changed={this.changedHandler}
+                                val={this.state.name}
                                 error={this.state.forgetEmailError}
                             />
                             <Input
@@ -63,6 +90,7 @@ class ContactUs extends Component {
                                 name={'email'}
                                 placeholder={'ایمیل'}
                                 changed={this.changedHandler}
+                                val={this.state.email}
                                 error={this.state.forgetEmailError}
                             />
                             <Input
@@ -70,6 +98,7 @@ class ContactUs extends Component {
                                 name={'phonenumber'}
                                 placeholder={'شماره همراه'}
                                 changed={this.changedHandler}
+                                val={this.state.phonenumber}
                                 error={this.state.forgetEmailError}
                             />
                             <TextArea
@@ -77,6 +106,7 @@ class ContactUs extends Component {
                                 name={'message'}
                                 placeholder={'پیام شما'}
                                 changed={this.changedHandler}
+                                val={this.state.message}
                                 error={this.state.forgetEmailError}
                             />
                             <Button
@@ -85,7 +115,7 @@ class ContactUs extends Component {
                                 bgcolor={'#0090CF'}
                                 hoverbgcolor={'#1fc056cc'}
                                 borderRadius="30px"
-                                click={this._postContactUs} />
+                                click={this._postContactUs}/>
 
                         </div>
                     </div>

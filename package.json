@@ -10,6 +10,7 @@
     "react-scripts": "2.1.8",
     "react-slick": "^0.23.2",
     "slick-carousel": "^1.8.1",
+    "sweetalert-react": "^0.4.11",
     "video-react": "^0.13.6"
   },
   "scripts": {
