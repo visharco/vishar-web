@@ -4,9 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import image1 from './../../../assets/images/image1.png'
-import image2 from './../../../assets/images/image2.png'
-import image3 from './../../../assets/images/image3.png'
+import img01 from './../../../assets/images/work-sample/01.png' 
+import img02 from './../../../assets/images/work-sample/02.png' 
+import img03 from './../../../assets/images/work-sample/03.png' 
+import img04 from './../../../assets/images/work-sample/04.png' 
+import img05 from './../../../assets/images/work-sample/05.png' 
+import img06 from './../../../assets/images/work-sample/06.png' 
 
 import './style.css';
 
@@ -54,58 +57,44 @@ class SampleDesigns extends Component {
                     <div>
                                 <Slider {...settings}>
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'  }} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img01 + ')'  }} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img02 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img03 + ')'}} >
                                         </div>
                                         
                                     </div>
 
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'}} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img04 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img05 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
                                     <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
+                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + img06 + ')'}} >
                                         </div>
                                         
                                     </div>
                                     
-                                    <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image3 + ')'}} >
-                                        </div>
-                                        
-                                    </div>
+                           
                                     
-                                    <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image2 + ')'}} >
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <div>
-                                        <div className="sampleDesigns-slider" style={{ backgroundImage: 'url(' + image1 + ')'}} >
-                                        </div>
-                                        
-                                    </div>
+ 
                                 </Slider>
                             </div>
                     </div>
