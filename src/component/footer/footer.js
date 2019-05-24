@@ -31,6 +31,12 @@ class FooterComponent extends Component {
         alert(this.state.email)
     }
 
+    //
+    //
+    _goto = (val) => {
+        window.location.pathname = val;
+
+    }
 
     render() {
         return (
@@ -78,14 +84,14 @@ class FooterComponent extends Component {
                         <h1>منوها</h1>
                         <div className="footer-menu">
                             <ul>
-                                <li>درباره ما</li>
+                                <li onClick={() => this._goto('/aboutus')}>درباره ما</li>
                                 <li>بلاگ</li>
-                                <li>تماس باما</li>
+                                <li onClick={() => this._goto('/contactUs')}>تماس باما</li>
                             </ul>
                             <ul>
-                                <li>گتگوری ها</li>
-                                <li>طراحان</li>
-                                <li>پروژه ها</li>
+                                <li onClick={() => this._goto('/categories')}>گتگوری ها</li>
+                                <li onClick={() => this._goto('/designers')}>طراحان</li>
+                                <li onClick={() => this._goto('/projects')}>پروژه ها</li>
                             </ul>
 
                         </div>
