@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import customer1 from './../../../assets/images/customer1.png'
+import img01 from './../../../assets/images/comment/01.jpeg'
+import img02 from './../../../assets/images/comment/02.jpeg'
+import img03 from './../../../assets/images/comment/03.jpeg'
 
 import './style.css';
 
@@ -36,68 +39,43 @@ class CustomerComment extends Component {
                                 <div className="customer-box" >
                                     <div className="customer-detail">
                                         <div className="customer-title  " >
-                                            <h1>امید رحمانی</h1>
-                                            <h2>کارمند اپل</h2>
+                                            <h1> سارا مومنی </h1>
+                                            <h2>مدیر کسب و کارهای اینترنتی</h2>
                                         </div>
-                                        <img src={customer1} alt="نظرات" />
+                                        <img src={img01} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                        همکاری با ویشار بسیار ساده و لذت بخش بوده، چراکه با توجه به امنیت و سرعت در سرویس دهی مرا در دستیابی به طرح دلخواه خود یاری نمودند
                                     </p>
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
                                         <div className="customer-title  " >
-                                            <h1>امید رحمانی</h1>
-                                            <h2>کارمند اپل</h2>
+                                            <h1>مهدی حسینیان</h1>
+                                            <h2>UI/UX طراح </h2>
                                         </div>
-                                        <img src={customer1} alt="نظرات" />
+                                        <img src={img02} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                   بیشت از 5 سال است که در زمینه طراحی رابط کاربری و تجربه کاربری فعالیت دارم ، ویشار به راحتی پاسخگوی نیازهای من بوده و با اطمنیان می توانم مشتریان خود را بیابم
+                                  
                                     </p>
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
                                         <div className="customer-title  " >
-                                            <h1>امید رحمانی</h1>
-                                            <h2>کارمند اپل</h2>
+                                            <h1>شراره دشتی</h1>
+                                            <h2>طراحی رابط گرافیک </h2>
                                         </div>
-                                        <img src={customer1} alt="نظرات" />
+                                        <img src={img03} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                   امروزه کار کردن در عرصه اینترنت بسیار دشوار شده ، با وجود ویشار به راحتی می توانم در هر کجا که هستم مشتریان خود را بیابم .
+                                  
                                     </p>
                                 </div>
-                                <div className="customer-box" >
-                                    <div className="customer-detail">
-                                        <div className="customer-title  " >
-                                            <h1>امید رحمانی</h1>
-                                            <h2>کارمند اپل</h2>
-                                        </div>
-                                        <img src={customer1} alt="نظرات" />
-                                    </div>
-                                    <p className="customer-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    </p>
-                                </div>
-                                <div className="customer-box" >
-                                    <div className="customer-detail">
-                                        <div className="customer-title  " >
-                                            <h1>امید رحمانی</h1>
-                                            <h2>کارمند اپل</h2>
-                                        </div>
-                                        <img src={customer1} alt="نظرات" />
-                                    </div>
-                                    <p className="customer-text">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-                                    </p>
-                                </div>
+                      
+                       
                             </Slider>
                         </div>
                     </div>
