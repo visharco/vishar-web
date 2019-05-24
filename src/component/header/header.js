@@ -93,7 +93,7 @@ class HeaderComponent extends Component {
                                 <span className={line3.join(' ')} ></span>
                             </div>
                             <div className="header-logo" >
-                                <Link to="/" ><img src={logo} alt="لوگو" style={{height:'72px'}} /></Link>
+                                <Link to="/" ><img src={logo} alt="لوگو" style={{height:'72px', zIndex:9999}} /></Link>
                             </div>
                         </div>
                     </div>

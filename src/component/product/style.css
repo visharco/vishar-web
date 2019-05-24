@@ -106,6 +106,10 @@ margin: 0px 5px 0px 10px;
     .product {
         width: calc(100% - 40px);
     }
+
+    .product-img {
+        height: 340px;
+    }
 }
 
 
@@ -137,6 +141,7 @@ margin: 0px 5px 0px 10px;
     .product-title div{
         width: 100%;
         justify-content: center;
+        padding: 20px 0;
     }
     .product-title{
         display: flex;
