@@ -25,7 +25,7 @@ class ContactUs extends Component {
 
 
     //
-    //
+    // ---------------------------------------------------------------------------------------------------
     _postContactUs = () => {
 
         const data = new FormData();
@@ -33,6 +33,7 @@ class ContactUs extends Component {
         data.append('name', this.state.name)
         data.append('name', this.state.name)
         data.append('name', this.state.name)
+        alert("conatc us")
     }
 
 
@@ -87,7 +88,7 @@ class ContactUs extends Component {
                                 bgcolor={'#0090CF'}
                                 hoverbgcolor={'#1fc056cc'}
                                 borderRadius="30px"
-                                click={this.callSubmit} />
+                                click={this._postContactUs} />
 
                         </div>
                     </div>
