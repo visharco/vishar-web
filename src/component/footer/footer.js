@@ -13,6 +13,25 @@ class FooterComponent extends Component {
         super(props);
         this.state = {}
     }
+
+       //
+    // get data from input by event target -------------------------------------------------------------->
+    //
+    changedHandler = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+
+
+    //
+    // ----------------------------------------------------------------------------------------------------
+    _submitEmail = () => {
+        alert(this.state.email)
+    }
+
+
     render() {
         return (
             <div className="footer">
@@ -21,10 +40,10 @@ class FooterComponent extends Component {
                         <h1>عضویت در خبرنامه</h1>
                         <div className="footer-newslater">
                             <div className="newslater-container">
-                                <input className="footer-newslater-input-container" placeholder="ایمیل" />
+                                <input className="footer-newslater-input-container" name="email"  onChange={this.changedHandler} placeholder="ایمیل" />
 
 
-                                <div className="footer-newslater-button-container">
+                                <div className="footer-newslater-button-container" onClick={this._submitEmail}>
                                     <p>عضویت</p>
                                 </div>
                             </div>
