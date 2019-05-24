@@ -13,7 +13,6 @@ class ContactUs extends Component {
         this.state = {}
     }
 
-
     //
     // get data from input by event target -------------------------------------------------------------->
     //
@@ -22,7 +21,6 @@ class ContactUs extends Component {
             [e.target.name]: e.target.value
         })
     }
-
 
     //
     // ---------------------------------------------------------------------------------------------------
@@ -35,7 +33,6 @@ class ContactUs extends Component {
         data.append('name', this.state.name)
         alert("conatc us")
     }
-
 
 
     render() {

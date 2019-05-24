@@ -23,8 +23,6 @@ class FooterComponent extends Component {
         })
     }
 
-
-
     //
     // ----------------------------------------------------------------------------------------------------
     _submitEmail = () => {
@@ -76,7 +74,6 @@ class FooterComponent extends Component {
                                     </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -85,7 +82,7 @@ class FooterComponent extends Component {
                         <div className="footer-menu">
                             <ul>
                                 <li onClick={() => this._goto('/aboutus')}>درباره ما</li>
-                                <li>بلاگ</li>
+                                <li onClick={()=> window.location = "http://www.blog.vishar.com/"}>بلاگ</li>
                                 <li onClick={() => this._goto('/contactUs')}>تماس باما</li>
                             </ul>
                             <ul>
