@@ -12,6 +12,31 @@ class ContactUs extends Component {
         super(props);
         this.state = {}
     }
+
+
+    //
+    // get data from input by event target -------------------------------------------------------------->
+    //
+    changedHandler = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+
+    //
+    //
+    _postContactUs = () => {
+
+        const data = new FormData();
+        data.append('name', this.state.name)
+        data.append('name', this.state.name)
+        data.append('name', this.state.name)
+        data.append('name', this.state.name)
+    }
+
+
+
     render() {
         return (
             <div className="contactUs" >
