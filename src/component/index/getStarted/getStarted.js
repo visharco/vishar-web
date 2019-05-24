@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router';
 import './style.css';
 
 
@@ -8,6 +8,10 @@ class GetStarted extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+    }
+
+    goto = () => {
+        window.location = 'http://dashboard.vishar.com/'
     }
     render() {
         return (
@@ -25,7 +29,7 @@ class GetStarted extends Component {
                                 </h2>
                             </div>
                         </div>
-                        <div className="get-button-box" >
+                        <div to="/" className="get-button-box" onClick={this.goto} >
                             <p className="get-button" >ایجاد حساب کاربری</p>
                         </div>
                     </div>
