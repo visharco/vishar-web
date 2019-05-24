@@ -122,6 +122,8 @@
 .footer-newslater-button-container p {
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    
 }
 
 .footer-newslater-button-container:hover {
