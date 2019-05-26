@@ -111,7 +111,7 @@ class FooterComponent extends Component {
                                 <li onClick={() => this._goto('/contactUs')}>تماس باما</li>
                             </ul>
                             <ul>
-                                <li onClick={() => this._goto('/categories')}>گتگوری ها</li>
+                                <li onClick={() => this._goto('/categories')}>دسته بندی ها</li>
                                 <li onClick={() => this._goto('/designers')}>طراحان</li>
                                 <li onClick={() => this._goto('/projects')}>پروژه ها</li>
                             </ul>
