@@ -121,15 +121,15 @@ class Profile extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="Profile-desc-box1" >
-                                <Button
-                                    isLoading={this.state.isLoading}
-                                    title={'دعوت به همکاری'}
-                                    bgcolor={'#0080FF'}
-                                    hoverbgcolor={'#1fc056cc'}
-                                    click={this.callSubmit}
-                                    borderRadius="5px"
-                                    color="#fff"
-                                />
+                                {/*<Button*/}
+                                {/*    isLoading={this.state.isLoading}*/}
+                                {/*    title={'دعوت به همکاری'}*/}
+                                {/*    bgcolor={'#0080FF'}*/}
+                                {/*    hoverbgcolor={'#1fc056cc'}*/}
+                                {/*    click={this.callSubmit}*/}
+                                {/*    borderRadius="5px"*/}
+                                {/*    color="#fff"*/}
+                                {/*/>*/}
                                 <div className="Profile-desc-box">
                                     {/* <div className="Profile-desc-title" onClick={this.descriptionHandler} id="appreciate" ref={this.appreciate} >قدر دانی ها</div> */}
                                     <div className="Profile-desc-title" onClick={this.descriptionHandler} id="profile" ref={this.profile} >پروفایل</div>
