@@ -27,11 +27,13 @@ class GetStarted extends Component {
                                 <h2 dir="rtl" className="get-title-down" >
                                 طراحان ویشار برآن است با توجه به درک و شناخت نیاز سفارش دهنده، بهترین و متنوع ترین طرح ها را در سریعترین زمان ممکن توسط طراحان مجرب کشور بصورت مستقیم به کارفرما ارائه دهد.
                                 </h2>
+                                <div to="/" className="get-button-box" onClick={this.goto} >
+                                    <p className="get-button" >ایجاد حساب کاربری</p>
+                                </div>
                             </div>
+                     
                         </div>
-                        <div to="/" className="get-button-box" onClick={this.goto} >
-                            <p className="get-button" >ایجاد حساب کاربری</p>
-                        </div>
+                     
                     </div>
                 </div>
             </div>

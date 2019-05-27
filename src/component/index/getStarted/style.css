@@ -14,6 +14,8 @@
     height: 100vh;
     min-height: 700px;
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .getStarted .container{
@@ -42,7 +44,7 @@ margin-bottom: 50px;
 border-bottom: 10px solid;
 padding-bottom: 10px;
 display: inline;
-border-radius: 0px 0px 0px 10px;
+border-radius: 10px;
 }
 
 .get-title-down{
@@ -55,16 +57,17 @@ margin-top: 50px;
 }
 
 .get-button{
-    background-color: #2D9CDB;
+    background-color: #fcfcfc;
     border-radius: 30px;
     width: 200px;
     height: 50px;
     font-size: 14px;
     line-height: 50px;
-    color: #fff;
+    color: #2D9CDB;
     text-align: center;
     font-weight: 900;
     cursor: pointer;
+    box-shadow: 0 3px 6px rgba(157,206,255,.16);
     transition: all .2s linear;
 
 }
@@ -89,7 +92,11 @@ margin-top: 50px;
 
 @media screen and (max-width: 700px){
 .getStarted .container-fluid{
-    display: flex;
+    display: flex; 
+    background-size: 100%;
+    background: linear-gradient(#00bdc9, #008bc8); 
+    max-height: 200px;
+
 }
 .getStarted .container{
     padding: 50px;
@@ -125,6 +132,22 @@ margin-top: 50px;
     .getStarted .container{
         padding: 20px;
     }
+
+    .cat-part1-text{
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .cat-part1-text h2{
+        width: 100%; 
+    }
+    .cat-part1-action {
+        width: 100%;
+
+    }
+
+
+
     .get-title-up{
         font-size: 20px;
     }
