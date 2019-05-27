@@ -55,8 +55,8 @@ class CategoriesComponent extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="C-search-box " >
-                                <input type="text" />
-                                <img src={search} alt="جستجو" />
+                                {/*<input type="text" />*/}
+                                {/*<img src={search} alt="جستجو" />*/}
                             </div>
                             <div className="C-search-wrap" >
                                 <div className="C-search-result " >

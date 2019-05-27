@@ -68,8 +68,8 @@ class DesignersComponent extends Component {
                     <div className="container-fluid">
                         <div className="container" >
                             <div className="designers-search-box " >
-                                <input type="text" />
-                                <img src={search} alt="جستجو" />
+                                {/*<input type="text" />*/}
+                                {/*<img src={search} alt="جستجو" />*/}
                             </div>
                             <div className="designers-search-wrap" >
                                 <div className="designers-search-result " >
