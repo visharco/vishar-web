@@ -14,7 +14,7 @@ function getToken(token){
 }
 
 // const Token = getToken(localStorage.getItem('@authorization_vishar'));
-const Token = getToken( decodeURIComponent(document.cookie));
+const Token = getToken( decodeURIComponent(document.cookie).split('auth=')[1]);
 
 
 
