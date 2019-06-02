@@ -12,7 +12,9 @@ function getToken(token){
     return null 
 }
 
-const Token = getToken(localStorage.getItem('@authorization_vishar'))
+// const Token = getToken(localStorage.getItem('@authorization_vishar'));
+const Token = getToken(sessionStorage.getItem('@authorization_vishar'));
+
 
 
 export default Token;
