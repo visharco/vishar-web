@@ -83,6 +83,59 @@ width: 150px;
     padding: 50px;
     text-align: center;
 }
+
+
+
+
+
+.img-01 {
+    width: 150px;
+    height: 150px; 
+    background-image: url('../../../assets/images/index/taknafari abi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition:all .2s linear;
+}
+
+.img-01:hover { 
+    background-image: url('../../../assets/images/index/taknafari.png'); 
+}
+
+.img-02 {
+    width: 150px;
+    height: 150px; 
+    background-image: url('../../../assets/images/index/hamkari abi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition:all .2s linear;
+}
+
+.img-02:hover { 
+    background-image: url('../../../assets/images/index/hamkari.png'); 
+}
+
+.img-03 {
+    width: 150px;
+    height: 150px; 
+    background-image: url('../../../assets/images/index/behtarin tarh abi.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition:all .2s linear;
+}
+
+.img-03:hover { 
+    background-image: url('../../../assets/images/index/behtarin tarh.png'); 
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 900px){
 .ourService .container{
     flex-direction: column;
