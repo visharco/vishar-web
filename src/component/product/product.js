@@ -17,7 +17,7 @@ class Product extends Component {
         return (
             <div className="product">
                 <div className="product-img"  >
-                    <img src={this.props.data.image} alt="ddd" />
+                    <img src={this.props.data.image} alt="کتگوری ها" />
                 </div>
                 <div className="product-down" >
                     <div className="product-title" >
@@ -30,7 +30,7 @@ class Product extends Component {
                     <div className="product-text" >
                         {this.props.data.desc}
                     </div>
-                    <div className="product-options" >
+                    {/* <div className="product-options" >
                         <div className="product-option">
                             <p>طراحی لوگو</p>
                             <img src={tik} alt="تیک" />
@@ -47,7 +47,7 @@ class Product extends Component {
                             <p>طرح اولیه</p>
                             <img src={tik} alt="تیک" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
