@@ -92,11 +92,7 @@ class Categories extends Component {
                         <div className="cat-slider" >
                             <div>
                                 <Slider {...settings}>
-                                   
                                     {renderCategory}
-                                  
-
-                                   
                                 </Slider>
                             </div>
                         </div>
