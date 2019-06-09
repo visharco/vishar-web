@@ -17,13 +17,13 @@ class Product extends Component {
         return (
             <div className="product">
                 <div className="product-img"  >
-                    <img src={this.props.data.icon} alt="ddd" />
+                    <img src={this.props.data.image} alt="ddd" />
                 </div>
                 <div className="product-down" >
                     <div className="product-title" >
                         <div> 
                             <span>تومان</span>
-                            <p> {PriceDigit(this.props.data.pay,'price')}</p> 
+                            <p> {PriceDigit(this.props.data.category_plan[0].price,'price')}</p>
                         </div>
                         <h1>{this.props.data.title}</h1>
                     </div>
