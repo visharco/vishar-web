@@ -17,20 +17,20 @@ class Product extends Component {
         return (
             <div className="product">
                 <div className="product-img"  >
-                    <img src={this.props.data.icon} alt="ddd" />
+                    <img src={this.props.data.image} alt="کتگوری ها" />
                 </div>
                 <div className="product-down" >
                     <div className="product-title" >
                         <div> 
                             <span>تومان</span>
-                            <p> {PriceDigit(this.props.data.pay,'price')}</p> 
+                            <p> {PriceDigit(this.props.data.category_plan[0].price,'price')}</p>
                         </div>
                         <h1>{this.props.data.title}</h1>
                     </div>
                     <div className="product-text" >
                         {this.props.data.desc}
                     </div>
-                    <div className="product-options" >
+                    {/* <div className="product-options" >
                         <div className="product-option">
                             <p>طراحی لوگو</p>
                             <img src={tik} alt="تیک" />
@@ -47,7 +47,7 @@ class Product extends Component {
                             <p>طرح اولیه</p>
                             <img src={tik} alt="تیک" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
