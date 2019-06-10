@@ -1,6 +1,6 @@
 .product{
     width: calc(33.33% - 40px);
-    height: 500px;
+    height: 590px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@
 }
 .product-down{
     padding: 20px;
-    height: 200px;;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 .product-title h1{
-    font-size: 16px;
+    font-size: 14px;
 }   
 .product-img {
     background-color: #efefef;
@@ -54,11 +54,11 @@
 
 }
 .product-title div{
-    padding: 2px 25px;
+    padding: 5px 20px;
     border-radius: 30px;
     border: 2px solid #0090CF;
     color: #0090CF;
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
