@@ -17,7 +17,7 @@ class HowWorking extends Component {
         return (
             <div className="howWorking" >
               
-                <div class=" row row2 container   ">
+                <div class=" row row2 container " >
                     <div className="col-50 ">
                         <div className="main-prt-one"></div>
                     </div>
@@ -35,7 +35,7 @@ class HowWorking extends Component {
                     <div className="col-50 ">
                         <div className="main-prt-two"></div>
                     </div>
-                    
+
                 </div>
 
 
@@ -44,7 +44,7 @@ class HowWorking extends Component {
                         <div className="main-prt-three"></div>
                     </div>
                     <div className="col-50 txt-right p-20">
-                        <h1>چه پروژه هایی و در چه مدت زمانی از طرف ما قابل انجام است؟</h1>
+                            <h1>چه پروژه هایی و در چه مدت زمانی از طرف ما قابل انجام است؟</h1>
                             <p>خیلی چیزها! طراحان حرفه ای ما می توانند در زمینه طراحی لوگوهای مختلف، وب سایت ها، بنرهای تبلیغاتی و غیره فعالیت کنند. برای کسب اطلاعات بیشتر میتوانید دسته بندی خدمات مختلف ارائه شده توسط ما را در سایت ملاحظه بفرمایید. بسته به پیچیدگی یا ساده بودن طراحی، زمان تحویل سفارش متفاوت می باشد. برای طراحی های ساده تر، زمان کمتر و برای طراحی های پیچیده تر زمان بیشتری صرف خواهد شد.</p>
                     </div>
                 </div>
