@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 
 import './style.css';
-import img01 from '../../../assets/images/index/01.png'
-import img02 from '../../../assets/images/index/02.png'
-import img03 from '../../../assets/images/index/03.png'
+import img01 from '../../../assets/images/index/01.png';
+import img02 from '../../../assets/images/index/02.png';
+import img03 from '../../../assets/images/index/03.png';
 
 
 class HowWorking extends Component {
@@ -16,7 +16,6 @@ class HowWorking extends Component {
     render() {
         return (
             <div className="howWorking" >
-              
               
                 <div class=" row row2 container   ">
                     <div className="col-50 ">
@@ -36,9 +35,8 @@ class HowWorking extends Component {
                     <div className="col-50 ">
                         <div className="main-prt-two"></div>
                     </div>
-               
+                    
                 </div>
-
 
 
                 <div class=" row  row2 container   ">
