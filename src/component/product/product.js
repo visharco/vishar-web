@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import tik from '../../assets/icons/tik.svg';
 import product from '../../assets/images/slide2.png'
 import PriceDigit from '../priceDigit/priceDigit';
+import AOS from 'aos';
 
 
 import './style.css';
@@ -12,10 +13,12 @@ class Product extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+        AOS.init();
+
     }
     render() {
         return (
-            <div className="product">
+            <div className="product" data-aos="flip-right" >
                 <div className="product-img"  >
                     <img src={this.props.data.image} alt="کتگوری ها" />
                 </div>
