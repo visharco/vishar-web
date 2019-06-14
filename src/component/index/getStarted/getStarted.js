@@ -31,7 +31,7 @@ class GetStarted extends Component {
                                 طراحان ویشار بر آن است با توجه به درک و شناخت نیاز سفارش دهنده، بهترین و متنوع ترین طرح ها را در سریعترین زمان ممکن توسط طراحان مجرب کشور بصورت مستقیم به کارفرما ارائه دهد.
                                 </h2>
                                 <div to="/" className="get-button-box" onClick={this.goto} >
-                                    <p className="get-button" >ایجاد حساب کاربری</p>
+                                    <p className="get-button" data-aos="flip-right">ایجاد حساب کاربری</p>
                                 </div>
                             </div>
                      
