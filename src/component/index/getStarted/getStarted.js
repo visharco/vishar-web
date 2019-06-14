@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import './style.css';
+import AOS from 'aos';
 
 
 
@@ -8,6 +9,8 @@ class GetStarted extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+        AOS.init();
+
     }
 
     goto = () => {
@@ -19,9 +22,9 @@ class GetStarted extends Component {
                 <div className="container-fluid">
                     <div className="container">
                         <div className="get-title">
-                            <div className="get-title-box" >
-                                <div className="get-title-up" >
-                                    <h1>ویشــــــار </h1>
+                            <div className="get-title-box"  data-aos="fade-left"  >
+                                <div className="get-title-up "  >
+                                    <h1 >ویشــــــار </h1>
                                     <h1> طراحان بیدار</h1>
                                 </div>
                                 <h2 dir="rtl" className="get-title-down" >
