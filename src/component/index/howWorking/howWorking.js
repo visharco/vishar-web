@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import AOS from 'aos';
 
 import './style.css';
 import img01 from '../../../assets/images/index/01.png';
@@ -11,6 +12,8 @@ class HowWorking extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+        AOS.init();
+
     }
 
     render() {
@@ -64,7 +67,8 @@ class HowWorking extends Component {
 
                     <div className="container">
                         <h1>از کجا شروع کنم ؟</h1>
-                        <div className="how-right">
+                        <div className="how-right" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
                             <div className="how-text" >
                                 <h1>
                                     حساب کاربریت رو بساز
@@ -79,7 +83,8 @@ class HowWorking extends Component {
                         </div>
 
                         <div className="how-left">
-                            <div className="how-text" >
+                            <div className="how-text" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" >
                                 <h1>
                                 پیدا کردن بهترین طراح
                                 </h1>
@@ -93,7 +98,8 @@ class HowWorking extends Component {
                         </div>
 
                         <div className="how-right">
-                            <div className="how-text" >
+                            <div className="how-text" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" >
                                 <h1>
                                 بهترین طرح رو انتخاب کن
                                 </h1>
