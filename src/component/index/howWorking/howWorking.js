@@ -82,9 +82,9 @@ class HowWorking extends Component {
                            </div>
                         </div>
 
-                        <div className="how-left">
-                            <div className="how-text" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" >
+                        <div className="how-left" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+                            <div className="how-text"  >
                                 <h1>
                                 پیدا کردن بهترین طراح
                                 </h1>
@@ -97,9 +97,9 @@ class HowWorking extends Component {
                             </div>
                         </div>
 
-                        <div className="how-right">
-                            <div className="how-text" data-aos="fade-up"
-     data-aos-anchor-placement="top-center" >
+                        <div className="how-right" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+                            <div className="how-text"  >
                                 <h1>
                                 بهترین طرح رو انتخاب کن
                                 </h1>
