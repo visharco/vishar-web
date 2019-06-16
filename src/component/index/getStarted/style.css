@@ -15,7 +15,7 @@
     min-height: 700px;
     background-size: 59%;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left bottom;
     opacity: .6;
   
 
@@ -76,7 +76,9 @@
 }
 
 .get-title-box{
-width: 50%;
+    width: 50%;
+    color: #ffffff;
+
 }
 
 .get-title-up{
