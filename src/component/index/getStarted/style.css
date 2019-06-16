@@ -2,7 +2,7 @@
 
 
 .getStarted{ 
-    background-color: #eeeeeec9;
+    background-color: #0e0e38;
     width: 100%;
 }
 
@@ -10,11 +10,15 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    background-image: url('./../../../assets/images/getstarted.jpg');
+    background-image: url('../../../assets/images/getstarted.gif');
     height: 100vh;
     min-height: 700px;
-    background-size: cover;
+    background-size: 59%;
     background-repeat: no-repeat;
+    background-position: left center;
+    opacity: .6;
+  
+
 
 }
 
