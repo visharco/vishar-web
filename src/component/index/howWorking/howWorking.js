@@ -20,11 +20,11 @@ class HowWorking extends Component {
         return (
             <div className="howWorking" >
               
-                <div class=" row row2 container "   data-aos="fade-down">
-                    <div className="col-50 ">
+                <div class=" row row2 container "  >
+                    <div className="col-50 "  data-aos="fade-right">
                         <div className="main-prt-one"></div>
                     </div>
-                    <div className="col-50 txt-right p-20  "  > 
+                    <div className="col-50 txt-right p-20  "    data-aos="fade-left"> 
                         <h1>ویشار چگونه کار میکند ؟</h1>
                         <p>ما زمینه ای را فراهم کردیم تا مجرب ترین و قوی ترین طراحان در زمینه های مختلف گرد هم بیایند. مجموعه ویشار با بهره گیری از گروه های حرفه ای در حوزه های مختلف طراحی، عکس برداری، فیلم برداری و... قادر به پذیرش کلیه پروژه های گرافیکی و تبلیغاتی شما می باشد.</p>
                     </div>

@@ -38,7 +38,9 @@ class Categories extends Component {
         const settings = {
             dots: true,
             infinite: true,
+            autoplay: true,
             speed: 500,
+            autoplaySpeed: 2500,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
