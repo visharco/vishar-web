@@ -16,6 +16,8 @@ class GetStarted extends Component {
     goto = () => {
         window.location = 'http://dashboard.vishar.com/'
     }
+
+    
     render() {
         return (
             <div className="getStarted" >
