@@ -16,7 +16,7 @@
     background-size: 59%;
     background-repeat: no-repeat;
     background-position: left bottom;
-    opacity: .6;
+    opacity: .9;
   
 
 
@@ -139,12 +139,18 @@ margin-top: 50px;
 .getStarted .container-fluid{
     display: flex; 
     background-size: 100%;
-    background: linear-gradient(#00bdc9, #008bc8); 
-    max-height: 200px;
+    background-position: top center;
+    /* background: linear-gradient(#00bdc9, #008bc8);  */ 
+    padding-top: 450px;
+    height: auto;
+
 
 }
 .getStarted .container{
     padding: 50px;
+}
+.cat-part1-text h2{
+    width: 100%; 
 }
 
 .get-title-box{
@@ -159,6 +165,7 @@ margin-top: 50px;
 }
 .cat-part1-action p{
     width: 100%;
+    padding: 0 40px;
 }
 
 .cat-part1{

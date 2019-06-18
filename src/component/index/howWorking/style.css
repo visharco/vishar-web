@@ -6,6 +6,7 @@ p {
 .howWorking{ 
     background-color: #ffffff;
     width: 100%;
+    overflow: hidden;
 }
 
 .howWorking .container-fluid{
