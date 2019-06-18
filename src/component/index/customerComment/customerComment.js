@@ -22,8 +22,10 @@ class CustomerComment extends Component {
     render() {
         const settings = {
             dots: true,
-            infinite: true,
+            infinite: true, 
+            autoplay: true,
             speed: 500,
+            autoplaySpeed: 4000,
             slidesToShow: 1,
             slidesToScroll: 1,
 

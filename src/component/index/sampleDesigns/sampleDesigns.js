@@ -25,7 +25,9 @@ class SampleDesigns extends Component {
         const settings = {
             dots: true,
             infinite: true,
+            autoplay: true,
             speed: 500,
+            autoplaySpeed: 1000,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
