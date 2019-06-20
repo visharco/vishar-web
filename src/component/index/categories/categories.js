@@ -24,7 +24,6 @@ class Categories extends Component {
     }
 
     componentWillMount = async() => {
-
         const res = await GetToAPI('site/category');
 
         this.setState({
