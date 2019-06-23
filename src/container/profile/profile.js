@@ -149,13 +149,13 @@ class Profile extends Component {
                                     
                                     <div className="Profile-desc-text" >
                                         <p>
-                                        {this.state.data.summary ? this.state.data.summary : 'این طراح ،خلاصه فعالیت های خود را ثبت نکرده است'}
+                                        {this.state.data.summary !=='null' ? this.state.data.summary : 'این طراح ،خلاصه فعالیت های خود را ثبت نکرده است'}
                                         </p>
                                         <h1>خلاصه</h1>
                                     </div>
                                     <div className="Profile-desc-text" >
                                         <p>
-                                           {this.state.data.experience ? this.state.data.experience : 'این طراح ، تجربیات گذشته خود را ثبت نکرده است'}
+                                           {this.state.data.experience !=='null' ? this.state.data.experience : 'این طراح ، تجربیات گذشته خود را ثبت نکرده است'}
                                         </p>
                                         <h1>تجربیات</h1>
                                     </div>
