@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link } from 'react-router'
+import {Link, browserHistory } from 'react-router'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -66,7 +66,7 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
-                    return   <div key={index}>
+                    return   <div key={index} onClick={()=> browserHistory.push('/categories')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
                                     <p className="cat-label" >{data.title}</p>
                                 </div>
