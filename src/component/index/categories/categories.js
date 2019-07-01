@@ -66,7 +66,7 @@ class Categories extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data,index) => {
-                    return   <div key={index} onClick={()=> browserHistory.push('/categories')}>
+                    return   <div key={index} className="show-my-category" onClick={()=> browserHistory.push('/categories')}>
                                 <div className="category-slider" style={{ backgroundImage: 'url(' + data.image + ')' }} >
                                     <p className="cat-label" >{data.title}</p>
                                 </div>

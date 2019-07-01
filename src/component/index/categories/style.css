@@ -49,6 +49,9 @@ align-items: center;
 
 
 }
+.show-my-category {
+    cursor: pointer;
+}
 .cat-part1-action p{
     background-color: #2D9CDB;
     border-radius: 5px;
