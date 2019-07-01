@@ -24,13 +24,14 @@ class Project extends Component {
     }
     render() {
         return (
-            <div className="project" onClick={this.props.showProject} >
+            <div className="project" onClick={this.props.showProject} onClick={() => this.showProject(this.props.data.id)}>
                 <div className="p-left" >
                     <p className="p-price" >{PriceDigit(this.props.data.invoice.price_all,'price')} تومان</p>
                     <div className="p-icons" >
                         <div className="p-icon" >
                             <p>{this.props.data.count_design} طرح</p>
                             <img src={layersicon} alt="لایه ها " />
+                           
                         </div>
                         <div className="p-icon" >
                             <p>
@@ -65,7 +66,8 @@ class Project extends Component {
                             <p>{this.props.data.invoice.category}</p>
                         </div>
                     </div>
-                    <img src={design1} alt="طرح" />
+                    {/* <img src={design1} alt="طرح" /> */}
+                    <div className="image-of-project"></div>
 
 
 

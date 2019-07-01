@@ -97,6 +97,21 @@
     padding: 5px 0px;
 }
 
+.image-of-project {
+    width: 150px;
+    height: 150px;
+    background-color: #f8f8ff;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px #e8e8e8;
+    background-image: url('../../assets/images/layersicon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+
+
+}
+
 .p-icon{
     display: flex;
     align-items: center;
