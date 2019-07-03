@@ -88,7 +88,7 @@ p {
 
 .howWorking .container{
     margin: auto;   
-    padding:100px 50px;
+    padding:20px 50px;
     max-width: 1200px;
 }
 
@@ -180,7 +180,7 @@ align-items: flex-start;
 
 @media screen and (max-width: 700px){
 .howWorking .container{
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 .how-text p{
     width: 100%;
