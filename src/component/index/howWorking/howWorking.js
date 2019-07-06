@@ -24,14 +24,14 @@ class HowWorking extends Component {
                     <div className="col-50 "  data-aos="fade-right">
                         <div className="main-prt-one"></div>
                     </div>
-                    <div className="col-50 txt-right p-20  "    data-aos="fade-left"> 
+                    <div className="col-50 txt-right p-20  main-text-center"    data-aos="fade-left"> 
                         <h1>ویشار چگونه کار میکند ؟</h1>
                         <p>ما زمینه ای را فراهم کردیم تا مجرب ترین و قوی ترین طراحان در زمینه های مختلف گرد هم بیایند. مجموعه ویشار با بهره گیری از گروه های حرفه ای در حوزه های مختلف طراحی، عکس برداری، فیلم برداری و... قادر به پذیرش کلیه پروژه های گرافیکی و تبلیغاتی شما می باشد.</p>
                     </div>
                 </div>
 
                 <div class=" row container   ">
-                    <div className="col-50 txt-right p-20"  data-aos="fade-right">
+                    <div className="col-50 txt-right p-20 main-text-center"  data-aos="fade-right">
                         <h1>به ما در مورد نیاز خود بگویید</h1>
                         <p>در ابتدا توضیح مختصری در مورد نیازهای خود به طراحان ما ارائه دهید. این کار تنها چند دقیقه از وقت شما را خواهد گرفت. مهم نیست پروژه شما چه مقدار ساده یا پیچیده باشد، تخصص ما اجرایی کردن آنهاست.</p>
                     </div>
@@ -46,14 +46,14 @@ class HowWorking extends Component {
                     <div className="col-50 "  data-aos="fade-right">
                         <div className="main-prt-three"></div>
                     </div>
-                    <div className="col-50 txt-right p-20"  data-aos="fade-left">
-                            <h1>چه پروژه هایی و در چه مدت زمانی از طرف ما قابل انجام است؟</h1>
+                    <div className="col-50 txt-right p-20 main-text-center"  data-aos="fade-left">
+                            <h1>چه پروژه هایی امکان پذیر است؟</h1>
                             <p>خیلی چیزها! طراحان حرفه ای ما می توانند در زمینه طراحی لوگوهای مختلف، وب سایت ها، بنرهای تبلیغاتی و غیره فعالیت کنند. برای کسب اطلاعات بیشتر میتوانید دسته بندی خدمات مختلف ارائه شده توسط ما را در سایت ملاحظه بفرمایید. بسته به پیچیدگی یا ساده بودن طراحی، زمان تحویل سفارش متفاوت می باشد. برای طراحی های ساده تر، زمان کمتر و برای طراحی های پیچیده تر زمان بیشتری صرف خواهد شد.</p>
                     </div>
                 </div>
 
                 <div class=" row  container   ">
-                    <div className="col-50 txt-right p-20"  data-aos="fade-right">
+                    <div className="col-50 txt-right p-20 main-text-center"  data-aos="fade-right">
                         <h1>هزینه طراحی چقدر می شود؟</h1>
                         <p>با توجه به طبقه بندی های مختلف هزینه دریافتی برای سفارش های مختلف متفاوت می باشد. هر طبقه بندی دارای زیر مجموعه جدا می باشد که هزینه هر کدام در مقابل آن نوشته شده است.</p>
                     </div>
