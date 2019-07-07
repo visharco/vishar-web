@@ -51,6 +51,9 @@ align-items: center;
 }
 .show-my-category {
     cursor: pointer;
+    width: 400px;
+    margin: 5px; 
+
 }
 .cat-part1-action p{
     background-color: #2D9CDB;
@@ -80,13 +83,15 @@ align-items: center;
     background-size:contain;
     background-repeat:no-repeat;
     width: 300px; 
-    height: 200px; 
+    height: 300px;     
+    /* width: 400px; 
+    height: 400px;  */
     cursor: zoom-in ; 
     margin:auto ;
     position:relative ;
     background-color: #aeaeae;
-    background-size: 100%;
-    
+    background-size: cover;
+    border-radius: 5px;     
 }
 
 .cat-label{

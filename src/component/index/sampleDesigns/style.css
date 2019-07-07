@@ -45,7 +45,7 @@
 }
 .sampleDesigns-slider{
     background-position: center; 
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
     width: 300px; height: 300px;
     cursor: zoom-in;

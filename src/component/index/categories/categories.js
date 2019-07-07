@@ -15,6 +15,11 @@ import './style.css';
 
 
 
+ 
+
+
+
+
 class Categories extends Component {
     constructor(props) {
         super(props);
@@ -35,13 +40,13 @@ class Categories extends Component {
 
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             autoplay: true,
             speed: 500,
             autoplaySpeed: 2500,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 1,  
             responsive: [
                 {
                     breakpoint: 1000,
@@ -49,7 +54,7 @@ class Categories extends Component {
                         slidesToShow: 2,
                         slidesToScroll: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
