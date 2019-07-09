@@ -58,15 +58,27 @@
 }
 
 .brand {
+    /* width: 150px;
+    height: 150px;
+    -webkit-filter: grayscale(200%); 
+    filter: grayscale(200%); */
+
     width: 150px;
     height: 150px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(200%);
+    filter: grayscale(-105%);
+    transition:all .2s linear;
+    opacity: 0.4;
+
+ 
 
 }
 .brand:hover {
-    background-color: red;
-    
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+    border-radius: 5px; 
+
 }
 
 
