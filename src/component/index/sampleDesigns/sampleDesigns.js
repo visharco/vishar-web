@@ -165,7 +165,7 @@ class SampleDesigns extends Component {
                 <div className="sampleDesigns bg-fff">
                     <div className="container-fluid">
                         <div className="container">
-                            <h1>همکاران تجاری ما</h1>
+                            <h1>همکاران تجاری ویشار </h1>
                             <div>
                                 <Slider {...settings2}>
                                     <div>
