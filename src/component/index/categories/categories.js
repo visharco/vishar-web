@@ -89,7 +89,7 @@ class Categories extends Component {
                         <Link to="/categories" className="cat-part1-action" >
                             <p>نمایش همه  ی دسته بندیهای  </p>
                         </Link>
-                            <div className="cat-part1-text" >
+                            <div className="cat-part1-text"  data-aos="fade-up">
                                 <h1>دسته بندی های ویشار</h1>
                                 <h2>
                                 طراحان ویشار، پروژه های مختلفی را در زمینه هایی چون طراحی لوگو، ست اداری، بنر، طراحی کارت ویزیت، بروشور و... طراحی و تحویل مشتری می دهند. دسته بندی های ما طیف گسترده ای از نیازهای شما را برآورده خواهند کرد. پس با ما همراه باشید.

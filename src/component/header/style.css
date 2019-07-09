@@ -9,8 +9,9 @@
 
 .header{ 
     background-color: #ffffff;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    box-shadow: 0 3px 11px rgba(140, 140, 140, 0.23);
     height: 80px;
     display: -webkit-flex;
     display: flex;

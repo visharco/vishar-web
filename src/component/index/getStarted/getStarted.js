@@ -24,7 +24,7 @@ class GetStarted extends Component {
                 <div className="container-fluid">
                     <div className="container">
                         <div className="get-title">
-                            <div className="get-title-box"  data-aos="fade-left"  >
+                            <div className="get-title-box"  data-aos="fade-up"  >
                                 <div className="get-title-up "  > 
                                     <h2> ویشار، طراحان همیشه بیدار</h2>
                                 </div>
