@@ -80,7 +80,7 @@ class SampleDesigns extends Component {
         const settings2 = {
             dots: false,
             infinite: true,
-            autoplay: false,
+            autoplay: true,
             speed: 500,
             autoplaySpeed: 500,
             slidesToShow: 7,
