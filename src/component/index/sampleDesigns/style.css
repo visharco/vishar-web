@@ -16,7 +16,7 @@
     padding: 50px;
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
 }
 
 .sampleDesigns .container h1{
@@ -52,10 +52,21 @@
      margin:auto ;
      position:relative;
 }
+.bg-fff {
+    background-color: #ffffff!important;
 
-.brand{
+}
+
+.brand {
     width: 150px;
     height: 150px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+}
+.brand:hover {
+    background-color: red;
+    
 }
 
 

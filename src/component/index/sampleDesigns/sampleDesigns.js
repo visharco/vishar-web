@@ -162,7 +162,7 @@ class SampleDesigns extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="sampleDesigns">
+                <div className="sampleDesigns bg-fff">
                     <div className="container-fluid">
                         <div className="container">
                             <h1>همکاران تجاری ما</h1>
