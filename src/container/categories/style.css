@@ -80,6 +80,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 .C-search-pagination{
     display: flex;
