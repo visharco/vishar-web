@@ -23,7 +23,7 @@
 .footer-menu{
     display: flex;
     color: #fff;
-    width: 300px;
+    /* width: 300px; */
     margin: auto;   
     justify-content: center;
 

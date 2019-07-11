@@ -8,6 +8,13 @@
 
 
 }
+.contact-us-info {
+    text-align: right;
+    padding-top: 50px;
+}
+.contact-us-info p {
+   margin-bottom: 10px;
+}
 
 .contactUs .container{
     margin: auto; 

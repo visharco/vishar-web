@@ -8,6 +8,7 @@ import CategorieScreen from './container/categories/categories';
 import DesignersScreen from './container/designers/designers';
 import ProjectsScreen from './container/projects/projects';
 import AboutUsScreen from './container/aboutUs/aboutUs';
+import PolicyScreen from './container/policy/policyComponent';
 import ContactUsScreen from './container/contactUs/contactUs';
 import ProfileScreen from './container/profile/profile';
 import DesignerDesignScreen from './container/designerDesign/designerDesign';
@@ -30,6 +31,7 @@ class RouterComponent extends Component {
                     <Route   path="designers" component={DesignersScreen} /> 
                     <Route   path="projects" component={ProjectsScreen} /> 
                     <Route   path="aboutUs" component={AboutUsScreen} /> 
+                    <Route   path="policy" component={PolicyScreen} /> 
                     <Route   path="contactUs" component={ContactUsScreen} /> 
                     <Route   path="/profile/:id" component={ProfileScreen} /> 
                     <Route   path="designs/:id" component={DesignerDesignScreen} /> 

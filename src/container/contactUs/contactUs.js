@@ -68,7 +68,7 @@ class ContactUs extends Component {
                         <div className="contactUs-title">
                             <h1>تماس با ما</h1>
                             <p>
-                                اگر نظر، پیشنهاد یا سوالی دارید می توانید در هر زمان از شبانه روز از طریق فرم زیر با ما
+                                اگر نظر، پیشنهاد ، شکایت و یا سوالی دارید می توانید در هر زمان از شبانه روز از طریق فرم زیر با ما
                                 در ارتباط باشید.
                             </p>
                             <p>
@@ -76,7 +76,11 @@ class ContactUs extends Component {
                                 مشخصات ثبت شده توسط شما ارسال خواهند کرد.
                             </p>
                         </div>
-                        <div className="conatactUs-form">
+
+
+                        <div className="row">
+                            <div className="col-50">
+                            <div className="conatactUs-form">
                             <Input
                                 type={'text'}
                                 name={'name'}
@@ -117,6 +121,21 @@ class ContactUs extends Component {
                                 borderRadius="30px"
                                 click={this._postContactUs}/>
 
+                        </div>
+
+                            </div>
+                            <div className="col-50">
+                                <div className="contact-us-info">
+                                <h3>نشانی</h3>
+                                    <p>بخش مرکزی، خیابان امام خمینی، کوچه آفتاب ۳۸، ساختمان زاهدی، پلاک ۴۸، طبقه ۱، واحد ۳</p>
+                                    <p>کد پستی: 4616819687</p>
+                                    <h3>تلفن تماس</h3>
+                                    <p>1144233700</p>
+                                    <h3>پست الکترونیک</h3>
+                                    <p>info@vishar.com</p>
+                                    <p>dataamolco@yahoo.com</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

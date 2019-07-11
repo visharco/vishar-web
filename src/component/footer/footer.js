@@ -109,13 +109,14 @@ class FooterComponent extends Component {
                                 <li onClick={() => this._goto('/aboutus')}>درباره ما</li>
                                 <li onClick={() => window.location = "http://www.blog.vishar.com/"}>بلاگ</li>
                                 <li onClick={() => this._goto('/contactUs')}>تماس باما</li>
+                                <li onClick={() => this._goto('/policy')}>قوانین و مقررات</li>
+
                             </ul>
                             <ul>
                                 <li onClick={() => this._goto('/categories')}>دسته بندی ها</li>
                                 <li onClick={() => this._goto('/designers')}>طراحان</li>
                                 <li onClick={() => this._goto('/projects')}>پروژه ها</li>
-                            </ul>
-
+                            </ul> 
                         </div>
                     </div>
 
