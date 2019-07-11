@@ -5,3 +5,11 @@
     text-align: right;
     padding: 60px 0; 
 }
+
+.policy h2 {
+  padding: 25px 0;
+  border-bottom: 3px solid #444444;
+  margin-bottom: 10px;
+  
+}
+
