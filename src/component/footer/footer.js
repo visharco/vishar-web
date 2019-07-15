@@ -54,7 +54,9 @@ class FooterComponent extends Component {
     }
     _openEnamad = () => {
         // window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=pgWlS6pCVix54VAI&quot',' toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')
-        window.open('&quot;https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=QLc1X4NC0uwIknYj&quot', '&quot;Popup&quot','&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot')    }
+        window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=QLc1X4NC0uwIknYj&quot&quot','Popup&quot&quot','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot')    }
+        // window.open('http://www.facebook.com/sharer.php?s=100&p[title]=Fb Share&p[summary]=Facebook share popup&p[url]=javascript:fbShare("http://jsfiddle.net/stichoza/EYxTJ/")&p[images][0]="http://goo.gl/dS52U"', 'sharer', 'toolbar=0,status=0,width=548,height=325');
+
 
     render() {
         const enamad = (   <img 
