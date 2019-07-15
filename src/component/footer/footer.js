@@ -52,8 +52,17 @@ class FooterComponent extends Component {
         window.location.pathname = val;
 
     }
+    _openEnamad = () => {
+        // window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=pgWlS6pCVix54VAI&quot',' toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')
+        window.open('&quot;https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=QLc1X4NC0uwIknYj&quot', '&quot;Popup&quot','&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot')    }
 
     render() {
+        const enamad = (   <img 
+            src="https://trustseal.enamad.ir/logo.aspx?id=126862&amp;p=pgWlS6pCVix54VAI" 
+            alt="" 
+            onClick={this._openEnamad}
+            id="pgWlS6pCVix54VAI"    />
+        )
         return (
             <div className="footer">
                 <SweetAlert
@@ -101,7 +110,9 @@ class FooterComponent extends Component {
                             </div>
                         </div>
                     </div>
-
+                    <div class="enamad" id="pgWlS6pCVix54VAI" onClick={this._openEnamad}>
+                        {enamad}
+                    </div>
                     <div className="footer-split ">
                         <h1>منوها</h1>
                         <div className="footer-menu">

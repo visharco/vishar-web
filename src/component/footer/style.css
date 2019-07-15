@@ -19,6 +19,18 @@
     color: #7F7F7F;
     padding: 30px;
 }
+.enamad {
+    width: 195px;
+    height: 202px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #131313;
+    
+    
+}
 
 .footer-menu{
     display: flex;
