@@ -7,8 +7,9 @@ import telegram from './../../assets/icons/telegram.svg'
 import '../../../node_modules/sweetalert/dist/sweetalert.css'
 import './style.css';
 import SweetAlert from "sweetalert-react";
-import PostToApi from "../../controler/postToApi";
-
+import PostToApi from "../../controler/postToApi"; 
+ 
+const iframe = '<iframe src="http://www.vishar.com/enamad.html" width="220" height="202"></iframe>'; 
 
 class FooterComponent extends Component {
     constructor(props) {
@@ -54,8 +55,21 @@ class FooterComponent extends Component {
     }
     _openEnamad = () => {
         // window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=pgWlS6pCVix54VAI&quot',' toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30')
-        window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=QLc1X4NC0uwIknYj&quot&quot','Popup&quot&quot','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot')    }
+        // window.open('https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=QLc1X4NC0uwIknYj&quot&quot','Popup&quot&quot','toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot')    }
+        // window.open(ccc);
+        window.open("https://trustseal.enamad.ir/Verify.aspx?id=126862&amp;p=GKiH7jvXOYp7ABG6&quot;");
+
         // window.open('http://www.facebook.com/sharer.php?s=100&p[title]=Fb Share&p[summary]=Facebook share popup&p[url]=javascript:fbShare("http://jsfiddle.net/stichoza/EYxTJ/")&p[images][0]="http://goo.gl/dS52U"', 'sharer', 'toolbar=0,status=0,width=548,height=325');
+
+    }
+
+
+    iframe() {
+        return {
+          __html: iframe
+        }
+      }
+
 
 
     render() {
@@ -113,7 +127,11 @@ class FooterComponent extends Component {
                         </div>
                     </div>
                     <div class="enamad"   >
-                        {enamad}
+                        {/* {enamad} */}
+
+                        <div dangerouslySetInnerHTML={ this.iframe() } />
+
+
                     </div>
                     <div className="footer-split ">
                         <h1>منوها</h1>
