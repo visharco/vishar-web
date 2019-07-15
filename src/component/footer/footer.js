@@ -112,7 +112,7 @@ class FooterComponent extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="enamad" id="pgWlS6pCVix54VAI" onClick={this._openEnamad}>
+                    <div class="enamad"   >
                         {enamad}
                     </div>
                     <div className="footer-split ">
