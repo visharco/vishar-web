@@ -13,7 +13,9 @@ class CategoriesComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            category: []
+            category: [],
+            isLoadingData: true,
+            
         }
     }
 
@@ -21,7 +23,8 @@ class CategoriesComponent extends Component {
 
         const res = await GetApi('site/category');
         await this.setState({
-            category: res.data
+            category: res.data,
+            isLoadingData: false
         })
     }
 
@@ -57,8 +60,8 @@ class CategoriesComponent extends Component {
                                 {/*<img src={search} alt="جستجو" />*/}
                             </div>
                             <div className="C-search-wrap">
-                                <div className="C-search-result ">
-                                    {renderCategory}
+                                <div className="C-search-result "> 
+                                    {!this.state.isLoadingData ? renderCategory : <div className="loading-fff"></div>}
 
                                 </div>
 
