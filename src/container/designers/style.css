@@ -19,6 +19,17 @@
 
 }
 
+.loading-fff {
+    margin: auto;
+    width: 250px;
+    height: 250px; 
+    background-image: url('../../assets/images/loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+
+}
+
 .designers-title h1{
 margin-bottom: 20px;
 color: #333;

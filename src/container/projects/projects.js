@@ -12,18 +12,25 @@ class ProjectsComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            projects:[]
+            projects:[],
+            isLoadingData: true,
         }
     }
 
 
 
     componentWillMount = async() =>{
-        const res= await GetToApi('site/projects');
-        console.log(res.data)
-        this.setState({
-            projects : res.data
-        })
+        const res= await GetToApi('site/projects'); 
+        if(res.status === 200 ) {
+            this.setState({
+                projects : res.data,
+                isLoadingData : false
+            })
+        }
+        else {
+           alert(res.error)
+        }
+      
     }
 
 
@@ -105,8 +112,9 @@ class ProjectsComponent extends Component {
                             
                             <div className="P-results" >
                                 {/* <h1 className="P-result-title" >نمایش 789 نتیجه </h1> */}
-                              {renderProjects}
-                       
+                         
+                              {!this.state.isLoadingData ? renderProjects : <div className="loading-fff"></div>}
+
 
                             </div>
 

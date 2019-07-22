@@ -21,7 +21,8 @@ class DesignersComponent extends Component {
         this.state = {
             designerName: 'سارا دنیل',
             designerLevel: 'سطح ۲',
-            desginers:[]
+            desginers:[],
+            isLoadingData : true
         }
     }
     gotoDesigner = (id) => {
@@ -32,7 +33,8 @@ class DesignersComponent extends Component {
         const res = await GetApi('site/user/designer');
         
         await this.setState({
-            desginers:res.data
+            desginers:res.data,
+            isLoadingData: false
         })
     }
 
@@ -80,7 +82,7 @@ class DesignersComponent extends Component {
                                         click={this.gotoDesigner}
                                     /> */}
 
-                                    {renderDesginers}
+                                    {!this.state.isLoadingData ? renderDesginers : <div className="loading-fff"></div>}
                              
                             
                      
