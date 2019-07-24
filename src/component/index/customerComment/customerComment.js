@@ -8,8 +8,9 @@ import customer1 from './../../../assets/images/customer1.png'
 import img01 from './../../../assets/images/comment/01.jpeg'
 import img02 from './../../../assets/images/comment/02.jpeg'
 import img03 from './../../../assets/images/comment/03.jpeg'
-
 import './style.css';
+
+
 
 
 
@@ -52,15 +53,14 @@ class CustomerComment extends Component {
                                 </div>
                                 <div className="customer-box" >
                                     <div className="customer-detail">
-                                        <div className="customer-title  " >
+                                        <div className="customer-title  ">
                                             <h1>مهدی حسینیان</h1>
                                             <h2>UI/UX طراح </h2>
                                         </div>
                                         <img src={img02} alt="نظرات" />
                                     </div>
                                     <p className="customer-text">
-                                   بیش از 5 سال است که در زمینه طراحی رابط کاربری و تجربه کاربری فعالیت دارم ، ویشار به راحتی پاسخگوی نیازهای من بوده و با اطمینان می توانم مشتریان خود را بیابم
-                                  
+                                    بیش از 5 سال است که در زمینه طراحی رابط کاربری و تجربه کاربری فعالیت دارم ، ویشار به راحتی پاسخگوی نیازهای من بوده و با اطمینان می توانم مشتریان خود را بیابم
                                     </p>
                                 </div>
                                 <div className="customer-box" >
@@ -73,7 +73,6 @@ class CustomerComment extends Component {
                                     </div>
                                     <p className="customer-text">
                                    امروزه کار کردن در عرصه اینترنت بسیار دشوار شده ، با وجود ویشار به راحتی می توانم در هر کجا که هستم مشتریان خود را بیابم .
-                                  
                                     </p>
                                 </div>
                       
