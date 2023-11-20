@@ -63,11 +63,11 @@ class HeaderComponent extends Component {
                         <div className="menuTablet" >
                             <div className="headerMenuUp" ref={this.menuTablet}  >
 
-                            {Token ?   <a href="http://www.dashboard.vishar.com" className="menu-login" onClick={this._callLogin}>
+                            {Token ?   <a href="http://www.dashboard.ddtarh.ir" className="menu-login" onClick={this._callLogin}>
                                     <p className="menu-login-text">حساب کاربری من</p>
                                 </a> 
                                 : 
-                                <a href="http://www.dashboard.vishar.com/login" className="menu-login" onClick={this._callLogin}>
+                                <a href="http://www.dashboard.ddtarh.ir/login" className="menu-login" onClick={this._callLogin}>
                                 <p className="menu-login-text">ثبت نام / ورود</p>
                         </a> 
                     }
@@ -78,7 +78,7 @@ class HeaderComponent extends Component {
 
                                 <ul className="menu-links">
                                     <Link onClick={this.openHumberger} to="/contactUs" ><li className="menu-link">تماس ما</li></Link>
-                                    <a href="http://www.blog.vishar.com"  ><li className="menu-link">بلاگ</li></a>
+                                    <a href="http://www.blog.ddtarh.ir"  ><li className="menu-link">بلاگ</li></a>
                                     <Link onClick={this.openHumberger} to="/aboutUs" ><li className="menu-link">درباره ما</li></Link>
                                     <Link onClick={this.openHumberger} to="/projects" ><li className="menu-link">پروژه ها</li></Link>
                                     <Link onClick={this.openHumberger} to="/designers" ><li className="menu-link">طراحان</li></Link>
