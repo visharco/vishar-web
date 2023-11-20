@@ -4,8 +4,7 @@ import Token from '../api/token';
 
 function GetToApi(key){
 
-    console.log(Token)
-
+ 
     const url =  base.baseURL + key;
 
     return fetch(url, {

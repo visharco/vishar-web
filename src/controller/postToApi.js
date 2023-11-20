@@ -3,11 +3,7 @@ import base from '../api/baseURL';
 import Token from '../api/token';
 
 function postApi(data, key) {
-
-  console.log(Token)
-
   const url = base.baseURL + key;
-
   return fetch(url, {
     method: "POST",
     cache: "no-cache",

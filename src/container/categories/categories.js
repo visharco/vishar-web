@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import categoryTitle from '../../assets/images/categorytitle.svg'
 import Product from '../../component/product/product'
-import GetApi from '../../controler/getToApi';
+import GetApi from '../../controller/getToApi';
 import './style.css';
 
 

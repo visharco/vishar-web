@@ -7,7 +7,7 @@ import pic1 from './../../assets/images/pic1.png'
 import Button from '../../component/common/Button/Button';
 import DesignerLogo from '../../component/designerLogo/designerLogo';
 import Appreciation from '../../component/appreciation/appreciation';
-import GetToApi from '../../controler/getToApi';
+import GetToApi from '../../controller/getToApi';
 import loadingImage from '../../assets/images/loading-image.gif';
 
 
@@ -28,8 +28,7 @@ class Profile extends Component {
 
     componentWillMount = async() => {
         let id = window.location.pathname.split('/')[2];
-        console.log(id)
-
+ 
         const res = await GetToApi('site/user/designer/' + id);
         this.setState({
             data: res.data,

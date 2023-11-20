@@ -3,8 +3,7 @@ Get TOken Component from localStorg
 */
 
 function getToken(token) {
-    console.log(token)
-    if (token !== null)
+     if (token !== null)
         return token
     return null
 }

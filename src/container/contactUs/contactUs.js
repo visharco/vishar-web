@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Input from './../../component/common/input/Input';
 import TextArea from './../../component/common/textarea/textarea';
 import Button from './../../component/common/Button/Button'
 import SweetAlert from 'sweetalert-react';
-import './style.css';
-import PostToApi from "../../controler/postToApi";
-import {browserHistory} from "react-router";
+import PostToApi from "../../controller/postToApi";
+import { browserHistory } from "react-router";
 import '../../../node_modules/sweetalert/dist/sweetalert.css'
+import './style.css';
 
 class ContactUs extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class ContactUs extends Component {
         this.state = {
             name: '',
             email: '',
-            phonenumber: '',
+            phoneNumber: '',
             message: '',
         }
     }
@@ -34,16 +34,16 @@ class ContactUs extends Component {
         const data = new FormData();
         data.append('name', this.state.name)
         data.append('email', this.state.email)
-        data.append('phone', this.state.phonenumber)
+        data.append('phone', this.state.phoneNumber)
         data.append('message', this.state.message)
-        const res = await PostToApi(data, 'site/contactUs' );
+        const res = await PostToApi(data, 'site/contactUs');
         if (res.status === 200) {
             this.setState({
                 alertText: 'کاربر گرامی اطلاعات با موفقیت ثبت شد.',
                 show: true,
                 name: '',
                 email: '',
-                phonenumber: '',
+                phoneNumber: '',
                 message: '',
             });
         } else
@@ -61,7 +61,7 @@ class ContactUs extends Component {
                     show={this.state.show}
                     title="اعلان"
                     text={this.state.alertText}
-                    onConfirm={() => this.setState({show: false})}
+                    onConfirm={() => this.setState({ show: false })}
                 />
                 <div className="container-fluid">
                     <div className="container">
@@ -80,53 +80,53 @@ class ContactUs extends Component {
 
                         <div className="row">
                             <div className="col-50">
-                            <div className="conatactUs-form">
-                            <Input
-                                type={'text'}
-                                name={'name'}
-                                placeholder={'نام و نام خانوادگی'}
-                                changed={this.changedHandler}
-                                val={this.state.name}
-                                error={this.state.forgetEmailError}
-                            />
-                            <Input
-                                type={'text'}
-                                name={'email'}
-                                placeholder={'ایمیل'}
-                                changed={this.changedHandler}
-                                val={this.state.email}
-                                error={this.state.forgetEmailError}
-                            />
-                            <Input
-                                type={'text'}
-                                name={'phonenumber'}
-                                placeholder={'شماره همراه'}
-                                changed={this.changedHandler}
-                                val={this.state.phonenumber}
-                                error={this.state.forgetEmailError}
-                            />
-                            <TextArea
-                                type={'text'}
-                                name={'message'}
-                                placeholder={'پیام شما'}
-                                changed={this.changedHandler}
-                                val={this.state.message}
-                                error={this.state.forgetEmailError}
-                            />
-                            <Button
-                                isLoading={this.state.isLoading}
-                                title={'ارسال'}
-                                bgcolor={'#0090CF'}
-                                hoverbgcolor={'#1fc056cc'}
-                                borderRadius="30px"
-                                click={this._postContactUs}/>
+                                <div className="conatactUs-form">
+                                    <Input
+                                        type={'text'}
+                                        name={'name'}
+                                        placeholder={'نام و نام خانوادگی'}
+                                        changed={this.changedHandler}
+                                        val={this.state.name}
+                                        error={this.state.forgetEmailError}
+                                    />
+                                    <Input
+                                        type={'text'}
+                                        name={'email'}
+                                        placeholder={'ایمیل'}
+                                        changed={this.changedHandler}
+                                        val={this.state.email}
+                                        error={this.state.forgetEmailError}
+                                    />
+                                    <Input
+                                        type={'text'}
+                                        name={'phonenumber'}
+                                        placeholder={'شماره همراه'}
+                                        changed={this.changedHandler}
+                                        val={this.state.phoneNumber}
+                                        error={this.state.forgetEmailError}
+                                    />
+                                    <TextArea
+                                        type={'text'}
+                                        name={'message'}
+                                        placeholder={'پیام شما'}
+                                        changed={this.changedHandler}
+                                        val={this.state.message}
+                                        error={this.state.forgetEmailError}
+                                    />
+                                    <Button
+                                        isLoading={this.state.isLoading}
+                                        title={'ارسال'}
+                                        bgcolor={'#0090CF'}
+                                        hoverbgcolor={'#1fc056cc'}
+                                        borderRadius="30px"
+                                        click={this._postContactUs} />
 
-                        </div>
+                                </div>
 
                             </div>
                             <div className="col-50">
                                 <div className="contact-us-info">
-                                <h3>نشانی</h3>
+                                    <h3>نشانی</h3>
                                     <p>بخش مرکزی، خیابان امام خمینی، کوچه آفتاب ۳۸، ساختمان زاهدی، پلاک ۴۸، طبقه ۱، واحد ۳</p>
                                     <p>کد پستی: 4616819687</p>
                                     <h3>تلفن تماس</h3>

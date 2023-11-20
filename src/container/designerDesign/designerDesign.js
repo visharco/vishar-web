@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
-
 import { browserHistory } from 'react-router';
-
-import biggerlogo1 from './../../assets/images/biggerlogo1.png'
-
 import DesignerLogoTitle from '../../component/designerLogoTitle/designerLogoTitle';
-import DesignerLogoPostComment from '../../component/designerLogoPostComment/designerLogoPostComment.js';
-import DesignerLogoDetail from '../../component/designerLogoDetail/designerLogoDetail';
-import DesignerLogoComment from '../../component/designerLogoComment/designerLogoComment';
-import GetToApi from '../../controler/getToApi';
-
+import GetToApi from '../../controller/getToApi';
 import './style.css';
-
-
 
 class DesignerDesign extends Component {
     constructor(props) {
@@ -29,19 +19,16 @@ class DesignerDesign extends Component {
         }
     }
 
-
     componentWillMount = async() =>{
         let id = window.location.pathname.split('/')[2];
-        console.log(id)
-
+ 
         const res = await GetToApi('site/designer/portfolio/' + id);
        await this.setState({
             data: res.data,
             name:res.data.user.name,
             avatar:res.data.user.image_thumb
         })
-        console.log(this.state.data.user.name)
-    }
+     }
 
     //
     // -------------------------------------------------------------------------------------------------

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import rocket from '../../assets/images/rocket.svg'
 
 import Project from '../../component/project/project';
-import GetToApi from '../../controler/getToApi';
+import GetToApi from '../../controller/getToApi';
 import './style.css';
 
 
@@ -54,8 +54,7 @@ class ProjectsComponent extends Component {
             this.open.current.style.backgroundColor = "#f5f5f5"
             this.open.current.style.color = "#888"
         }
-        console.log('wfe')
-
+ 
     }
     render() {
 

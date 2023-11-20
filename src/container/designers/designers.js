@@ -10,7 +10,7 @@ import './style.css';
 //
 // controler -------------->
 //
-import GetApi from '../../controler/getToApi';
+import GetApi from '../../controller/getToApi';
 
 
 
@@ -27,8 +27,7 @@ class DesignersComponent extends Component {
     }
     gotoDesigner = (id) => {
         browserHistory.push('/profile/' + id);
-        console.log(this.props)
-    }
+     }
     componentWillMount = async() => {
         const res = await GetApi('site/user/designer');
         

@@ -20,7 +20,7 @@ class DesignerLogoTitle extends Component {
                         isLoading={this.state.isLoading}
                         title={'نمایش صفحه ی پروفایل'}
                         bgcolor={'#0090CF'}
-                        hoverbgcolor={'#419cdb80'}
+                        hoverbgcolor={'#2f9c9c80'}
                         click={this.goToFullProfile}
                         borderRadius="5px"
                         color="#fff"
