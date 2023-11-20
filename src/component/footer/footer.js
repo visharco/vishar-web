@@ -9,7 +9,7 @@ import './style.css';
 import SweetAlert from "sweetalert-react";
 import PostToApi from "../../controler/postToApi"; 
  
-const iframe = '<iframe src="http://www.vishar.com/enamad.html" width="220" height="202"></iframe>'; 
+const iframe = '<iframe src="http://www.ddtarh.ir/enamad.html" width="220" height="202"></iframe>'; 
 
 class FooterComponent extends Component {
     constructor(props) {
@@ -138,7 +138,7 @@ class FooterComponent extends Component {
                         <div className="footer-menu">
                             <ul>
                                 <li onClick={() => this._goto('/aboutus')}>درباره ما</li>
-                                <li onClick={() => window.location = "http://www.blog.vishar.com/"}>بلاگ</li>
+                                <li onClick={() => window.location = "http://www.blog.ddtarh.ir/"}>بلاگ</li>
                                 <li onClick={() => this._goto('/contactUs')}>تماس باما</li>
                                 <li onClick={() => this._goto('/policy')}>قوانین و مقررات</li>
 

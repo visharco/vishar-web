@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import comment from '../../assets/icons/comment.svg';
-import like from '../../assets/icons/like.svg';
-import view from '../../assets/icons/view.svg';
+// import comment from '../../assets/icons/comment.svg';
+// import like from '../../assets/icons/like.svg';
+// import view from '../../assets/icons/view.svg';
 import customer1 from '../../assets/images/customer1.png';
 
 import './style.css';
@@ -31,15 +31,15 @@ class DesignerLogoDetail extends Component {
                 </p>
                 <div className="DLD-icon-box" >
                     <div className="DLD-icons" >
-                        <img src={like} alt="لایک" />
+                        {/* <img src={like} alt="لایک" /> */}
                         <span>12</span>
                     </div>
                     <div className="DLD-icons" >
-                        <img src={view} alt="بازدید" />
+                        {/* <img src={view} alt="بازدید" /> */}
                         <span>33</span>
                     </div>
                     <div className="DLD-icons" >
-                        <img src={comment} alt="نظر" />
+                        {/* <img src={comment} alt="نظر" /> */}
                         <span>39</span>
                     </div>
                 </div>

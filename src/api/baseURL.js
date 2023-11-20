@@ -4,35 +4,16 @@
  //
  
 
- const url ='http://api.vishar.com' ;
- const versioan ='v1' ;
- const api ='api' ;
-
- const baseURL = url + '/' + api + '/' + versioan + '/'
+ const url ='http://api.ddtarh.ir' ;
+ const version ='v1' ;
+ const api ='api' ; 
+ const baseURL = url + '/' + api + '/' + version + '/'
 
  export default {
      url, 
-     versioan, 
+     version, 
      api,
 
      baseURL
     };
-
-
-
-/* How can Use It. ---------------->
-
-
-import base from '../../../../api/baseURL';
-
-console.log(base);  // http:api.example.com
-console.log(base.baseURL);  // http:api.example.com
-console.log(base.versioan);  // v1
-console.log(base.api);  // api
-
-
-
-
-
-
-*/
+ 

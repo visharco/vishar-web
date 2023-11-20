@@ -18,7 +18,7 @@ class Product extends Component {
     }
     render() {
         return (
-            <div className="product" data-aos="flip-right" onClick={()=> window.open('http://dashboard.vishar.com/dashboard')}>
+            <div className="product" data-aos="flip-right" onClick={()=> window.open('http://dashboard.ddtarh.ir/dashboard')}>
                 <div className="product-img"  >
                     <img src={this.props.data.image} alt="کتگوری ها" />
                 </div>

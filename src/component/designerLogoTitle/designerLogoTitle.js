@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 
-import comment from '../../assets/icons/comment.svg'
-import like from '../../assets/icons/like.svg'
-import view from '../../assets/icons/view.svg'
-import customer1 from '../../assets/images/customer1.png'
-
-
 import Button from '../common/Button/Button'
 
 

@@ -14,7 +14,7 @@ class GetStarted extends Component {
     }
 
     goto = () => {
-        window.location = 'http://dashboard.vishar.com/'
+        window.location = 'http://dashboard.ddtarh.ir/'
     }
 
     

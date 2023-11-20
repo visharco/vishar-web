@@ -1,12 +1,8 @@
-import React, {Component} from 'react';
-
-import categorytitle from '../../assets/images/categorytitle.svg'
-import search from '../../assets/icons/search.svg'
-
+import React, { Component } from 'react';
+import categoryTitle from '../../assets/images/categorytitle.svg'
 import Product from '../../component/product/product'
-
-import './style.css';
 import GetApi from '../../controler/getToApi';
+import './style.css';
 
 
 class CategoriesComponent extends Component {
@@ -15,7 +11,7 @@ class CategoriesComponent extends Component {
         this.state = {
             category: [],
             isLoadingData: true,
-            
+
         }
     }
 
@@ -32,7 +28,7 @@ class CategoriesComponent extends Component {
 
         const renderCategory = (
             this.state.category ? this.state.category.map((data, index) => {
-                return <Product data={data}/>
+                return <Product data={data} />
             }) : ''
         )
         return (
@@ -41,11 +37,11 @@ class CategoriesComponent extends Component {
                 <div className="C-title">
                     <div className="container-fluid">
                         <div className="container">
-                            <img src={categorytitle} alt="عنوان دسته بندی"/>
+                            <img src={categoryTitle} alt="عنوان دسته بندی" />
                             <div className="C-title-right">
                                 <h1>دسته بندی های ویشار</h1>
                                 <p>
-                                طراحان ویشار، پروژه های مختلفی را در زمینه هایی چون طراحی لوگو، ست اداری، بنر، طراحی کارت ویزیت، بروشور و... طراحی و تحویل مشتری می دهند. دسته بندی های ما طیف گسترده ای از نیازهای شما را برآورده خواهند کرد. پس با ما همراه باشید.
+                                    طراحان ویشار، پروژه های مختلفی را در زمینه هایی چون طراحی لوگو، ست اداری، بنر، طراحی کارت ویزیت، بروشور و... طراحی و تحویل مشتری می دهند. دسته بندی های ما طیف گسترده ای از نیازهای شما را برآورده خواهند کرد. پس با ما همراه باشید.
                                 </p>
                             </div>
                         </div>
@@ -56,17 +52,12 @@ class CategoriesComponent extends Component {
                     <div className="container-fluid">
                         <div className="container">
                             <div className="C-search-box ">
-                                {/*<input type="text" />*/}
-                                {/*<img src={search} alt="جستجو" />*/}
                             </div>
                             <div className="C-search-wrap">
-                                <div className="C-search-result "> 
+                                <div className="C-search-result ">
                                     {!this.state.isLoadingData ? renderCategory : <div className="loading-fff"></div>}
-
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>

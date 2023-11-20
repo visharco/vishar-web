@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
-import comment from '../../assets/icons/comment.svg'
-import like from '../../assets/icons/like.svg'
+// import comment from '../../assets/icons/comment.svg'
+// import like from '../../assets/icons/like.svg'
 
 import designerLogo from '../../assets/images/profilelogo.png';
 import loadingImage from '../../assets/images/loading-image.gif';
@@ -31,11 +31,11 @@ class DesignerLogo extends Component {
                 <div className="designerLogo-CL" >
                     <div className="designerLogo-II">
                         <span>12</span>
-                        <img src={comment} alt="لوگو" />
+                        {/* <img src={comment} alt="لوگو" /> */}
                     </div>
                     <div className="designerLogo-II" >
                         <span>23</span>
-                        <img src={like} alt="لایک" />
+                        {/* <img src={like} alt="لایک" /> */}
                     </div>
                 </div>
                 <div className="designerLogo-CL" >

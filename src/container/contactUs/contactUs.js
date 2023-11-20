@@ -132,7 +132,7 @@ class ContactUs extends Component {
                                     <h3>تلفن تماس</h3>
                                     <p>1144233700</p>
                                     <h3>پست الکترونیک</h3>
-                                    <p>info@vishar.com</p>
+                                    <p>info@ddtarh.ir</p>
                                     <p>dataamolco@yahoo.com</p>
                                 </div>
                             </div>

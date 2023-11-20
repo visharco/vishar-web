@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import report from '../../assets/icons/report.svg'
+// import report from '../../assets/icons/report.svg'
 import pic1 from '../../assets/images/pic1.png'
 
 import './style.css';
@@ -24,7 +24,7 @@ class DesignerLogoComment extends Component {
                     </div>
                     <div className="DLC-report" >
                         <span>گزارش</span>
-                        <img src={report} alt="گزارش"/>
+                        {/* <img src={report} alt="گزارش"/> */}
                     </div>
                 </div>
                 <p>طراحیت عالیه . دمت گرم</p>

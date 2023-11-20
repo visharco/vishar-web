@@ -2,10 +2,6 @@
 import base from '../api/baseURL';
 import Token from '../api/token';
 
-
-
-
-
 function GetToApi(key){
 
     console.log(Token)
@@ -29,31 +25,9 @@ function GetToApi(key){
       return Promise.all([statusCode, data])
     })
     .then(([res, data]) => {
-      //console.log(res, data) 
       return ({'status':res, 'data':data.data , 'error':data.error, 'isLoading':false})
     })
  
 }
- 
-
-
 export default GetToApi;
 
-
-
-/* how can use it ------------------->
-
-import GetApi  from './controler/postToApi';
-
-
-const res = GetApi('api url');
-
-  console.log(res);          // data, error,status
-  console.log(res.status);   // 200 means success
-  console.log(res.error);    // show the error from server
-  console.log(res.data);     // show the data from server
-
-
-*/
-
- 
